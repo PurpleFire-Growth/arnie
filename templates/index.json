@@ -99,93 +99,6 @@
         "button_text_color": ""
       }
     },
-    "image-link-blocks": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "1664424046b00c932c-0": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-1": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-2": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-3": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "1664424046b00c932c-0",
-        "1664424046b00c932c-1",
-        "1664424046b00c932c-2",
-        "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "block_size": "large",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -422,10 +335,10 @@
         "headings_NgQRiR": {
           "type": "headings",
           "settings": {
-            "heading_1": "Heading 1",
-            "heading_2": "Heading 2",
-            "heading_3": "Heading 3",
-            "heading_4": "",
+            "heading_1": "Product Specifications",
+            "heading_2": "Product Specifications",
+            "heading_3": "Product Specifications",
+            "heading_4": "Product Specifications",
             "heading_5": "",
             "heading_6": "",
             "heading_7": "",
@@ -447,11 +360,11 @@
         "values_HaxDUt": {
           "type": "values",
           "settings": {
-            "product": "",
-            "value_1": "<p>Value 1</p>",
-            "value_2": "<p>Value 2</p>",
-            "value_3": "<p>Value 3</p>",
-            "value_4": "",
+            "product": "arnie",
+            "value_1": "<p>Yes</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "<p>Yes</p>",
             "value_5": "",
             "value_6": "",
             "value_7": "",
@@ -476,10 +389,10 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>Value 1</p>",
-            "value_2": "<p>Value 2</p>",
-            "value_3": "<p>Value 3</p>",
-            "value_4": "",
+            "value_1": "<p>No</p>",
+            "value_2": "<p>No</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>No</p>",
             "value_5": "",
             "value_6": "",
             "value_7": "",
@@ -514,10 +427,10 @@
         "button_text": "",
         "button_url": "",
         "text_position": "start",
-        "max_rows": 5,
+        "max_rows": 4,
         "view_all_text": "View all",
         "view_less_text": "View less",
-        "view_product": "View",
+        "view_product": "",
         "show_product_info": true,
         "show_product_swatch": true,
         "viewing_product": "",
@@ -760,7 +673,6 @@
     "slideshow",
     "scrolling_text_nNzJj7",
     "impact-text",
-    "image-link-blocks",
     "featured-collection",
     "image-with-text-overlay",
     "multi_column_jDx7pQ",
