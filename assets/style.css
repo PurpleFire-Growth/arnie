@@ -1,0 +1,10 @@
+/* style the image in product card */
+.product-card__figure{
+    background-color:#009b67; 
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
