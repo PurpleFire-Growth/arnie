@@ -48,16 +48,7 @@ Supported variables
 {%- endif -%}
 
 <product-card handle="{{ product.handle | escape }}" {% if reveal and settings.stagger_products_apparition %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
-  {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  PRODUCT BADGES
-  --------------------------------------------------------------------------------------------------------------------
-  {%- endcomment -%}
-
-  {%- if show_badges and product.media.size > 0 -%}
-    {%- render 'product-badges', product: product, context: 'card', class: 'product-card__badge-list' -%}
-  {%- endif -%}
-
+ 
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT MEDIA
@@ -92,9 +83,11 @@ Supported variables
         {%- endif -%}
       </a>
 
-      {%- if show_quick_buy and product.available -%}
+     {%- if show_quick_buy and product.available -%}
         <div class="product-card__quick-buy">
-          {%- assign quick_add_label = 'product.general.quick_add' | t -%}
+          {% comment %} New text for button {% endcomment %}
+          {%- assign quick_add_label = 'Buy Now' -%}
+          {% comment %} {%- assign quick_add_label = 'product.general.quick_add' | t -%} {% endcomment %}
 
           {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
             {%- form 'product', product, is: 'product-form' -%}
@@ -119,7 +112,7 @@ Supported variables
               </button>
             </div>
 
-            <div class="pointer-coarse:hidden">
+            <div class="pointer-coarse:visible">
               {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
             </div>
 
@@ -129,7 +122,7 @@ Supported variables
           {%- endif -%}
         </div>
       {%- endif -%}
-    </div>
+    </div> 
   {%- endif -%}
 
   {%- comment -%}
@@ -166,8 +159,30 @@ Supported variables
         <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
       {%- endif -%}
 
-      {%- render 'price-list', product: product, text_alignment: text_alignment -%}
+      <div class="product-info-container">
+        <div class="price-list-container">
+          {%- render 'price-list', product: product, text_alignment: text_alignment -%}
+        </div>
+      
+        {%- comment -%}
+        --------------------------------------------------------------------------------------------------------------------
+        PRODUCT BADGES
+        --------------------------------------------------------------------------------------------------------------------
+        {%- endcomment -%}
+      
+        {%- if show_badges and product.media.size > 0 -%}
+          <div class="product-badges-container">
+            {%- render 'product-badges', product: product, context: 'card', class: 'product-card__badge-list' -%}
+          </div>
+        {%- endif -%}
+      </div>
+      
+
     </div>
+
+    {% comment %} Small description {% endcomment %}
+    <p class="product-description">{{ product.description }}</p>
+
 
     {%- if show_rating and mobile_reduced or text_alignment == 'center' -%}
       {%- capture rating_class -%}{% unless text_alignment == 'center' %}sm:hidden{% endunless %}{%- endcapture -%}
@@ -231,16 +246,81 @@ Supported variables
       {%- endfor -%}
     {%- endif -%}
   </div>
+  {% comment %} button {% endcomment %}
 
  <style>
   .product-card__figure{
     background-color: #009b67;
+    width:88%;
+    height:88%;
     border-radius: 50%;
     display: flex;
-
 }
   .product-card_image{
-    border-radius: 0px 0px 30000px 30000px;
+    height: 401px;
+    height: 100%;
+    align-self: center;
+    border-radius: 0px 0px 40000px 40000px;
+
   }
+  {% comment %} styling sale badge {% endcomment %}
+  .product-card__badge-list {
+    gap: var(--spacing-2);
+    pointer-events: none;
+    z-index: 5;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: unset;
+  }
+
+  .product-info-container {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .price-list-container,
+  .product-badges-container {
+    flex: 1; 
+  }
+  
+  .badge.badge--on-sale{
+  background-color:#D3B494;
+  color:black;
+  font-size: 15px;
+  font-weight:400;
+  border-radius: 4px;
+
+  }
+  .text-on-sale{
+    color: #009B67;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .product-description{
+  margin: 15px 0px;
+  }
+  .product-card__quick-buy {
+    position: fixed;
+    top: 100%;
+    bottom: var(--product-card-quick-buy-inset);
+}
+@media screen and (pointer: fine) {
+  .product-card__quick-buy {
+      opacity: 1;
+       visibility: visible !important; 
+       width:100%;
+      transition: opacity .2s ease-in-out, transform .2s ease-in-out, visibility .2s ease-in-out;
+      transform: translateY(5px);
+  }
+}
+.scroll-area.bleed{
+  height:700px;
+}
+.button{
+  width:100%;
+}
   </style>
 </product-card>
