@@ -425,6 +425,9 @@
         "values_HaxDUt",
         "values_AEgpKh"
       ],
+      "custom_css": [
+        ".v-stack.gap-5{display:none;}"
+      ],
       "settings": {
         "full_width": true,
         "subheading": "",
