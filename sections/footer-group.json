@@ -92,9 +92,10 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
+            "image": "shopify://shop_images/image.png",
             "image_width": 150,
-            "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
+            "heading_size": "h5",
+            "title": "For a life played well.",
             "content": ""
           }
         },
