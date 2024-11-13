@@ -22,7 +22,7 @@
             "subheading": "Arnie°s Naturals",
             "title": "Value Proposition <br> Nice Text",
             "heading_tag": "h0",
-            "button_text": "Shop Now",
+            "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
@@ -426,7 +426,7 @@
         "values_AEgpKh"
       ],
       "custom_css": [
-        ".v-stack.gap-5{display:none;}"
+        ".v-stack.gap-5 {display: none;}"
       ],
       "settings": {
         "full_width": true,
