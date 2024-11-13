@@ -34,7 +34,12 @@ CSS
       --slideshow-slide-controls-background: {{ controls_background.rgb }};
       --slideshow-slide-controls-color: {{ controls_color.rgb }};
     }
+  
   {%- endfor -%}
+  .custom-image{
+    z-index:100;
+    width:17%;
+    }
 </style>
 
 {%- comment -%}
@@ -116,6 +121,11 @@ LIQUID
 
           <div {% render 'surface', class: content_class, text_color: block.settings.text_color %}>
             <div class="prose">
+             {% comment %} Image above subheading {% endcomment %}
+             {% if block.settings.custom_image %}
+              <img src="{{ block.settings.custom_image | img_url: 'medium' }}" alt="Custom Image" class="custom-image">
+             {% endif %}
+             {% comment %} end {% endcomment %}
               {%- if block.settings.subheading != blank -%}
                 <p class="subheading" data-sequence="subheading">{{ block.settings.subheading | escape }}</p>
               {%- endif -%}
@@ -190,6 +200,7 @@ LIQUID
 </x-slideshow>
 
 {% schema %}
+
 {
   "name": "Slideshow",
   "class": "shopify-section--slideshow",
@@ -442,6 +453,12 @@ LIQUID
           "label": "Subheading",
           "default": "Tell your story"
         },
+      
+          {
+            "type": "image_picker",
+            "id": "custom_image",
+            "label": "Upload an Image"
+          },
         {
           "type": "text",
           "id": "title",

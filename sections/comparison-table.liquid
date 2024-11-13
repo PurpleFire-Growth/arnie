@@ -10,6 +10,15 @@ CSS
 {%- endcomment -%}
 
 <style>
+  .feature-chart__table-row {
+    --feature-chart-heading-width: 300px;
+   
+  }
+
+  #shopify-section-template--23786342646048__comparison_table_LtCyDT.section-stack__main{
+    width: -webkit-fill-available;
+  }
+
   #shopify-section-{{ section.id }} {
     --feature-chart-values-columns-count: {{ values_column_count }};
   }
@@ -76,9 +85,10 @@ LIQUID
       {%- assign text_color = section.settings.chart_text_color | default: settings.text_color -%}
       {%- assign background_color = section.settings.chart_background -%}
 
+      {% comment %}  TABLE TO HAVE TRANSPARENT BACKGROUND
       {%- if background_color == blank or background_color == 'rgba(0,0,0,0)' -%}
         {%- assign background_color = settings.background | color_mix: text_color, 95 -%}
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       <feature-chart max-rows="{{ section.settings.max_rows }}" {% render 'surface', class: 'feature-chart', background: background_color, text_color: text_color %}>
         <div class="feature-chart__table {% if values_column_count > 1 %}feature-chart__table--multi-columns{% endif %} feature-chart__table--product divide-y scroll-area">
