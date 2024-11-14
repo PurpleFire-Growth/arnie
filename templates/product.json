@@ -109,6 +109,15 @@
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
+        },
+        "product_variations_j8VTYQ": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "selector_style": "swatch"
+          }
         }
       },
       "block_order": [
@@ -126,7 +135,8 @@
         "collapsible_text_rBfLne",
         "collapsible_text_LgDYKT",
         "collapsible_text_7EWdC7",
-        "collapsible_text_7QWM4F"
+        "collapsible_text_7QWM4F",
+        "product_variations_j8VTYQ"
       ],
       "settings": {
         "full_width": true,
@@ -146,31 +156,24 @@
         "input_text_color": ""
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "scrolling_text_LA4wqA": {
+      "type": "scrolling-text",
       "settings": {
-        "recommendations_count": 6,
-        "products": [],
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "You may also like",
-        "content": "",
+        "text": "Guarantee",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "text_color": "#009b67",
+        "text_gradient": ""
       }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "scrolling_text_LA4wqA"
   ]
 }
