@@ -247,6 +247,12 @@
             "heading_tag": "h2"
           }
         },
+        "rating_DDpmWw": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true
+          }
+        },
         "badges_BAcRpM": {
           "type": "badges",
           "settings": {}
@@ -255,12 +261,6 @@
           "type": "price",
           "settings": {
             "show_taxes_notice": false
-          }
-        },
-        "rating_DDpmWw": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
           }
         },
         "separator_MB43cE": {
@@ -307,9 +307,9 @@
       "block_order": [
         "vendor_NTaMAT",
         "title_9aDBN6",
+        "rating_DDpmWw",
         "badges_BAcRpM",
         "price_NDQHH6",
-        "rating_DDpmWw",
         "separator_MB43cE",
         "description_TAxd9X",
         "variant_picker_tTm4Ce",
@@ -321,7 +321,7 @@
         "full_width": true,
         "product": "arnie-s-aftersun",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": true,
