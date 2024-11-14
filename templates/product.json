@@ -249,6 +249,38 @@
         "overlay_opacity": 30
       }
     },
+    "rich_text_ELQrjr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_APY3gX": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusted by people that rise every challenge",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_QjLiXd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>Are you ready to join them?</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_APY3gX",
+        "richtext_QjLiXd"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "media_grid_MLJFhK": {
       "type": "media-grid",
       "blocks": {
@@ -362,6 +394,7 @@
     "scrolling_text_LA4wqA",
     "text_with_icons_iBYJ8D",
     "image_with_text_overlay_cKmUWz",
+    "rich_text_ELQrjr",
     "media_grid_MLJFhK"
   ]
 }
