@@ -134,42 +134,28 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
-            "text": "For a life played well",
+            "text": "Plant-powered topicals that works as hard as  you do.",
             "heading_tag": "h1"
-          }
-        },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "1664424230c4756b0e-1"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "md",
-        "image": "shopify://shop_images/99299d9704772fb7bc13bfc085587487.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-start-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "text_with_icons_AzrtNM": {
