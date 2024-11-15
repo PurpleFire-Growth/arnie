@@ -221,11 +221,55 @@
         "text_color": ""
       }
     },
+    "multiple_images_with_text_34A96X": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_JjTatM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e_4cae9525-2223-465f-93c7-1fb07a18833e.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "Why Arnie's",
+            "title": "Premium Ingredients",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_ajJiK7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d_950ccf47-f446-4daa-827a-ce6ecfdbf252.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_JjTatM",
+        "item_ajJiK7"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "featured_product_4kgUwe": {
       "type": "featured-product",
       "blocks": {
         "vendor_NTaMAT": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "title_9aDBN6": {
@@ -236,8 +280,9 @@
         },
         "rating_DDpmWw": {
           "type": "rating",
+          "disabled": true,
           "settings": {
-            "show_empty": true
+            "show_empty": false
           }
         },
         "badges_BAcRpM": {
@@ -412,6 +457,7 @@
         "values_HaxDUt",
         "values_AEgpKh"
       ],
+      "disabled": true,
       "custom_css": [
         ".v-stack.gap-5 {display: none;}"
       ],
@@ -440,34 +486,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "image_with_text_overlay_hz9D4G": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_tyd3M3": {
-          "type": "heading",
-          "settings": {
-            "text": "Proudly Made in The USA",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_tyd3M3"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/03ad4503039ea2d2e5d3107cf64c35b8.jpg",
-        "mobile_image": "shopify://shop_images/03ad4503039ea2d2e5d3107cf64c35b8.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
       }
     },
     "rich_text_7gBJxx": {
@@ -670,9 +688,9 @@
     "featured-collection",
     "image-with-text-overlay",
     "text_with_icons_AzrtNM",
+    "multiple_images_with_text_34A96X",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
-    "image_with_text_overlay_hz9D4G",
     "rich_text_7gBJxx",
     "media_grid_NN7bPM",
     "faq"
