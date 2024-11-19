@@ -616,6 +616,23 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "newsletter_8aXfQH": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "image": "shopify://shop_images/baa180f786fd13c559d9ead42647280c.jpg",
+        "show_icon": true,
+        "title": "Join Arnie's Army",
+        "content": "<p>Subscribe to get notified about new products, offers and philanthropic endeavors from the Arnold and Winnie Foundation.</p>",
+        "button_text": "Subscribe",
+        "subtext": "By completing this form you are signing up to receive our emails. You can unsubscribe at any time.",
+        "background": "#003725",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -628,6 +645,7 @@
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
     "media_grid_NN7bPM",
-    "faq"
+    "faq",
+    "newsletter_8aXfQH"
   ]
 }
