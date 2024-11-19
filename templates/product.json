@@ -483,7 +483,7 @@
         "values_AfDHGC"
       ],
       "custom_css": [
-        ".v-stack.gap-5{display:none;}"
+        ".v-stack.gap-5 {display: none;}"
       ],
       "settings": {
         "full_width": true,
@@ -560,7 +560,7 @@
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "accordion_background": "",
+        "accordion_background": "#ffffff",
         "accordion_text_color": ""
       }
     }
