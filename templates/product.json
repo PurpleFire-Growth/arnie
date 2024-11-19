@@ -482,6 +482,9 @@
         "values_Va7AHN",
         "values_AfDHGC"
       ],
+      "custom_css": [
+        ".v-stack.gap-5{display:none;}"
+      ],
       "settings": {
         "full_width": true,
         "subheading": "",
