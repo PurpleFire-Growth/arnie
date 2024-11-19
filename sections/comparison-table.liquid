@@ -10,19 +10,16 @@ CSS
 {%- endcomment -%}
 
 <style>
-    #shopify-section-template--23802905887008__comparison_table_fYFyRj .section-stack__main {
-        width: 100%;
-     
-    }
+
   .feature-chart__table-row {
     --feature-chart-heading-width: 300px;
    
   }
 
-  #shopify-section-template--23786342646048__comparison_table_LtCyDT.section-stack__main{
+  /* #shopify-section-template--23786342646048__comparison_table_LtCyDT.section-stack__main{
     width: -webkit-fill-available;
   }
-
+ */
   #shopify-section-{{ section.id }} {
     --feature-chart-values-columns-count: {{ values_column_count }};
   }
@@ -31,7 +28,7 @@ CSS
     {%- if text_position == 'center' -%}
       #shopify-section-{{ section.id }} .section-stack__main {
         width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}900px{% else %}100%{% endif %};
-        min-width: 680px;
+        min-width: 680px; 
         margin-inline: auto;
       }
     {%- else -%}
