@@ -434,7 +434,7 @@
         "view_all_text": "View all",
         "view_less_text": "View less",
         "view_product": "",
-        "show_product_info": false,
+        "show_product_info": true,
         "show_product_swatch": false,
         "viewing_product": "",
         "background": "",
