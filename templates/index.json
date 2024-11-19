@@ -620,7 +620,7 @@
     "newsletter_8aXfQH": {
       "type": "newsletter",
       "custom_css": [
-        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid;}"
+        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}"
       ],
       "settings": {
         "full_width": false,
