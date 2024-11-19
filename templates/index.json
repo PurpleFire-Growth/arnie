@@ -619,6 +619,9 @@
     },
     "newsletter_8aXfQH": {
       "type": "newsletter",
+      "custom_css": [
+        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid;}"
+      ],
       "settings": {
         "full_width": false,
         "image": "shopify://shop_images/baa180f786fd13c559d9ead42647280c.jpg",
