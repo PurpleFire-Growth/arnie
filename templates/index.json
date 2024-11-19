@@ -65,42 +65,6 @@
         "text_gradient": ""
       }
     },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "100% Natural",
-            "subheading": "",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.8,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -373,10 +337,10 @@
         "headings_NgQRiR": {
           "type": "headings",
           "settings": {
-            "heading_1": "Product Specifications",
-            "heading_2": "Product Specifications",
-            "heading_3": "Product Specifications",
-            "heading_4": "Product Specifications",
+            "heading_1": "Muscle Cream",
+            "heading_2": "Roll On",
+            "heading_3": "Sunscreen",
+            "heading_4": "Aftersun",
             "heading_5": "",
             "heading_6": "",
             "heading_7": "",
@@ -398,8 +362,8 @@
         "values_HaxDUt": {
           "type": "values",
           "settings": {
-            "product": "arnies",
-            "value_1": "<p>Yes</p>",
+            "product": "",
+            "value_1": "",
             "value_2": "<p>Yes</p>",
             "value_3": "<p>Yes</p>",
             "value_4": "<p>Yes</p>",
@@ -457,10 +421,7 @@
         "values_HaxDUt",
         "values_AEgpKh"
       ],
-      "disabled": true,
-      "custom_css": [
-        ".v-stack.gap-5 {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -473,8 +434,8 @@
         "view_all_text": "View all",
         "view_less_text": "View less",
         "view_product": "",
-        "show_product_info": true,
-        "show_product_swatch": true,
+        "show_product_info": false,
+        "show_product_swatch": false,
         "viewing_product": "",
         "background": "",
         "background_gradient": "",
@@ -486,31 +447,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "rich_text_7gBJxx": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Db6Uyh": {
-          "type": "heading",
-          "settings": {
-            "text": "The legacy that will be remembered",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_Db6Uyh"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "media_grid_NN7bPM": {
@@ -611,6 +547,7 @@
         "image_zWJhTh",
         "image_t4CCQ7"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -684,14 +621,12 @@
   "order": [
     "slideshow",
     "scrolling_text_nNzJj7",
-    "impact-text",
     "featured-collection",
     "image-with-text-overlay",
     "text_with_icons_AzrtNM",
     "multiple_images_with_text_34A96X",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
-    "rich_text_7gBJxx",
     "media_grid_NN7bPM",
     "faq"
   ]
