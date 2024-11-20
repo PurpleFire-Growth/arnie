@@ -533,7 +533,6 @@
         "item_GMyUaL": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/star.png",
             "column_size": "4",
             "title": "Benefit",
             "heading_tag": "h4",
@@ -546,7 +545,6 @@
         "item_kpCxjp": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/star.png",
             "column_size": "4",
             "title": "Benefit",
             "heading_tag": "h4",
@@ -559,7 +557,6 @@
         "item_AVqkV8": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/star.png",
             "column_size": "4",
             "title": "Benefit",
             "heading_tag": "h4",
