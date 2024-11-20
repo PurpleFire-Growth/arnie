@@ -525,22 +525,30 @@
         "item_yLbkmB": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
+            "title": "What allergens is Arnies free from?",
             "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
           }
         },
         "item_HWJ9PY": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
+            "title": "How much is shipping?",
             "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        },
+        "item_jdBaNt": {
+          "type": "item",
+          "settings": {
+            "title": "What makes Arnies better than other?",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
       },
       "block_order": [
         "item_XRYLqi",
         "item_yLbkmB",
-        "item_HWJ9PY"
+        "item_HWJ9PY",
+        "item_jdBaNt"
       ],
       "settings": {
         "full_width": true,
