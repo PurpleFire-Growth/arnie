@@ -624,6 +624,9 @@
         "item_HWJ9PY",
         "item_jdBaNt"
       ],
+      "custom_css": [
+        ".section-stack__intro {width: 35%;}"
+      ],
       "settings": {
         "full_width": true,
         "subheading": "",
