@@ -142,6 +142,9 @@
         "collapsible_text_7QWM4F",
         "product_variations_j8VTYQ"
       ],
+      "custom_css": [
+        ".product-gallery__media img{width:50%;}"
+      ],
       "settings": {
         "full_width": true,
         "show_fixed_add_to_cart": true,
