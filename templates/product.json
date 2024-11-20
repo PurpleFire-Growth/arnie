@@ -625,7 +625,8 @@
         "item_jdBaNt"
       ],
       "custom_css": [
-        ".section-stack__intro {width: 35%;}"
+        ".section-stack__intro {width: 35%;}",
+        ".section-stack__main {width: 58%;}"
       ],
       "settings": {
         "full_width": true,
