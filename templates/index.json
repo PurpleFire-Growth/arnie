@@ -15,14 +15,14 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "Arnie°s Naturals",
-            "title": "Value Proposition <br> Nice Text",
+            "custom_image": "shopify://shop_images/image_3.png",
+            "title": "Legendary Care<br> for Life in Motion.",
             "heading_tag": "h0",
-            "button_text": "",
+            "button_text": "Shop Now",
             "button_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
@@ -54,50 +54,15 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "Guarantee",
-        "text_size": "xsmall",
+        "text": "For a life well played・",
+        "text_size": "large",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
         "background": "",
         "background_gradient": "",
-        "text_color": "#009b67",
+        "text_color": "#0b0b0b",
         "text_gradient": ""
-      }
-    },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
-          "settings": {
-            "title": "100% Natural",
-            "subheading": "",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "1664424181b38582d5-0"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.8,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "featured-collection": {
@@ -133,42 +98,28 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
-            "text": "For a life played well",
+            "text": "Plant-powered topicals that works as hard as  you do.",
             "heading_tag": "h1"
-          }
-        },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "1664424230c4756b0e-1"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "md",
-        "image": "shopify://shop_images/99299d9704772fb7bc13bfc085587487.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-start-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "text_with_icons_AzrtNM": {
@@ -234,17 +185,68 @@
         "text_color": ""
       }
     },
+    "multiple_images_with_text_34A96X": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_JjTatM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e_4cae9525-2223-465f-93c7-1fb07a18833e.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "Why Arnie's",
+            "title": "Premium Ingredients",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_ajJiK7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d_950ccf47-f446-4daa-827a-ce6ecfdbf252.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_JjTatM",
+        "item_ajJiK7"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "featured_product_4kgUwe": {
       "type": "featured-product",
       "blocks": {
         "vendor_NTaMAT": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "title_9aDBN6": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
+          }
+        },
+        "rating_DDpmWw": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
           }
         },
         "badges_BAcRpM": {
@@ -255,12 +257,6 @@
           "type": "price",
           "settings": {
             "show_taxes_notice": false
-          }
-        },
-        "rating_DDpmWw": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
           }
         },
         "separator_MB43cE": {
@@ -307,9 +303,9 @@
       "block_order": [
         "vendor_NTaMAT",
         "title_9aDBN6",
+        "rating_DDpmWw",
         "badges_BAcRpM",
         "price_NDQHH6",
-        "rating_DDpmWw",
         "separator_MB43cE",
         "description_TAxd9X",
         "variant_picker_tTm4Ce",
@@ -321,7 +317,7 @@
         "full_width": true,
         "product": "arnie-s-aftersun",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": true,
@@ -341,10 +337,10 @@
         "headings_NgQRiR": {
           "type": "headings",
           "settings": {
-            "heading_1": "Product Specifications",
-            "heading_2": "Product Specifications",
-            "heading_3": "Product Specifications",
-            "heading_4": "Product Specifications",
+            "heading_1": "Muscle Cream",
+            "heading_2": "Roll On",
+            "heading_3": "Sunscreen",
+            "heading_4": "Aftersun",
             "heading_5": "",
             "heading_6": "",
             "heading_7": "",
@@ -366,8 +362,8 @@
         "values_HaxDUt": {
           "type": "values",
           "settings": {
-            "product": "arnies",
-            "value_1": "<p>Yes</p>",
+            "product": "",
+            "value_1": "",
             "value_2": "<p>Yes</p>",
             "value_3": "<p>Yes</p>",
             "value_4": "<p>Yes</p>",
@@ -425,9 +421,7 @@
         "values_HaxDUt",
         "values_AEgpKh"
       ],
-      "custom_css": [
-        ".v-stack.gap-5 {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -441,7 +435,7 @@
         "view_less_text": "View less",
         "view_product": "",
         "show_product_info": true,
-        "show_product_swatch": true,
+        "show_product_swatch": false,
         "viewing_product": "",
         "background": "",
         "background_gradient": "",
@@ -453,59 +447,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "image_with_text_overlay_hz9D4G": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_tyd3M3": {
-          "type": "heading",
-          "settings": {
-            "text": "Proudly Made in The USA",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_tyd3M3"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/03ad4503039ea2d2e5d3107cf64c35b8.jpg",
-        "mobile_image": "shopify://shop_images/03ad4503039ea2d2e5d3107cf64c35b8.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
-    "rich_text_7gBJxx": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Db6Uyh": {
-          "type": "heading",
-          "settings": {
-            "text": "The legacy that will be remembered",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_Db6Uyh"
-      ],
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "media_grid_NN7bPM": {
@@ -606,6 +547,7 @@
         "image_zWJhTh",
         "image_t4CCQ7"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -674,20 +616,39 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "newsletter_8aXfQH": {
+      "type": "newsletter",
+      "custom_css": [
+        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "image": "shopify://shop_images/baa180f786fd13c559d9ead42647280c.jpg",
+        "show_icon": true,
+        "title": "Join Arnie's Army",
+        "content": "<p>Subscribe to get notified about new products, offers and philanthropic endeavors from the Arnold and Winnie Foundation.</p>",
+        "button_text": "Subscribe",
+        "subtext": "By completing this form you are signing up to receive our emails. You can unsubscribe at any time.",
+        "background": "#003725",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
     "slideshow",
     "scrolling_text_nNzJj7",
-    "impact-text",
     "featured-collection",
     "image-with-text-overlay",
     "text_with_icons_AzrtNM",
+    "multiple_images_with_text_34A96X",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
-    "image_with_text_overlay_hz9D4G",
-    "rich_text_7gBJxx",
     "media_grid_NN7bPM",
-    "faq"
+    "faq",
+    "newsletter_8aXfQH"
   ]
 }

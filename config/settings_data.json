@@ -16,6 +16,7 @@
     "block_border_radius": 24,
     "block_shadow_opacity": 10,
     "block_shadow_vertical_offset": 18,
+    "button_style": "fill",
     "button_hover_effect": "reverse",
     "background": "#ffffff",
     "text_color": "#272727",
@@ -45,6 +46,8 @@
     "product_info_alignment": "start",
     "cart_type": "drawer",
     "cart_icon": "shopping_basket",
+    "social_facebook": "shopify://collections/all",
+    "social_instagram": "shopify://collections/all",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
     "content_for_index": []

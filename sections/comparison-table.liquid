@@ -10,6 +10,7 @@ CSS
 {%- endcomment -%}
 
 <style>
+
   .feature-chart__table-row {
     --feature-chart-heading-width: 300px;
    
@@ -27,7 +28,7 @@ CSS
     {%- if text_position == 'center' -%}
       #shopify-section-{{ section.id }} .section-stack__main {
         width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}900px{% else %}100%{% endif %};
-        min-width: 680px;
+        min-width: 680px; 
         margin-inline: auto;
       }
     {%- else -%}
