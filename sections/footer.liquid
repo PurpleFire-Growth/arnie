@@ -11,6 +11,8 @@
       --footer-block-list-justify-content: space-between;
     }
   }
+ 
+  
 </style>
 {%- endif -%}
 
@@ -95,7 +97,7 @@
                           {%- render 'banner', content: error_message, status: 'error' -%}
                         {%- endif -%}
 
-                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input type="hidden" name="contact[tags]" value="newsletter" class="footer-form">
 
                         {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
                         {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}

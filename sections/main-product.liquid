@@ -98,7 +98,7 @@
     {%- endif -%}
   </product-rerender>
 {%- endif -%}
-
+    
 {%- comment -%}
 IMPLEMENTATION NOTE: Shopify does not currently allows to render a given section within the context of a given product. However,
 when rendering the quick buy popovers, we want to be able to re-use the merchant's choices (such as the selector type). This
@@ -121,7 +121,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       "type": "vendor",
       "name": "Vendor",
       "limit": 1
-    },
+    }, 
     {
       "type": "title",
       "name": "Title",
