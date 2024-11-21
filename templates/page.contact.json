@@ -106,14 +106,14 @@
           "type": "item",
           "settings": {
             "title": "Are your products organic?",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "content": "<p>Many of our ingredients are certified organic. Each product page lists specific organic ingredients. While not all our products are 100% organic certified, we prioritize organic ingredients whenever possible.</p>",
             "page": ""
           }
         },
         "item_k7KWmf": {
           "type": "item",
           "settings": {
-            "title": "Question 3",
+            "title": "When will I receive my order?",
             "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
             "page": ""
           }
