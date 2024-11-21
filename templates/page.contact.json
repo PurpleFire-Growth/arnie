@@ -97,15 +97,15 @@
         "item_yJmdwQ": {
           "type": "item",
           "settings": {
-            "title": "Question 1",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "title": "What makes Arnie's Naturals products different?",
+            "content": "<p>Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations.</p>",
             "page": ""
           }
         },
         "item_4LeFMU": {
           "type": "item",
           "settings": {
-            "title": "Question 2",
+            "title": "Are your products organic?",
             "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
             "page": ""
           }
