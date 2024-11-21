@@ -189,21 +189,19 @@
       const iconChecked = document.querySelector('.icon-input-checked');
       const iconUnchecked = document.querySelector('.icon-input-unchecked');
 
-     
-        if (input.checked) {
-          iconChecked.classList.add('visible');
-          iconChecked.classList.remove('hidden');
+      if (input.checked) {
+        iconChecked.classList.add('visible');
+        iconChecked.classList.remove('hidden');
 
-          iconUnchecked.classList.add('hidden');
-          iconUnchecked.classList.remove('visible');
-        } else {
-          iconUnchecked.classList.add('visible');
-          iconUnchecked.classList.remove('hidden');
+        iconUnchecked.classList.add('hidden');
+        iconUnchecked.classList.remove('visible');
+      } else {
+        iconUnchecked.classList.add('visible');
+        iconUnchecked.classList.remove('hidden');
 
-          iconChecked.classList.add('hidden');
-          iconChecked.classList.remove('visible');
-        }
-    
+        iconChecked.classList.add('hidden');
+        iconChecked.classList.remove('visible');
+      }
     });
   });
 </script>
@@ -367,6 +365,12 @@
           "id": "custom_input",
           "label": "Custom Input",
           "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": true
         }
       ]
     },
@@ -442,6 +446,12 @@
           "type": "checkbox",
           "id": "custom_input",
           "label": "Custom Input",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
           "default": true
         }
       ]
@@ -543,7 +553,48 @@
   "presets": [
     {
       "name": "Custom Contact Form",
-      "settings": {}
+      "settings": {
+        "subheading": "",
+        "title": "Contact Us",
+        "full_width": true,
+        "text_position": "center",
+        "contact_form_size": "large",
+        "button_text": "Submit",
+        "background": "#ffffff",
+        "contact_background": "#ffffff"
+      },
+      "blocks": [
+        {
+          "type": "full_name",
+          "settings": {
+            "title": "Full Name",
+            "required": true
+          }
+        },
+        {
+          "type": "email",
+          "settings": {
+            "title": "Email Address",
+            "full_width": false,
+            "required": true
+          }
+        },
+        {
+          "type": "phone_number",
+          "settings": {
+            "title": "Phone Number",
+            "full_width": false,
+            "required": false
+          }
+        },
+        {
+          "type": "message",
+          "settings": {
+            "title": "Message",
+            "required": true
+          }
+        }
+      ]
     }
   ]
 }
