@@ -90,10 +90,63 @@
         "button_text_color": "",
         "button_text": "Submit"
       }
+    },
+    "accordion_content_XCHGNj": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_yJmdwQ": {
+          "type": "item",
+          "settings": {
+            "title": "Question 1",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        },
+        "item_4LeFMU": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        },
+        "item_k7KWmf": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_yJmdwQ",
+        "item_4LeFMU",
+        "item_k7KWmf"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Frequently asked questions",
+        "content": "<h4>We’ve got the answers.</h4>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "custom_contact_form_EahFBj"
+    "custom_contact_form_EahFBj",
+    "accordion_content_XCHGNj"
   ]
 }
