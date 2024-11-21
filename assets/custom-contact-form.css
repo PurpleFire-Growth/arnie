@@ -1,0 +1,36 @@
+.custom_contact_form .button_container {
+  width: 100%;
+}
+.custom_contact_form .button_container button {
+  width: 100%;
+}
+
+.custom_contact_form .fieldset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-control.full_width {
+  width: 100%;
+}
+
+.form-control.half_width {
+  width: 48.5% !important;
+}
+.news_and_promotions_label{
+  display: flex;
+  gap: 0.5rem;
+}
+.news_and_promotions_label .hidden{
+  display: none;
+}
+.news_and_promotions_label .visible{
+  display: flex;
+}
+#news_and_promotions{
+  display: none;
+}
+
+.custom_contact_form .section-stack{
+  gap: 0px;
+}
