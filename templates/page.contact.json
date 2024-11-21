@@ -1,1 +1,99 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"contact":{"type":"contact","settings":{}}},"order":["main","contact"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "custom_contact_form_EahFBj": {
+      "type": "custom-contact-form",
+      "blocks": {
+        "full_name_aH67Th": {
+          "type": "full_name",
+          "settings": {
+            "title": "Full Name",
+            "placeholder": "Enter your Name",
+            "full_width": true,
+            "custom_input": true
+          }
+        },
+        "email_hpEGGQ": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Enter your email",
+            "full_width": false,
+            "custom_input": true
+          }
+        },
+        "phone_number_cJJddc": {
+          "type": "phone_number",
+          "settings": {
+            "title": "Phone Number",
+            "placeholder": "Enter your phone number",
+            "full_width": false,
+            "custom_input": true,
+            "required": false
+          }
+        },
+        "message_YJrAYL": {
+          "type": "message",
+          "settings": {
+            "title": "Message",
+            "placeholder": "Write your message",
+            "full_width": true,
+            "custom_input": true,
+            "required": false
+          }
+        },
+        "news_and_promotions_T6nedV": {
+          "type": "news_and_promotions",
+          "settings": {
+            "text": "I want to receive news and promotions about Arnie’s products.",
+            "checked": true
+          }
+        }
+      },
+      "block_order": [
+        "full_name_aH67Th",
+        "email_hpEGGQ",
+        "phone_number_cJJddc",
+        "message_YJrAYL",
+        "news_and_promotions_T6nedV"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Contact Us",
+        "content": "",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": "",
+        "button_text": "Submit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_contact_form_EahFBj"
+  ]
+}
