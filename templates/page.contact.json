@@ -25,7 +25,8 @@
             "title": "Full Name",
             "placeholder": "Enter your Name",
             "full_width": true,
-            "custom_input": true
+            "custom_input": true,
+            "required": true
           }
         },
         "email_hpEGGQ": {
@@ -34,7 +35,8 @@
             "title": "Email",
             "placeholder": "Enter your email",
             "full_width": false,
-            "custom_input": true
+            "custom_input": true,
+            "required": true
           }
         },
         "phone_number_cJJddc": {
@@ -114,7 +116,7 @@
           "type": "item",
           "settings": {
             "title": "When will I receive my order?",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "content": "<p>This depends on shipping method and location, but typically between 2-7 business days. We fulfill and ship all orders by the next business day.</p>",
             "page": ""
           }
         }
