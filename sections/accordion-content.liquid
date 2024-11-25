@@ -1,11 +1,48 @@
 {%- render 'section-spacing-collapsing' -%}
 
 {%- assign text_position = section.settings.text_position -%}
+{%- assign subheading_position = section.settings.subheading_position -%}
 
 <style>
   #shopify-section-{{ section.id }} {
     --section-stack-intro: {% if text_position == 'center' %}66.6667%{% else %}50%{% endif %};
     --section-stack-main: 50%;
+  }
+
+  {%- if section.settings.add_padding == 'no' -%}
+    #shopify-section-{{ section.id }} .accordion-box {
+      padding: 0px;
+    }
+  {%- endif -%}
+
+  @media screen and (max-width: 690px) {
+    #shopify-section-{{ section.id }} .h2 {
+      font-size: {{ section.settings.title_font_size_mobile }}px;
+    }
+    #shopify-section-{{ section.id }} .subheading {
+      font-size: {{ section.settings.subheading_font_size_mobile }}px;
+    }
+    #shopify-section-{{ section.id }} .section-stack {
+      gap: {{ section.settings.gap_mobile }}px;
+    }
+    {%- if section.settings.add_padding == 'no' -%}
+      #shopify-section-{{ section.id }} .accordion:first-child .accordion__toggle {
+        padding-top: 0px;
+      }
+    {%- endif -%}
+  }
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} .section-stack {
+      gap: {{ section.settings.gap_desktop }}px;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} .h2 {
+      font-size: {{ section.settings.title_font_size_desktop }}px;
+    }
+    #shopify-section-{{ section.id }} .subheading {
+      font-size: {{ section.settings.subheading }}px;
+    }
   }
 </style>
 
@@ -13,13 +50,21 @@
   <div class="section-stack {% if text_position != 'center' %}section-stack--horizontal{% else %}section-stack--center{% endif %} {% if text_position == 'end' %}section-stack--reverse{% endif %}">
     {%- capture content -%}
       {%- if section.settings.subheading != blank -%}
-        <p class="subheading">{{ section.settings.subheading | escape }}</p>
+        {%- if section.settings.subheading_position == 'before' -%}
+          <p class="subheading">{{ section.settings.subheading | escape }}</p>
+        {%- endif -%}
       {%- endif -%}
 
       {%- if section.settings.title != blank -%}
         <h2 class="h2">
           {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
         </h2>
+      {%- endif -%}
+
+      {%- if section.settings.subheading != blank -%}
+        {%- if section.settings.subheading_position == 'after' -%}
+          <p class="subheading">{{ section.settings.subheading | escape }}</p>
+        {%- endif -%}
       {%- endif -%}
 
       {{- section.settings.content -}}
@@ -39,7 +84,14 @@
 
     {%- if section.blocks.size > 0 -%}
       <div class="section-stack__main">
-        <div {% render 'surface', class: 'accordion-box rounded', background: section.settings.accordion_background, text_color: section.settings.accordion_text_color, background_fallback: 'bg-secondary' %}>
+        <div
+          {% render 'surface',
+            class: 'accordion-box rounded',
+            background: section.settings.accordion_background,
+            text_color: section.settings.accordion_text_color,
+            background_fallback: 'bg-secondary'
+          %}
+        >
           {%- for block in section.blocks -%}
             {%- if block.settings.title != blank and block.settings.content != blank -%}
               {%- capture accordion_content -%}
@@ -98,15 +150,91 @@
       "default": true
     },
     {
+      "type": "range",
+      "id": "gap_mobile",
+      "min": 16,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Space between elements mobile",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "gap_desktop",
+      "min": 16,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "Space between elements desktop",
+      "default": 48
+    },
+    {
       "type": "text",
       "id": "subheading",
       "label": "Subheading"
+    },
+    {
+      "type": "range",
+      "id": "subheading_font_size_mobile",
+      "min": 12,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading font size mobile",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subheading_font_size_desktop",
+      "min": 12,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading font size desktop",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "subheading_position",
+      "label": "Place subheading before or after",
+      "options": [
+        {
+          "value": "before",
+          "label": "Before"
+        },
+        {
+          "value": "after",
+          "label": "After"
+        }
+      ],
+      "default": "before"
     },
     {
       "type": "text",
       "id": "title",
       "label": "Heading",
       "default": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size_mobile",
+      "min": 12,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "Title font size mobile",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "title_font_size_desktop",
+      "min": 12,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "Title font size desktop",
+      "default": 48
     },
     {
       "type": "richtext",
@@ -143,6 +271,22 @@
         }
       ],
       "default": "start"
+    },
+    {
+      "type": "select",
+      "id": "add_padding",
+      "label": "Add padding to accordions",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes"
     },
     {
       "type": "header",
