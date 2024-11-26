@@ -50,8 +50,6 @@
 
           {%- form 'contact', id: contact_form_id, class: 'form' -%}
             <div class="fieldset">
-
-
               {%- for block in section.blocks -%}
                 {%- assign field_title = block.settings.title -%}
 
@@ -147,8 +145,8 @@
                       name="news_and_promotions"
                       checked="{{ block.settings.checked }}"
                     >
-                    {% render 'icon-input-checked', class: 'icon-input-checked visible' %}
-                    {% render 'icon-input-unchecked', class: 'icon-input-unchecked hidden' %}
+                    {% render 'icon-input-checked', class: 'icon-input-checked' %}
+                    {% render 'icon-input-unchecked', class: 'icon-input-unchecked', style: 'display: none;' %}
 
                     <p>{{ block.settings.text }}</p>
                   </label>
@@ -184,6 +182,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const element = document.querySelector('.news_and_promotions_label');
+    const emailInput = document.querySelector('[name="contact[email]"]');
+    const submitButton = document.querySelector('button[type="submit"]'); 
 
     element.addEventListener('click', () => {
       const input = document.querySelector('#news_and_promotions');
@@ -191,21 +191,33 @@
       const iconUnchecked = document.querySelector('.icon-input-unchecked');
 
       if (input.checked) {
-        iconChecked.classList.add('visible');
-        iconChecked.classList.remove('hidden');
-
-        iconUnchecked.classList.add('hidden');
-        iconUnchecked.classList.remove('visible');
+        iconChecked.style.display = 'block';
+        iconUnchecked.style.display = 'none';
       } else {
-        iconUnchecked.classList.add('visible');
-        iconUnchecked.classList.remove('hidden');
+        iconChecked.style.display = 'none';
+        iconUnchecked.style.display = 'block';
+      }
+    });
 
-        iconChecked.classList.add('hidden');
-        iconChecked.classList.remove('visible');
+    emailInput.addEventListener('input', (event) => {
+      const errorMessage = document.querySelector('.email-error-message');
+      const email = event.target.value;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (emailRegex.test(email)) {
+        errorMessage.style.display = 'none';
+        emailInput.classList.remove('incorrect-email-format');
+        submitButton.disabled = false;
+      } else {
+        errorMessage.style.display = 'block';
+        emailInput.classList.add('incorrect-email-format');
+        submitButton.disabled = true;
       }
     });
   });
 </script>
+
+
 
 {% schema %}
 {

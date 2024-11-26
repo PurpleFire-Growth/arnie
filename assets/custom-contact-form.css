@@ -49,6 +49,20 @@
   background-color: #E0FFF5;
   margin: 0 auto;
 }
+
+.email-error-message{
+  display: none;
+  color: red;
+  margin-top: 12px;
+}
+
+.incorrect-email-format{
+  border: 2px solid red;
+}
+.button[disabled]{
+  opacity: 0.3;
+}
+
 @media screen and (min-width: 390px) {
   .news_and_promotions_label p {
     white-space: nowrap;
