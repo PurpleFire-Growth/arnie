@@ -28,8 +28,8 @@
         "item_DmzC39": {
           "type": "item",
           "settings": {
-            "title": "Question 1",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "title": "When will I receive my order?",
+            "content": "<p>This depends on shipping method and location, but typically between 2-7 business days. We fulfill and ship all orders by the next business day.</p>",
             "page": ""
           }
         },
