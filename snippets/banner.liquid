@@ -22,7 +22,6 @@
     {%- assign button_background = settings.success_color -%}
   {%- when 'custom_success' -%}
     {%- assign icon = 'custom_success' -%}
-    {%- assign button_background = '#E0FFF5' -%}
   {%- when 'error' -%}
     {%- assign icon = 'error' -%}
     {%- assign button_background = settings.error_color -%}
@@ -31,7 +30,7 @@
     {%- assign button_background = settings.warning_color -%}
 {%- endcase -%}
 
-<div class="banner banner--{{ status }} {% if button_content != blank %}banner--with-icon{% endif %} {% if text_alignment != 'left' %}justify-center{% endif %}">
+<div class="banner banner--{{ status }} {% if button_content != blank %}banner--with-icon{% endif %} {% if text_alignment != 'left' %}justify-center{% endif %} {% if status == 'custom_success' %}custom-banner{% endif %}">
   {%- render 'icon' with icon, width: icon_width, height: icon_width, class: 'offset-icon' -%}
   {{- content -}}
 

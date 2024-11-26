@@ -167,7 +167,7 @@
             </div>
             {%- if form.posted_successfully? -%}
               {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
-              {%- render 'banner', status: 'success', content: section.settings.success_message -%}
+              {%- render 'banner', status: 'custom_success', content: section.settings.success_message -%}
             {%- endif -%}
 
             {%- if form.errors -%}

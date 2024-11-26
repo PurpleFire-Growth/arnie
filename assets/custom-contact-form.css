@@ -42,6 +42,13 @@
   line-height: 15.38px;
   text-align: left;
 }
+
+.custom-banner{
+  max-width: 530px;
+  border-radius: 16px;
+  background-color: #E0FFF5;
+  margin: 0 auto;
+}
 @media screen and (min-width: 390px) {
   .news_and_promotions_label p {
     white-space: nowrap;
