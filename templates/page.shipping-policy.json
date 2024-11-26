@@ -21,10 +21,71 @@
         "image": "shopify://shop_images/signature.png",
         "alt_text": "Signature"
       }
+    },
+    "accordion_content_ctt3MF": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_DmzC39": {
+          "type": "item",
+          "settings": {
+            "title": "Question 1",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        },
+        "item_NLbKdn": {
+          "type": "item",
+          "settings": {
+            "title": "Question 2",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        },
+        "item_pazgNt": {
+          "type": "item",
+          "settings": {
+            "title": "Question 3",
+            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_DmzC39",
+        "item_NLbKdn",
+        "item_pazgNt"
+      ],
+      "settings": {
+        "full_width": true,
+        "gap_mobile": 32,
+        "gap_desktop": 48,
+        "subheading": "We’ve got the answers.",
+        "subheading_font_size_mobile": 16,
+        "subheading_font_size_desktop": 32,
+        "subheading_position": "after",
+        "title": "Frequently asked questions",
+        "title_font_size_mobile": 32,
+        "title_font_size_desktop": 48,
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "add_padding": "yes",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "centered_image_R3DdEy"
+    "centered_image_R3DdEy",
+    "accordion_content_ctt3MF"
   ]
 }
