@@ -1,25 +1,28 @@
 {%- comment -%}
-----------------------------------------------------------------------------------------------------------------------
-BANNER COMPONENT
-----------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------
+  BANNER COMPONENT
+  ----------------------------------------------------------------------------------------------------------------------
 
-This component is used to create banner. This is used on every form status or to convey information.
+  This component is used to create banner. This is used on every form status or to convey information.
 
-********************************************
-Supported variables
-********************************************
+  ********************************************
+  Supported variables
+  ********************************************
 
-* status: can be "success", "error" or "warning" (if none is set the colors must be set on the parent)
-* content: the textual content to use
-* text_alignment: can be set to "left" to force aligning on left
-* button_href: an optional button link
-* button_content: an optional button content
+  * status: can be "success", "error" or "warning" (if none is set the colors must be set on the parent)
+  * content: the textual content to use
+  * text_alignment: can be set to "left" to force aligning on left
+  * button_href: an optional button link
+  * button_content: an optional button content
 {%- endcomment -%}
 
 {%- case status -%}
   {%- when 'success' -%}
     {%- assign icon = 'success' -%}
     {%- assign button_background = settings.success_color -%}
+  {%- when 'custom_success' -%}
+    {%- assign icon = 'custom_success' -%}
+    {%- assign button_background = '#E0FFF5' -%}
   {%- when 'error' -%}
     {%- assign icon = 'error' -%}
     {%- assign button_background = settings.error_color -%}
@@ -33,6 +36,12 @@ Supported variables
   {{- content -}}
 
   {%- if button_content != blank -%}
-    {%- render 'button', href: button_href, external: true, content: button_content, size: 'sm', background: button_background -%}
+    {%- render 'button',
+      href: button_href,
+      external: true,
+      content: button_content,
+      size: 'sm',
+      background: button_background
+    -%}
   {%- endif -%}
 </div>

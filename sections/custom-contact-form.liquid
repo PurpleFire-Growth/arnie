@@ -167,7 +167,7 @@
             </div>
             {%- if form.posted_successfully? -%}
               {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
-              {%- render 'banner', status: 'success', content: content -%}
+              {%- render 'banner', status: 'success', content: section.settings.success_message -%}
             {%- endif -%}
 
             {%- if form.errors -%}
@@ -274,6 +274,12 @@
         }
       ],
       "default": "large"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "Thank you for contacting us. We will get back to you as soon as possible."
     },
     {
       "type": "header",
