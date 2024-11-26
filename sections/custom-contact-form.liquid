@@ -138,18 +138,20 @@
                     full_width: block.settings.full_width
                   -%}
                 {%- elsif block.type == 'news_and_promotions' -%}
-                  <label class="news_and_promotions_label" for="news_and_promotions">
-                    <input
-                      type="checkbox"
-                      id="news_and_promotions"
-                      name="contact[news_and_promotions]"
-                      checked="{{ block.settings.checked }}"
-                    >
-                    {% render 'icon-input-checked', class: 'icon-input-checked' %}
-                    {% render 'icon-input-unchecked', class: 'icon-input-unchecked', style: 'display: none;' %}
+                  <div class="form-control full_width">
+                    <label class="news_and_promotions_label" for="news_and_promotions">
+                      <input
+                        type="checkbox"
+                        id="news_and_promotions"
+                        name="contact[news_and_promotions]"
+                        checked="{{ block.settings.checked }}"
+                      >
+                      {% render 'icon-input-checked', class: 'icon-input-checked' %}
+                      {% render 'icon-input-unchecked', class: 'icon-input-unchecked', style: 'display: none;' %}
 
-                    <p>{{ block.settings.text }}</p>
-                  </label>
+                      <p>{{ block.settings.text }}</p>
+                    </label>
+                  </div>
                 {%- endif -%}
               {%- endfor -%}
             </div>
@@ -183,7 +185,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const element = document.querySelector('.news_and_promotions_label');
     const emailInput = document.querySelector('[name="contact[email]"]');
-    const submitButton = document.querySelector('button[type="submit"]'); 
+    const submitButton = document.querySelector('button[type="submit"]');
 
     element.addEventListener('click', () => {
       const input = document.querySelector('#news_and_promotions');
@@ -216,8 +218,6 @@
     });
   });
 </script>
-
-
 
 {% schema %}
 {
