@@ -50,15 +50,7 @@
 
           {%- form 'contact', id: contact_form_id, class: 'form' -%}
             <div class="fieldset">
-              {%- if form.posted_successfully? -%}
-                {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
-                {%- render 'banner', status: 'success', content: content -%}
-              {%- endif -%}
 
-              {%- if form.errors -%}
-                {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
-                {%- render 'banner', status: 'error', content: content -%}
-              {%- endif -%}
 
               {%- for block in section.blocks -%}
                 {%- assign field_title = block.settings.title -%}
@@ -173,6 +165,15 @@
                 text_color: section.settings.button_text_color
               -%}
             </div>
+            {%- if form.posted_successfully? -%}
+              {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
+              {%- render 'banner', status: 'success', content: content -%}
+            {%- endif -%}
+
+            {%- if form.errors -%}
+              {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
+              {%- render 'banner', status: 'error', content: content -%}
+            {%- endif -%}
           {%- endform -%}
         </div>
       </div>
