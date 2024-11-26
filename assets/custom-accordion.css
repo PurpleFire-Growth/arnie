@@ -1,0 +1,26 @@
+.shopify-section--accordion-content .accordion__toggle span,
+.shopify-section--accordion-content .prose p {
+  font-size: 16px;
+}
+
+.shopify-section--accordion-content details {
+  border: 0px;
+}
+
+@media only screen and (min-width: 1050px) {
+  .shopify-section--accordion-content .section-full {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .shopify-section--accordion-content .section-stack__main {
+    width: 755px;
+  }
+
+  .shopify-section--accordion-content .accordion__toggle span {
+    font-size: 24px;
+  }
+  .shopify-section--accordion-content .prose p {
+    font-size: 20px;
+  }
+}

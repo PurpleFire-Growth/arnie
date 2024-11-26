@@ -1,8 +1,10 @@
 {%- render 'section-spacing-collapsing' -%}
 
 {%- assign text_position = section.settings.text_position -%}
-{%- assign subheading_position = section.settings.subheading_position -%}
 
+{%- if page.handle == 'contact' or page.handle == 'shipping-policy' -%}
+  {{ 'custom-accordion.css' | asset_url | stylesheet_tag: preload: true }}
+{%- endif -%}
 <style>
   #shopify-section-{{ section.id }} {
     --section-stack-intro: {% if text_position == 'center' %}66.6667%{% else %}50%{% endif %};
