@@ -54,8 +54,8 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "For a life well played・",
-        "text_size": "large",
+        "text": "・ Relieve ・ Recover ・ Soothe ・ Nourish ・ Hydrate ・ Restore ・ Protect",
+        "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
