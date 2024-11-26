@@ -2,32 +2,20 @@
   .shopify-section--accordion-content
   .accordion__toggle
   span,
-.page-shipping-policy .prose p {
+.page-shipping-policy .shopify-section--accordion-content .prose p {
   font-size: 16px;
 }
 
-.page-shipping-policy details {
-  border: 0px;
-}
-
-.page-terms-of-service
-  .shopify-section--accordion-content
-  .accordion__toggle
-  span,
-.page-terms-of-service .prose p {
-  font-size: 16px;
-}
-
-.page-terms-of-service details {
+.page-shipping-policy .shopify-section--accordion-content details {
   border: 0px;
 }
 
 @media only screen and (min-width: 1050px) {
-  .page-shipping-policy .section-full {
+  .page-shipping-policy .shopify-section--accordion-content .section-full {
     padding-left: 64px;
     padding-right: 64px;
   }
-  .page-shipping-policy .section-stack__main {
+  .page-shipping-policy .shopify-section--accordion-content .section-stack__main {
     width: 755px;
   }
 
@@ -37,25 +25,8 @@
     span {
     font-size: 24px;
   }
-  .page-shipping-policy .prose p {
+  .page-shipping-policy .shopify-section--accordion-content .prose p {
     font-size: 20px;
   }
 
-  .page-terms-of-service .section-full {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-  .page-terms-of-service.section-stack__main {
-    width: 755px;
-  }
-
-  .page-terms-of-service
-    .shopify-section--accordion-content
-    .accordion__toggle
-    span {
-    font-size: 24px;
-  }
-  .page-terms-of-service .prose p {
-    font-size: 20px;
-  }
 }
