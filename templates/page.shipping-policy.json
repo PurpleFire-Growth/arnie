@@ -45,7 +45,7 @@
           "type": "item",
           "settings": {
             "title": "Where do you ship?",
-            "content": "<p>Write content to help your customers to better understand your products or policies.</p>",
+            "content": "<p>We currently only offer domestic shipping within the United States.</p>",
             "page": ""
           }
         }
@@ -70,7 +70,7 @@
         "button_text": "",
         "button_url": "",
         "text_position": "start",
-        "add_padding": "yes",
+        "add_padding": "no",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
