@@ -11,10 +11,20 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "centered_image_y7FFpp": {
+      "type": "centered-image",
+      "settings": {
+        "image": "shopify://shop_images/signature.png",
+        "alt_text": "Signature"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "centered_image_y7FFpp"
   ]
 }
