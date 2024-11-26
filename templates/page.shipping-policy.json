@@ -71,14 +71,14 @@
         "button_url": "",
         "text_position": "start",
         "add_padding": "yes",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "accordion_background": "",
+        "accordion_background": "#ffffff",
         "accordion_text_color": ""
       }
     }
