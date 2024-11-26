@@ -11,10 +11,81 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "centered_image_R3DdEy": {
+      "type": "centered-image",
+      "settings": {
+        "image": "shopify://shop_images/signature.png",
+        "alt_text": "Signature"
+      }
+    },
+    "accordion_content_ctt3MF": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_DmzC39": {
+          "type": "item",
+          "settings": {
+            "title": "When will I receive my order?",
+            "content": "<p>This depends on shipping method and location, but typically between 2-7 business days. We fulfill and ship all orders by the next business day.</p>",
+            "page": ""
+          }
+        },
+        "item_NLbKdn": {
+          "type": "item",
+          "settings": {
+            "title": "How will I receive my orders?",
+            "content": "<p>USPS or UPS depending on the shipping method you selected. All orders are shipped in either a padded envelope or a box.</p>",
+            "page": ""
+          }
+        },
+        "item_pazgNt": {
+          "type": "item",
+          "settings": {
+            "title": "Where do you ship?",
+            "content": "<p>We currently only offer domestic shipping within the United States.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_DmzC39",
+        "item_NLbKdn",
+        "item_pazgNt"
+      ],
+      "settings": {
+        "full_width": true,
+        "gap_mobile": 32,
+        "gap_desktop": 48,
+        "subheading": "We’ve got the answers.",
+        "subheading_font_size_mobile": 16,
+        "subheading_font_size_desktop": 32,
+        "subheading_position": "after",
+        "title": "Frequently asked questions",
+        "title_font_size_mobile": 32,
+        "title_font_size_desktop": 48,
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "add_padding": "no",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "centered_image_R3DdEy",
+    "accordion_content_ctt3MF"
   ]
 }
