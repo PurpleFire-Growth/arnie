@@ -1,0 +1,54 @@
+<section id="{{ section.id }}">
+    <img
+      src="{{ section.settings.image | image_url }}"
+      alt="{{ section.settings.alt_text }}"
+      width="100"
+      height="100"
+      class="centered-image-image"
+    >
+</section>
+
+<style>
+  .centered-image-image {
+    margin: 0 auto;
+    width: 160px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .centered-image-image {
+      width: 220px;
+      height: 75px;
+      margin-bottom: 50px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Centered image",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Image's alt text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Centered image"
+    }
+  ]
+}
+{% endschema %}
