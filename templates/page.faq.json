@@ -29,21 +29,21 @@
             "third_accordion_title": "Are your products vegan?",
             "third_accordion_text": "<p>Most of our products are vegan. Any products containing beeswax, honey, or other animal-derived ingredients are clearly labeled on the product page.</p>",
             "fourth_accordion_title": "Do you test on animals?",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "fourth_accordion_text": "<p>Never. We are proudly cruelty-free and do not conduct or commission any animal testing on our ingredients or finished products.</p>"
           }
         },
         "accordion_UbAM67": {
           "type": "accordion",
           "settings": {
             "tab_title": "Ordering & Shipping",
-            "first_accordion_title": "Accordion Title",
-            "first_accordion_text": "<p>Accordion Text</p>",
-            "second_accordion_title": "Accordion Title",
+            "first_accordion_title": "How long will it take to receive my order?",
+            "first_accordion_text": "<ul><li>Standard Shipping (US): 3-5 business daysExpress</li><li>Shipping (US): 1-2 business daysInternational</li><li>Shipping: 7-14 business days</li></ul>",
+            "second_accordion_title": "Do you ship internationally?",
             "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Accordion Title",
+            "third_accordion_title": "Yes, we ship to most countries. International shipping rates and delivery times vary by location.",
             "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "Accordion Title",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "fourth_accordion_title": "What is your return policy?",
+            "fourth_accordion_text": "<p>We offer a 30-day satisfaction guarantee. If you're not completely satisfied with your purchase, you can return unused products in their original packaging for a full refund.</p>"
           }
         },
         "accordion_YqXJDE": {
