@@ -1,4 +1,3 @@
-
 {{ 'multiple-accordions.css' | asset_url | stylesheet_tag: preload: true }}
 
 <section>
@@ -16,7 +15,6 @@
       </div>
     {%- endfor -%}
   </div>
-
 </section>
 
 {% schema %}
@@ -36,15 +34,51 @@
         },
         {
           "type": "text",
-          "id": "accordion_title",
+          "id": "first_accordion_title",
           "label": "Accordion Title",
           "default": "Accordion Title"
         },
         {
-          "type": "text",
-          "id": "accordion_text",
+          "type": "richtext",
+          "id": "first_accordion_text",
           "label": "Accordion Text",
-          "default": "Accordion Text"
+          "default": "<p>Accordion Text</p>"
+        },
+        {
+          "type": "text",
+          "id": "second_accordion_title",
+          "label": "Accordion Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "richtext",
+          "id": "second_accordion_text",
+          "label": "Accordion Text",
+          "default": "<p>Accordion Text</p>"
+        },
+        {
+          "type": "text",
+          "id": "third_accordion_title",
+          "label": "Accordion Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "richtext",
+          "id": "third_accordion_text",
+          "label": "Accordion Text",
+          "default": "<p>Accordion Text</p>"
+        },
+        {
+          "type": "text",
+          "id": "fourth_accordion_title",
+          "label": "Accordion Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "richtext",
+          "id": "fourth_accordion_text",
+          "label": "Accordion Text",
+          "default": "<p>Accordion Text</p>"
         }
       ]
     }
