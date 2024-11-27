@@ -1,0 +1,78 @@
+
+{{ 'multiple-accordions.css' | asset_url | stylesheet_tag: preload: true }}
+
+<section>
+  <div class="accordions-tabs-container">
+    {%- for block in section.blocks -%}
+      <div class="tab">
+        {{ block.settings.tab_title }}
+      </div>
+    {%- endfor -%}
+  </div>
+  <div class="accordions-sidebar">
+    {%- for block in section.blocks -%}
+      <div class="sidebar-item">
+        {{ block.settings.tab_title }}
+      </div>
+    {%- endfor -%}
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Multiple Accordions",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "Accordion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "text",
+          "id": "accordion_title",
+          "label": "Accordion Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "text",
+          "id": "accordion_text",
+          "label": "Accordion Text",
+          "default": "Accordion Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multiple Accordions",
+      "blocks": [
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

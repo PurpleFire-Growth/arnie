@@ -1,0 +1,36 @@
+.accordions-tabs-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.tab:last-child {
+  margin-right: 0;
+}
+
+.accordions-sidebar {
+  display: none;
+}
+
+.sidebar-item {
+}
+
+@media only screen and (min-width: 768px) {
+  .accordions-tabs-container {
+    display: none;
+  }
+  .accordions-sidebar {
+    display: block;
+  }
+}
