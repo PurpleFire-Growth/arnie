@@ -113,10 +113,20 @@
         "accordion_3cjwX7"
       ],
       "settings": {}
+    },
+    "text_and_buton_UJbyjR": {
+      "type": "text-and-buton",
+      "settings": {
+        "title": "Still have questions?",
+        "subtitle": "Please do not hesitate to contact our support team if you need any assistance.",
+        "button_text": "Contact us",
+        "button_link": "/"
+      }
     }
   },
   "order": [
     "main",
-    "multiple_accordions_JGVk36"
+    "multiple_accordions_JGVk36",
+    "text_and_buton_UJbyjR"
   ]
 }
