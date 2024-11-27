@@ -94,13 +94,13 @@
           "settings": {
             "tab_title": "Contact & Support",
             "first_accordion_title": "Accordion Title",
-            "first_accordion_text": "<p>Accordion Text</p>",
-            "second_accordion_title": "Accordion Title",
-            "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Accordion Title",
-            "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "Accordion Title",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "first_accordion_text": "<ul><li>Email: <a href=\"mailto:support@arniesnaturals.com\" target=\"_blank\" title=\"mailto:support@arniesnaturals.com\">support@arniesnaturals.com</a></li><li>Phone: 1-800-NATURALS (Monday-Friday, 9am-5pm PST)Online</li><li>Chat: Available on our website during business hours</li></ul>",
+            "second_accordion_title": "",
+            "second_accordion_text": "",
+            "third_accordion_title": "",
+            "third_accordion_text": "",
+            "fourth_accordion_title": "",
+            "fourth_accordion_text": ""
           }
         }
       },
