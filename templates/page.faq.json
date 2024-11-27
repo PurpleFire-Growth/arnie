@@ -29,7 +29,7 @@
         "accordion_UbAM67": {
           "type": "accordion",
           "settings": {
-            "tab_title": "Tab Title",
+            "tab_title": "Ordering & Shipping",
             "accordion_title": "Accordion Title",
             "accordion_text": "Accordion Text"
           }
@@ -37,7 +37,7 @@
         "accordion_YqXJDE": {
           "type": "accordion",
           "settings": {
-            "tab_title": "Tab Title",
+            "tab_title": "Product Usage & Safety",
             "accordion_title": "Accordion Title",
             "accordion_text": "Accordion Text"
           }
@@ -45,7 +45,7 @@
         "accordion_LACewy": {
           "type": "accordion",
           "settings": {
-            "tab_title": "Tab Title",
+            "tab_title": "Account & Orders",
             "accordion_title": "Accordion Title",
             "accordion_text": "Accordion Text"
           }
@@ -53,7 +53,7 @@
         "accordion_EmEreV": {
           "type": "accordion",
           "settings": {
-            "tab_title": "Tab Title",
+            "tab_title": "Sustainability",
             "accordion_title": "Accordion Title",
             "accordion_text": "Accordion Text"
           }
@@ -61,7 +61,7 @@
         "accordion_3cjwX7": {
           "type": "accordion",
           "settings": {
-            "tab_title": "Tab Title",
+            "tab_title": "Contact & Support",
             "accordion_title": "Accordion Title",
             "accordion_text": "Accordion Text"
           }
