@@ -22,48 +22,84 @@
           "type": "accordion",
           "settings": {
             "tab_title": "Products & Ingredients",
-            "accordion_title": "What makes Arnie's Naturals products different?",
-            "accordion_text": "Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations."
+            "first_accordion_title": "What makes Arnie's Naturals products different?",
+            "first_accordion_text": "<p>Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations.</p>",
+            "second_accordion_title": "Are your products organic?",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Are your products vegan?",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Do you test on animals?",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         },
         "accordion_UbAM67": {
           "type": "accordion",
           "settings": {
             "tab_title": "Ordering & Shipping",
-            "accordion_title": "Accordion Title",
-            "accordion_text": "Accordion Text"
+            "first_accordion_title": "Accordion Title",
+            "first_accordion_text": "<p>Accordion Text</p>",
+            "second_accordion_title": "Accordion Title",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Accordion Title",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Accordion Title",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         },
         "accordion_YqXJDE": {
           "type": "accordion",
           "settings": {
             "tab_title": "Product Usage & Safety",
-            "accordion_title": "Accordion Title",
-            "accordion_text": "Accordion Text"
+            "first_accordion_title": "Accordion Title",
+            "first_accordion_text": "<p>Accordion Text</p>",
+            "second_accordion_title": "Accordion Title",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Accordion Title",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Accordion Title",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         },
         "accordion_LACewy": {
           "type": "accordion",
           "settings": {
             "tab_title": "Account & Orders",
-            "accordion_title": "Accordion Title",
-            "accordion_text": "Accordion Text"
+            "first_accordion_title": "Accordion Title",
+            "first_accordion_text": "<p>Accordion Text</p>",
+            "second_accordion_title": "Accordion Title",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Accordion Title",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Accordion Title",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         },
         "accordion_EmEreV": {
           "type": "accordion",
           "settings": {
             "tab_title": "Sustainability",
-            "accordion_title": "Accordion Title",
-            "accordion_text": "Accordion Text"
+            "first_accordion_title": "Accordion Title",
+            "first_accordion_text": "<p>Accordion Text</p>",
+            "second_accordion_title": "Accordion Title",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Accordion Title",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Accordion Title",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         },
         "accordion_3cjwX7": {
           "type": "accordion",
           "settings": {
             "tab_title": "Contact & Support",
-            "accordion_title": "Accordion Title",
-            "accordion_text": "Accordion Text"
+            "first_accordion_title": "Accordion Title",
+            "first_accordion_text": "<p>Accordion Text</p>",
+            "second_accordion_title": "Accordion Title",
+            "second_accordion_text": "<p>Accordion Text</p>",
+            "third_accordion_title": "Accordion Title",
+            "third_accordion_text": "<p>Accordion Text</p>",
+            "fourth_accordion_title": "Accordion Title",
+            "fourth_accordion_text": "<p>Accordion Text</p>"
           }
         }
       },
