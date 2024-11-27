@@ -50,14 +50,14 @@
           "type": "accordion",
           "settings": {
             "tab_title": "Product Usage & Safety",
-            "first_accordion_title": "Accordion Title",
-            "first_accordion_text": "<p>Accordion Text</p>",
-            "second_accordion_title": "Accordion Title",
-            "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Accordion Title",
-            "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "Accordion Title",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "first_accordion_title": "How should I store my products?",
+            "first_accordion_text": "<p>Store products in a cool, dry place away from direct sunlight. Most products have a shelf life of 12-18 months when unopened.</p>",
+            "second_accordion_title": "Are your products safe during pregnancy?",
+            "second_accordion_text": "<p>While our products are natural, we recommend consulting with your healthcare provider before using any new skincare products during pregnancy.</p>",
+            "third_accordion_title": "While our products are natural, we recommend consulting with your healthcare provider before using any new skincare products during pregnancy.",
+            "third_accordion_text": "<p>Yes, our natural formulations are generally suitable for sensitive skin. However, we recommend performing a patch test before regular use.</p>",
+            "fourth_accordion_title": "",
+            "fourth_accordion_text": ""
           }
         },
         "accordion_LACewy": {
