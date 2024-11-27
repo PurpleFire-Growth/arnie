@@ -14,9 +14,72 @@
       "settings": {
         "content_width": "80ch"
       }
+    },
+    "multiple_accordions_JGVk36": {
+      "type": "multiple-accordions",
+      "blocks": {
+        "accordion_Ux6jbb": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Products & Ingredients",
+            "accordion_title": "What makes Arnie's Naturals products different?",
+            "accordion_text": "Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations."
+          }
+        },
+        "accordion_UbAM67": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Tab Title",
+            "accordion_title": "Accordion Title",
+            "accordion_text": "Accordion Text"
+          }
+        },
+        "accordion_YqXJDE": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Tab Title",
+            "accordion_title": "Accordion Title",
+            "accordion_text": "Accordion Text"
+          }
+        },
+        "accordion_LACewy": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Tab Title",
+            "accordion_title": "Accordion Title",
+            "accordion_text": "Accordion Text"
+          }
+        },
+        "accordion_EmEreV": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Tab Title",
+            "accordion_title": "Accordion Title",
+            "accordion_text": "Accordion Text"
+          }
+        },
+        "accordion_3cjwX7": {
+          "type": "accordion",
+          "settings": {
+            "tab_title": "Tab Title",
+            "accordion_title": "Accordion Title",
+            "accordion_text": "Accordion Text"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Ux6jbb",
+        "accordion_UbAM67",
+        "accordion_YqXJDE",
+        "accordion_LACewy",
+        "accordion_EmEreV",
+        "accordion_3cjwX7"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "multiple_accordions_JGVk36"
   ]
 }
