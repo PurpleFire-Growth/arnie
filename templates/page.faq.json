@@ -64,14 +64,14 @@
           "type": "accordion",
           "settings": {
             "tab_title": "Account & Orders",
-            "first_accordion_title": "Accordion Title",
-            "first_accordion_text": "<p>Accordion Text</p>",
-            "second_accordion_title": "Accordion Title",
-            "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Accordion Title",
-            "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "Accordion Title",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "first_accordion_title": "How do I track my order?",
+            "first_accordion_text": "<p>You'll receive a tracking number via email once your order ships. You can also track your order by logging into your account on our website.</p>",
+            "second_accordion_title": "Can I modify or cancel my order?",
+            "second_accordion_text": "<p>Orders can be modified or cancelled within 2 hours of placement. Please contact customer service immediately if you need to make changes.</p>",
+            "third_accordion_title": "Do you offer wholesale options?",
+            "third_accordion_text": "<p>Yes, we offer wholesale pricing for qualified retailers. Please contact our wholesale department for more information.</p>",
+            "fourth_accordion_title": "",
+            "fourth_accordion_text": ""
           }
         },
         "accordion_EmEreV": {
