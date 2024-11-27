@@ -78,14 +78,14 @@
           "type": "accordion",
           "settings": {
             "tab_title": "Sustainability",
-            "first_accordion_title": "Accordion Title",
-            "first_accordion_text": "<p>Accordion Text</p>",
-            "second_accordion_title": "Accordion Title",
-            "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Accordion Title",
-            "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "Accordion Title",
-            "fourth_accordion_text": "<p>Accordion Text</p>"
+            "first_accordion_title": "What are your environmental practices?",
+            "first_accordion_text": "<p>We use recyclable packaging materials and minimize plastic use wherever possible. Our facility runs on renewable energy, and we participate in various environmental conservation initiatives.</p>",
+            "second_accordion_title": "Are your packaging materials recyclable?",
+            "second_accordion_text": "<p>Yes, most of our packaging is recyclable or biodegradable. Please check local recycling guidelines for specific materials.</p>",
+            "third_accordion_title": "Do you offer wholesale options?",
+            "third_accordion_text": "<p>Yes, we offer wholesale pricing for qualified retailers. Please contact our wholesale department for more information.</p>",
+            "fourth_accordion_title": "",
+            "fourth_accordion_text": ""
           }
         },
         "accordion_3cjwX7": {
