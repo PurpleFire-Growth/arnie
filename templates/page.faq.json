@@ -40,11 +40,11 @@
             "first_accordion_title": "How long will it take to receive my order?",
             "first_accordion_text": "<ul><li>Standard Shipping (US): 3-5 business daysExpress</li><li>Shipping (US): 1-2 business daysInternational</li><li>Shipping: 7-14 business days</li></ul>",
             "second_accordion_title": "Do you ship internationally?",
-            "second_accordion_text": "<p>Accordion Text</p>",
-            "third_accordion_title": "Yes, we ship to most countries. International shipping rates and delivery times vary by location.",
-            "third_accordion_text": "<p>Accordion Text</p>",
-            "fourth_accordion_title": "What is your return policy?",
-            "fourth_accordion_text": "<p>We offer a 30-day satisfaction guarantee. If you're not completely satisfied with your purchase, you can return unused products in their original packaging for a full refund.</p>"
+            "second_accordion_text": "<p>Yes, we ship to most countries. International shipping rates and delivery times vary by location.</p>",
+            "third_accordion_title": "What is your return policy?",
+            "third_accordion_text": "<p>We offer a 30-day satisfaction guarantee. If you're not completely satisfied with your purchase, you can return unused products in their original packaging for a full refund.</p>",
+            "fourth_accordion_title": "",
+            "fourth_accordion_text": ""
           }
         },
         "accordion_YqXJDE": {
@@ -55,7 +55,7 @@
             "first_accordion_text": "<p>Store products in a cool, dry place away from direct sunlight. Most products have a shelf life of 12-18 months when unopened.</p>",
             "second_accordion_title": "Are your products safe during pregnancy?",
             "second_accordion_text": "<p>While our products are natural, we recommend consulting with your healthcare provider before using any new skincare products during pregnancy.</p>",
-            "third_accordion_title": "While our products are natural, we recommend consulting with your healthcare provider before using any new skincare products during pregnancy.",
+            "third_accordion_title": "Can I use your products if I have sensitive skin?",
             "third_accordion_text": "<p>Yes, our natural formulations are generally suitable for sensitive skin. However, we recommend performing a patch test before regular use.</p>",
             "fourth_accordion_title": "",
             "fourth_accordion_text": ""
