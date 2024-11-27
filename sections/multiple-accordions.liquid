@@ -1,9 +1,9 @@
-{{ 'multiple-accordions.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'multiple-accordions.css' | asset_url | stylesheet_tag }}
 
-<section>
+<div class="multiple-accordions">
   <div class="accordions-tabs-container">
     {%- for block in section.blocks -%}
-      <div class="tab">
+      <div class="tab {% if forloop.index == 1 %}active{% endif %}" onclick="setAccordion({{ forloop.index }})">
         {{ block.settings.tab_title }}
       </div>
     {%- endfor -%}
@@ -15,7 +15,68 @@
       </div>
     {%- endfor -%}
   </div>
-</section>
+
+  {%- for block in section.blocks -%}
+    <div class="accordions-list accordions-list-{{ forloop.index }} {% if forloop.index == 1 %}active{% endif %}">
+      {%- if block.settings.first_accordion_title != blank and block.settings.first_accordion_text != blank -%}
+        {%- render 'accordion',
+          title: block.settings.first_accordion_title,
+          content: block.settings.first_accordion_text,
+          block: block
+        -%}
+      {%- endif -%}
+      {%- if block.settings.second_accordion_title != blank and block.settings.second_accordion_text != blank -%}
+        {%- render 'accordion',
+          title: block.settings.second_accordion_title,
+          content: block.settings.second_accordion_text,
+          block: block
+        -%}
+      {%- endif -%}
+      {%- if block.settings.third_accordion_title != blank and block.settings.third_accordion_text != blank -%}
+        {%- render 'accordion',
+          title: block.settings.third_accordion_title,
+          content: block.settings.third_accordion_text,
+          block: block
+        -%}
+      {%- endif -%}
+      {%- if block.settings.fourth_accordion_title != blank and block.settings.fourth_accordion_text != blank -%}
+        {%- render 'accordion',
+          title: block.settings.fourth_accordion_title,
+          content: block.settings.fourth_accordion_text,
+          block: block
+        -%}
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>
+
+<script>
+  function setAccordion(accordionIndex) {
+    setActiveTab(accordionIndex);
+    showAccordions(accordionIndex);
+  }
+
+  function setActiveTab(accordionIndex) {
+    let index = accordionIndex - 1;
+    let tabs = document.querySelectorAll('.accordions-tabs-container .tab');
+  
+    tabs.forEach((tab) => {
+      tab.classList.remove('active');
+    });
+
+    if (tabs[index ]) {
+      tabs[index].classList.add('active');
+    }
+  }
+
+  function showAccordions(accordionIndex) {
+    let index = accordionIndex - 1;
+    let accordionLists = document.querySelectorAll(`.accordions-list`);
+    if (!accordionLists.length) return;
+    accordionLists.forEach((accordionList) => accordionList.classList.remove('active'));
+    if (accordionLists[index]) accordionLists[index].classList.add('active');
+  }
+</script>
 
 {% schema %}
 {
@@ -25,6 +86,7 @@
     {
       "type": "accordion",
       "name": "Accordion",
+      "limit": 8,
       "settings": [
         {
           "type": "text",
