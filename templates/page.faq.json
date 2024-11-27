@@ -120,7 +120,7 @@
         "title": "Still have questions?",
         "subtitle": "Please do not hesitate to contact our support team if you need any assistance.",
         "button_text": "Contact us",
-        "button_link": "/"
+        "button_link": "shopify://pages/contact"
       }
     }
   },
