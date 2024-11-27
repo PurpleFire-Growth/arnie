@@ -1,0 +1,52 @@
+{{ 'text-and-button.css' | asset_url | stylesheet_tag }}
+
+<section class="text-and-button">
+  {%- if section.settings.title != blank -%}
+    <h2 class="title">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  {%- if section.settings.subtitle != blank -%}
+    <p class="subtitle">{{ section.settings.subtext }}</p>
+  {%- endif -%}
+  {%- if section.settings.button_text != blank -%}
+    <a href="{{ section.settings.button_link }}" class="btn btn-primary">
+      {{ section.settings.button_text }}
+    </a>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Text and Button",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "Still have questions?"
+    },
+    {
+      "type": "text",
+      "label": "Subtitle",
+      "id": "subtitle",
+      "default": "Please do not hesitate to contact our support team if you need any assistance."
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "id": "button_text",
+      "default": "Contact us"
+    },
+    {
+      "type": "url",
+      "label": "Button Link",
+      "id": "button_link",
+      "default": "/"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text and Button"
+    }
+  ]
+}
+{% endschema %}
