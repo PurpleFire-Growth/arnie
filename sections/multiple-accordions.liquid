@@ -10,7 +10,7 @@
   </div>
   <div class="accordions-sidebar">
     {%- for block in section.blocks -%}
-      <div class="sidebar-item">
+      <div class="sidebar-item {% if forloop.index == 1 %}active{% endif %}" onclick="setAccordion({{ forloop.index }})"> 
         {{ block.settings.tab_title }}
       </div>
     {%- endfor -%}
@@ -59,13 +59,22 @@
   function setActiveTab(accordionIndex) {
     let index = accordionIndex - 1;
     let tabs = document.querySelectorAll('.accordions-tabs-container .tab');
+    let sidebar_items = document.querySelectorAll('.accordions-sidebar .sidebar-item');
   
     tabs.forEach((tab) => {
       tab.classList.remove('active');
     });
 
-    if (tabs[index ]) {
+    sidebar_items.forEach((sidebar_item) => {
+      sidebar_item.classList.remove('active');
+    });
+
+    if (tabs[index]) {
       tabs[index].classList.add('active');
+    }
+
+    if (sidebar_items[index]) {
+      sidebar_items[index].classList.add('active');
     }
   }
 

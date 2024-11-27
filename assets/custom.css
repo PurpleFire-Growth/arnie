@@ -8,3 +8,13 @@
   line-height: 41.02px;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  #faqPage h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 71.79px;
+    margin-bottom: 32px;
+    white-space: nowrap;
+  }
+}
