@@ -5,10 +5,10 @@
     <h2 class="title">{{ section.settings.title }}</h2>
   {%- endif -%}
   {%- if section.settings.subtitle != blank -%}
-    <p class="subtitle">{{ section.settings.subtext }}</p>
+    <p class="subtitle">{{ section.settings.subtitle }}</p>
   {%- endif -%}
   {%- if section.settings.button_text != blank -%}
-    <a href="{{ section.settings.button_link }}" class="btn btn-primary">
+    <a href="{{ section.settings.button_link }}" class="button btn btn-primary" target="_blank">
       {{ section.settings.button_text }}
     </a>
   {%- endif -%}
