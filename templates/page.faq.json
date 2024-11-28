@@ -93,7 +93,7 @@
           "type": "accordion",
           "settings": {
             "tab_title": "Contact & Support",
-            "first_accordion_title": "Accordion Title",
+            "first_accordion_title": "How can I contact customer service?",
             "first_accordion_text": "<ul><li>Email: <a href=\"mailto:support@arniesnaturals.com\" target=\"_blank\" title=\"mailto:support@arniesnaturals.com\">support@arniesnaturals.com</a></li><li>Phone: 1-800-NATURALS (Monday-Friday, 9am-5pm PST)Online</li><li>Chat: Available on our website during business hours</li></ul>",
             "second_accordion_title": "",
             "second_accordion_text": "",
