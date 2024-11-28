@@ -14,6 +14,20 @@
       margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
     {%- endif -%}
   }
+  .image-below-text{
+    border-radius: 0px !important;
+    width: 40% !important;
+    height: 20% !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  .shadow-block {
+     box-shadow: none;
+  }
+
+  .sm\:place-self-start-center {
+    place-self: center center;
+ }
 </style>
 
 <div {% render 'section-properties' %} {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
@@ -24,7 +38,7 @@
       {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min({{ settings.page_width }}px, 100vw - 96px){% endif %}{%- endcapture -%}
       {%- capture fetch_priority -%}{% if section.index == 1 %}high{% else %}low{% endif %}{%- endcapture -%}
 
-      <picture>
+      <picture class="image-below-text">
         {%- if section.settings.mobile_image != blank -%}
           <source
             media="(max-width: 699px)"

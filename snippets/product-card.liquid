@@ -57,66 +57,95 @@ Supported variables
 
   {%- if product.media.size > 0 -%}
     <div class="product-card__figure">
-      <a href="{{ product.url }}" data-instant>
-        {%- capture sizes -%}
-          {%- if stacked -%}
-            (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), (max-width: 1200px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), calc((100vw - 96px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
-          {%- else -%}
-            (max-width: 699px) 74vw, (max-width: 999px) 38vw, calc((100vw - 96px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
-          {%- endif -%}
-        {%- endcapture -%}
-
-        {%- liquid
-          assign main_media_loading_strategy = nil
-          
-          if section.index > 3 or position > 3
-            assign main_media_loading_strategy = 'lazy'
-          endif
-        -%}
-
-        {%- capture main_image_classes -%}product-card_image product-cardimage--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: main_media_loading_strategy, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
-
-        {%- if show_secondary_image and product.media.size > 1 -%}
+      <div class="image-wrapper"> 
+        
+        <!-- Green Circle Background -->
+        <div class="circle-background"></div>
+  
+        <!-- Product Link and Image -->
+        <a href="{{ product.url }}" class="clipped-image product-card_image object-fill" data-instant>
+          {%- capture sizes -%}
+            {%- if stacked -%}
+              (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), 
+              (max-width: 1200px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), 
+              calc((100vw - 96px) / {{ section.settings.products_per_row_desktop }} - 
+              (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
+            {%- else -%}
+              (max-width: 699px) 74vw, 
+              (max-width: 999px) 38vw, 
+              calc((100vw - 96px) / {{ section.settings.products_per_row_desktop }} - 
+              (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
+            {%- endif -%}
+          {%- endcapture -%}
+  
+          {%- liquid
+            assign main_media_loading_strategy = nil
+            if section.index > 3 or position > 3
+              assign main_media_loading_strategy = 'lazy'
+            endif
+          -%}
+  
+          {%- capture main_image_classes -%}
+            product-card_image product-card_image--primary 
+            {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %} 
+            aspect-{{ settings.product_image_aspect_ratio | split: '' | first }}
+          {%- endcapture -%}
+  
+          {{- product.featured_media | image_url: width: product.featured_media.width | 
+            image_tag: loading: main_media_loading_strategy, sizes: sizes, 
+            widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        </a>
+  
+        <!-- Secondary Image (if applicable) -->
+        {% comment %} {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
-          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card_image product-card_image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
-        {%- endif -%}
-      </a>
-
-     {%- if show_quick_buy and product.available -%}
+          <a href="{{ product.url }}" data-instant>
+            {{- next_media | image_url: width: next_media.width | 
+              image_tag: class: 'product-card_image product-card_image--secondary object-fill', 
+              loading: 'lazy', fetchpriority: 'low', sizes: sizes, 
+              widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+          </a>
+        {%- endif -%} {% endcomment %}
+      </div>
+      
+      {%- if show_quick_buy and product.available -%}
         <div class="product-card__quick-buy">
           {% comment %} New text for button {% endcomment %}
           {%- assign quick_add_label = 'Buy Now' -%}
-          {% comment %} {%- assign quick_add_label = 'product.general.quick_add' | t -%} {% endcomment %}
-
+  
           {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
             {%- form 'product', product, is: 'product-form' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
+  
               <div class="pointer-fine:hidden">
-                <button type="submit" is="custom-button" class="product-card__mobile-quick-buy-button " aria-label="{{ quick_add_label | escape }}">
+                <button type="submit" is="custom-button" class="product-card__mobile-quick-buy-button" 
+                  aria-label="{{ quick_add_label | escape }}">
                   {%- render 'icon' with 'quick-buy-cart' -%}
                 </button>
               </div>
-
+  
               <div class="pointer-coarse:hidden">
                 {%- render 'button', type: 'submit', content: quick_add_label -%}
               </div>
             {%- endform -%}
           {%- else -%}
             {%- capture quick_buy_id -%} quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
-
+  
             <div class="pointer-fine:hidden">
-              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
+              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" 
+                aria-label="{{ quick_add_label | escape }}" is="custom-button" 
+                class="product-card__mobile-quick-buy-button">
                 {%- render 'icon' with 'quick-buy-cart' -%}
               </button>
             </div>
-
+  
             <div class="pointer-coarse:visible">
               {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
             </div>
-
-            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
+  
+            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" 
+              handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}" 
+              role="region" aria-live="polite" class="quick-buy-drawer drawer">
               {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
             </quick-buy-drawer>
           {%- endif -%}
@@ -124,7 +153,8 @@ Supported variables
       {%- endif -%}
     </div> 
   {%- endif -%}
-
+  
+  
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT INFO
@@ -249,19 +279,36 @@ Supported variables
 
 
  <style>
-  .product-card__figure{
-    background-color: #009b67;
-    width:88%;
-    height:88%;
-    border-radius: 50%;
+  .product-card__figure {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Aspect ratio square */
     display: flex;
-}
-  .product-card_image{
-    height: 401px;
-    height: 100%;
-    align-self: center;
-    border-radius: 0px 0px 40000px 40000px;
-
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .circle-background {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%; /* Adjust circle size */
+    height: 80%;
+    background-color:  #009b67;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -100; /* Ensures the circle is behind the image */
+  }
+  
+  .clipped-image {
+    height: 50%;
+    left: 50;
   }
   {% comment %} styling sale badge {% endcomment %}
   .product-card__badge-list {
@@ -310,8 +357,8 @@ Supported variables
 @media screen and (pointer: fine) {
   .product-card__quick-buy {
       opacity: 1;
-       visibility: visible !important; 
-       width:100%;
+      visibility: visible !important; 
+      width:100%;
       transition: opacity .2s ease-in-out, transform .2s ease-in-out, visibility .2s ease-in-out;
       transform: translateY(5px);
   }

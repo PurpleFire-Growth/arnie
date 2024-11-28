@@ -6,6 +6,10 @@
       --section-spacing-inline: 0;
       --scrolling-text-font-size: {% if section.settings.text_size == 'xsmall' %}1.125rem{% elsif section.settings.text_size == 'small' %}2.5rem{% elsif section.settings.text_size == 'medium' %}3.75rem{% elsif section.settings.text_size == 'large' %}5rem{% else %}7.5rem{% endif %};
     }
+    .scrolling-text--auto .scrolling-text__text {
+      font-weight: 300 !important;
+      padding: 0px !important;
+    }
 
     @media screen and (min-width: 700px) {
       #shopify-section-{{ section.id }} {
