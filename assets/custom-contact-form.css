@@ -43,23 +43,26 @@
   text-align: left;
 }
 
-.custom-banner{
+.custom-banner {
   max-width: 530px;
   border-radius: 16px;
-  background-color: #E0FFF5;
+  background-color: #e0fff5;
   margin: 0 auto;
 }
 
-.email-error-message{
+.email-error-message,
+.name-error-message,
+.phone-number-error-message,
+.message-error-message {
   display: none;
   color: red;
   margin-top: 12px;
 }
 
-.incorrect-email-format{
+.incorrect-email-format {
   border: 2px solid red;
 }
-.button[disabled]{
+.button[disabled] {
   opacity: 0.3;
 }
 

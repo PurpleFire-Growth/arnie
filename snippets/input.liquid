@@ -98,8 +98,21 @@
       </div>
     {%- endif -%}
 
-    {%- if type == 'email' -%}
-      <p class="email-error-message">Please use valid email address</p>
+    {%- if name == 'contact[email]' and custom_input -%}
+      <p class="email-error-message">Please insert a valid email address.</p>
     {%- endif -%}
+    
+    {%- if name == 'contact[name]' and custom_input -%}
+      <p class="name-error-message">Please insert a valid name</p>
+    {%- endif -%}
+    
+    {%- if name == 'contact[phone_number]' and custom_input -%}
+      <p class="phone-number-error-message">Please insert a valid phone number</p>
+    {%- endif -%}
+    
+    {%- if name == 'contact[body]' and custom_input -%}
+      <p class="message-error-message">Please insert a valid message</p>
+    {%- endif -%}
+    
   </div>
 {%- endif -%}

@@ -183,19 +183,28 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const element = document.querySelector('.news_and_promotions_label');
+    const fullName = document.querySelector('[name="contact[name]"]');
+    const phoneInput = document.querySelector('[name="contact[phone_number]"]');
+    const messageInput = document.querySelector('[name="contact[body]"]');
     const emailInput = document.querySelector('[name="contact[email]"]');
-{% comment %}     const fullName = document.querySelector('[name="contact[email]"]');
-    const emailInput = document.querySelector('[name="contact[email]"]');
-    const phoneInput = document.querySelector('[name="contact[email]"]'); {% endcomment %}
     const submitButton = document.querySelector('button[type="submit"]');
 
-    element.addEventListener('click', () => {
-      const input = document.querySelector('#news_and_promotions');
-      const iconChecked = document.querySelector('.icon-input-checked');
-      const iconUnchecked = document.querySelector('.icon-input-unchecked');
+    const email_error_message = document.querySelector('.email-error-message');
+    const name_error_message = document.querySelector('.name-error-message');
+    const phone_error_message = document.querySelector('.phone-number-error-message');
+    const message_error_message = document.querySelector('.message-error-message');
 
-      if (input.checked) {
+    const nameRegex = /^[A-Za-z\s]+$/;
+    const phoneRegex = /^[\+\d\s\-\(\)]+$/;
+    const invalidCharsRegex = /[<>''"]/;
+    const emailRegex = /^[^\s@<>''"]+@[^\s@]+\.[^\s@]+$/;
+
+    const inputCheckbox = document.querySelector('#news_and_promotions');
+    const iconChecked = document.querySelector('.icon-input-checked');
+    const iconUnchecked = document.querySelector('.icon-input-unchecked');
+
+    inputCheckbox.addEventListener('click', () => {
+      if (inputCheckbox.checked) {
         iconChecked.style.display = 'block';
         iconUnchecked.style.display = 'none';
       } else {
@@ -204,25 +213,73 @@
       }
     });
 
+    fullName.addEventListener('input', (event) => {
+      const name = event.target.value;
+      if (name.length <= 50 && nameRegex.test(name) && !invalidCharsRegex.test(name)) {
+        fullName.classList.remove('incorrect-input');
+        name_error_message.style.display = 'none';
+      } else {
+        fullName.classList.add('incorrect-input');
+        name_error_message.style.display = 'block';
+      }
+      validateForm();
+    });
+
+    phoneInput.addEventListener('input', (event) => {
+      const phone = event.target.value;
+      if (phoneRegex.test(phone) && !invalidCharsRegex.test(phone)) {
+        phoneInput.classList.remove('incorrect-input');
+        phone_error_message.style.display = 'none';
+      } else {
+        phoneInput.classList.add('incorrect-input');
+        phone_error_message.style.display = 'block';
+      }
+      validateForm();
+    });
+
+    messageInput.addEventListener('input', (event) => {
+      const message = event.target.value;
+      if (message.length >= 10 && !invalidCharsRegex.test(message)) {
+        messageInput.classList.remove('incorrect-input');
+        message_error_message.style.display = 'none';
+      } else {
+        messageInput.classList.add('incorrect-input');
+        message_error_message.style.display = 'block';
+      }
+      validateForm();
+    });
+
     emailInput.addEventListener('input', (event) => {
-      const errorMessage = document.querySelector('.email-error-message');
       const email = event.target.value;
-    
-      const emailRegex = /^[^\s@<>''"]+@[^\s@]+\.[^\s@]+$/;
-    
       if (emailRegex.test(email)) {
-        errorMessage.style.display = 'none';
         emailInput.classList.remove('incorrect-email-format');
+        email_error_message.style.display = 'none';
+      } else {
+        emailInput.classList.add('incorrect-email-format');
+        email_error_message.style.display = 'block';
+      }
+      validateForm();
+    });
+
+    function validateForm() {
+      const isFullNameValid =
+        fullName.value.length <= 50 && nameRegex.test(fullName.value) && !invalidCharsRegex.test(fullName.value);
+      const isPhoneValid = phoneRegex.test(phoneInput.value) && !invalidCharsRegex.test(phoneInput.value);
+      const isMessageValid = messageInput.value.length >= 10 && !invalidCharsRegex.test(messageInput.value);
+      const isEmailValid = emailRegex.test(emailInput.value);
+
+      if (isFullNameValid && isPhoneValid && isMessageValid && isEmailValid) {
         submitButton.disabled = false;
       } else {
-        errorMessage.style.display = 'block';
-        emailInput.classList.add('incorrect-email-format');
         submitButton.disabled = true;
       }
-    });
-    
+    }
+
+    validateForm();  
   });
 </script>
+
+
 
 {% schema %}
 {
