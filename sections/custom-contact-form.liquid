@@ -185,6 +185,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     const element = document.querySelector('.news_and_promotions_label');
     const emailInput = document.querySelector('[name="contact[email]"]');
+{% comment %}     const fullName = document.querySelector('[name="contact[email]"]');
+    const emailInput = document.querySelector('[name="contact[email]"]');
+    const phoneInput = document.querySelector('[name="contact[email]"]'); {% endcomment %}
     const submitButton = document.querySelector('button[type="submit"]');
 
     element.addEventListener('click', () => {
@@ -204,8 +207,9 @@
     emailInput.addEventListener('input', (event) => {
       const errorMessage = document.querySelector('.email-error-message');
       const email = event.target.value;
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+    
+      const emailRegex = /^[^\s@<>''"]+@[^\s@]+\.[^\s@]+$/;
+    
       if (emailRegex.test(email)) {
         errorMessage.style.display = 'none';
         emailInput.classList.remove('incorrect-email-format');
@@ -216,6 +220,7 @@
         submitButton.disabled = true;
       }
     });
+    
   });
 </script>
 
