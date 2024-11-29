@@ -252,10 +252,10 @@
     emailInput.addEventListener('input', (event) => {
       const email = event.target.value;
       if (emailRegex.test(email)) {
-        emailInput.classList.remove('incorrect-email-format');
+        emailInput.classList.remove('incorrect-input');
         email_error_message.style.display = 'none';
       } else {
-        emailInput.classList.add('incorrect-email-format');
+        emailInput.classList.add('incorrect-input');
         email_error_message.style.display = 'block';
       }
       validateForm();
