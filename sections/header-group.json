@@ -39,6 +39,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header__icon-list {align-items: flex-end; gap: var(--header-icon-list-spacing); display: flex; justify-content: flex-end;"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
