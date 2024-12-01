@@ -60,7 +60,7 @@ Supported variables
       <div class="image-wrapper"> 
         
         <!-- Green Circle Background -->
-        <div class="circle-background"></div>
+        <div class="circle-background">
   
         <!-- Product Link and Image -->
         <a href="{{ product.url }}" class="clipped-image product-card_image object-fill" data-instant>
@@ -95,7 +95,7 @@ Supported variables
             image_tag: loading: main_media_loading_strategy, sizes: sizes, 
             widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
         </a>
-  
+      </div>
         <!-- Secondary Image (if applicable) -->
         {% comment %} {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}

@@ -10,10 +10,33 @@ CSS
 {%- endcomment -%}
 
 <style>
+  .feature-chart__table-row:nth-child(odd) {
+    background-color: #F7F7F7; 
+  }
+  
+  .feature-chart__table-row:nth-child(even) {
+    background-color: #ffffff; 
+  }
 
+
+  .sm\:gap-0\.5 {
+  display:none;
+  }
+  .divide-y>:not([hidden])~:not([hidden]) {
+    border-block-start-width: 0px;
+  }
+  .text-subdued {
+    
+    text-align: center;
+  }
+
+  .feature-chart__product{
+   display:block;
+   margin: 0 auto;
+  }
   .feature-chart__table-row {
     --feature-chart-heading-width: 300px;
-   
+    
   }
 
   #shopify-section-template--23786342646048__comparison_table_LtCyDT.section-stack__main{
@@ -111,6 +134,7 @@ LIQUID
           {%- endfor -%}
 
           {%- comment -%}We need to create a first row for the products if any{%- endcomment -%}
+           
           {%- capture product_row -%}
             {%- for product_column in values_blocks -%}
               {%- if product_column.settings.product != blank -%}

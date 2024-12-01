@@ -28,6 +28,9 @@
   .sm\:place-self-start-center {
     place-self: center center;
  }
+.text-overlay{
+ color:black;
+}
 </style>
 
 <div {% render 'section-properties' %} {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
@@ -61,27 +64,28 @@
             {%- case block.type -%}
               {%- when 'subheading' -%}
                 {%- if block.settings.text != blank -%}
-                  <p class="bold" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</p>
+                  <p class="bold" {{ block.shopify_attributes }}>
+                    {% for letter in block.settings.text %}
+                      <span class="text-overlay">{{ letter }}</span>
+                    {% endfor %}
+                  </p>
                 {%- endif -%}
 
               {%- when 'heading' -%}
                 {%- if block.settings.text != blank -%}
                   <p class="{{ block.settings.heading_tag }}" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %} {{ block.shopify_attributes }}>
-                    {%- render 'styled-text', content: block.settings.text, apparition_effect: true -%}
+                    {% for letter in block.settings.text %}
+                      <span class="letter">{{ letter }}</span>
+                    {% endfor %}
                   </p>
-                {%- endif -%} 
+                {%- endif -%}
 
               {%- when 'richtext' -%}
                 {%- if block.settings.content != blank -%}
                   <div {{ block.shopify_attributes }}>
-                    {{- block.settings.content -}}
-                  </div>
-                {%- endif -%}
-
-              {%- when 'liquid' -%}
-                {%- if block.settings.liquid != blank -%}
-                  <div {{ block.shopify_attributes }}>
-                    {{- block.settings.liquid -}}
+                    {% for letter in block.settings.content %}
+                      <span class="non-overlay">{{ letter }}</span>
+                    {% endfor %}
                   </div>
                 {%- endif -%}
 
@@ -96,6 +100,7 @@
     {%- endif -%}
   </image-banner>
 </div>
+
 
 {% schema %}
 {
