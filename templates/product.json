@@ -14,12 +14,19 @@
       "blocks": {
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "title": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
+          }
+        },
+        "text_mf4bPN": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>Legendary Relief for Peak Performance.</h6>"
           }
         },
         "rating": {
@@ -127,6 +134,7 @@
       "block_order": [
         "vendor",
         "title",
+        "text_mf4bPN",
         "rating",
         "badges",
         "price",
@@ -167,14 +175,14 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "Guarantee",
+        "text": "・Relieve ・ Recover ・ Soothe ・ Nourish ・ Hydrate ・ Restore ・ Protect",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
         "background": "",
         "background_gradient": "",
-        "text_color": "#009b67",
+        "text_color": "#272727",
         "text_gradient": ""
       }
     },
