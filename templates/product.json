@@ -251,11 +251,30 @@
     },
     "image_with_text_overlay_cKmUWz": {
       "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_rfyfx4": {
+          "type": "heading",
+          "settings": {
+            "text": "For a life played well.",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_9cBgqF": {
+          "type": "subheading",
+          "settings": {
+            "text": "This can be content about Mr. Palmer’s legacy as humanitarian, golf champion and father."
+          }
+        }
+      },
+      "block_order": [
+        "heading_rfyfx4",
+        "subheading_9cBgqF"
+      ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "sm",
+        "image_size": "fill",
         "image": "shopify://shop_images/99299d9704772fb7bc13bfc085587487.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
