@@ -561,9 +561,9 @@
           "type": "item",
           "settings": {
             "column_size": "4",
-            "title": "Benefit",
+            "title": "Doctor Approved",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. </p>",
+            "content": "<p>Small text about this benefit in two sentences. Small text about this benefit in two sentences</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -573,7 +573,7 @@
           "type": "item",
           "settings": {
             "column_size": "4",
-            "title": "Benefit",
+            "title": "Made in USA",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. </p>",
             "link_url": "",
@@ -585,7 +585,7 @@
           "type": "item",
           "settings": {
             "column_size": "4",
-            "title": "Benefit",
+            "title": "Lab Tested",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. </p>",
             "link_url": "",
