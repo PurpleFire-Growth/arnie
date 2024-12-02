@@ -409,114 +409,6 @@
         "chart_true_false_color": ""
       }
     },
-    "media_grid_NN7bPM": {
-      "type": "media-grid",
-      "blocks": {
-        "image_XmTmdb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/f26224dd492eca3cc1b8e6ff51052aac.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_aDRxQx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_zWJhTh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_t4CCQ7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/baa180f786fd13c559d9ead42647280c.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_XmTmdb",
-        "image_aDRxQx",
-        "image_zWJhTh",
-        "image_t4CCQ7"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -606,7 +498,6 @@
     "text_with_icons_AzrtNM",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
-    "media_grid_NN7bPM",
     "faq",
     "newsletter_8aXfQH"
   ]
