@@ -16,6 +16,10 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_1.png",
+<<<<<<< HEAD
+=======
+            "mobile_image": "shopify://shop_images/Frame_1.png",
+>>>>>>> 0ccaaf49569018352cfc9a7b81f15a80232de6e3
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -130,42 +134,42 @@
           "type": "item",
           "settings": {
             "icon": "picto-star",
-            "custom_icon": "shopify://shop_images/star.png",
+            "custom_icon": "shopify://shop_images/image_4.png",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Benefit",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "title": "Excellence in Every Detail",
+            "content": "<p>Backed by Arnold Palmer's legendary standards, we deliver American-made quality you can trust in every product.</p>"
           }
         },
         "item_NrcnRy": {
           "type": "item",
           "settings": {
             "icon": "picto-star",
-            "custom_icon": "shopify://shop_images/star.png",
+            "custom_icon": "shopify://shop_images/image_5.png",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Benefit",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "title": "Natural Innovation ",
+            "content": "<p>Our plant-based formulas combine clean botanical ingredients with cutting-edge science for effective solutions that respect both body and planet.</p>"
           }
         },
         "item_9QThcb": {
           "type": "item",
           "settings": {
             "icon": "picto-star",
-            "custom_icon": "shopify://shop_images/star.png",
+            "custom_icon": "shopify://shop_images/image_6.png",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Benefit",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "title": "Active Performance",
+            "content": "<p>Our dynamic solutions support everyday athletes with effective relief that moves with you throughout your day.</p>"
           }
         }
       },
@@ -338,14 +342,14 @@
         "headings_NgQRiR": {
           "type": "headings",
           "settings": {
-            "heading_1": "Muscle Cream",
-            "heading_2": "Roll On",
-            "heading_3": "Sunscreen",
-            "heading_4": "Aftersun",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
+            "heading_1": "Natural ingredients",
+            "heading_2": "Third-party testing",
+            "heading_3": "GMP certified manufacturing",
+            "heading_4": "US-based customer service",
+            "heading_5": "Money-back guarantee",
+            "heading_6": "Free shipping options",
+            "heading_7": "Vegan/cruelty-free",
+            "heading_8": "Made in USA",
             "heading_9": "",
             "heading_10": "",
             "heading_11": "",
@@ -363,17 +367,17 @@
         "values_HaxDUt": {
           "type": "values",
           "settings": {
-            "product": "",
-            "value_1": "",
-            "value_2": "<p>Yes</p>",
-            "value_3": "<p>Yes</p>",
-            "value_4": "<p>Yes</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
+            "product": "arnies",
+            "value_1": "<p>✅</p>",
+            "value_2": "<p>✅</p>",
+            "value_3": "<p>✅</p>",
+            "value_4": "<p>✅</p>",
+            "value_5": "<p>✅</p>",
+            "value_6": "<p>✅</p>",
+            "value_7": "<p>✅</p>",
+            "value_8": "<p>✅</p>",
             "value_9": "",
-            "value_10": "",
+            "value_10": "<p>✅</p>",
             "value_11": "",
             "value_12": "",
             "value_13": "",
@@ -391,15 +395,15 @@
         "values_AEgpKh": {
           "type": "values",
           "settings": {
-            "product": "",
-            "value_1": "<p>No</p>",
-            "value_2": "<p>No</p>",
-            "value_3": "<p>No</p>",
-            "value_4": "<p>No</p>",
+            "product": "other-brands",
+            "value_1": "<p>🗙</p>",
+            "value_2": "<p>🗙</p>",
+            "value_3": "<p>🗙</p>",
+            "value_4": "<p>🗙</p>",
             "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
+            "value_6": "<p>🗙</p>",
+            "value_7": "<p>🗙</p>",
+            "value_8": "<p>🗙</p>",
             "value_9": "",
             "value_10": "",
             "value_11": "",
@@ -431,7 +435,7 @@
         "button_text": "",
         "button_url": "",
         "text_position": "start",
-        "max_rows": 4,
+        "max_rows": 10,
         "view_all_text": "View all",
         "view_less_text": "View less",
         "view_product": "",

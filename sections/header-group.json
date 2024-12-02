@@ -39,6 +39,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header__icon-list {align-items: flex-end; gap: var(--header-icon-list-spacing); display: flex; justify-content: flex-end;"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
@@ -50,7 +53,7 @@
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "bottom",
-        "layout": "logo_center_navigation_inline",
+        "layout": "logo_left_navigation_inline",
         "show_social_media": true,
         "show_locale_selector": true,
         "show_country_selector": true,
