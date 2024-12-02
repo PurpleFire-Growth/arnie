@@ -91,31 +91,15 @@
         "collapsible_text_rBfLne": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Benefit",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Use Instructions",
+            "content": "<p>Apply generously to sore muscles and joints. Gently massage until absorbed. Repeat as needed. For external use only.</p>",
             "page": ""
           }
         },
-        "collapsible_text_LgDYKT": {
+        "collapsible_text_BfEzBY": {
           "type": "collapsible_text",
           "settings": {
             "title": "Ingredients",
-            "content": "<p>Share some content to your customers about your products.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_7EWdC7": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "How to take",
-            "content": "<p>Share some content to your customers about your products.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_text_7QWM4F": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "Storage",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -145,9 +129,7 @@
         "quantity_selector",
         "buy_buttons",
         "collapsible_text_rBfLne",
-        "collapsible_text_LgDYKT",
-        "collapsible_text_7EWdC7",
-        "collapsible_text_7QWM4F",
+        "collapsible_text_BfEzBY",
         "product_variations_j8VTYQ"
       ],
       "custom_css": [
@@ -619,37 +601,29 @@
         "item_XRYLqi": {
           "type": "item",
           "settings": {
-            "title": "What can I expect while taking Arnies?",
-            "content": "<p>Like a lot of good things in life, Arnies is a long-term commitment rather than a quick fix. But even if you don’t feel the difference immediately, all those nutrients are getting to work behind the scenes.  </p><p>Early on, water-soluble nutrients (e.g. B-complex, selenium, vitamin C, and zinc) kick in. They’re absorbed quickly and start to replenish your body.  </p><p>Around the 3-6 month mark, fat-soluble nutrients (e.g. vitamins A, D, E, and minerals like omega 3) build up in your tissues. Research indicates these support heart health, skin, nails, hair, bone strength, and the immune system.  </p><p>Beyond that, patience pays off. Arnies  will continue to support your overall health—and you might notice the benefits our reviewers describe.</p>"
+            "title": "What makes Arnie's Naturals products different?",
+            "content": "<p>Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations.</p>"
           }
         },
         "item_yLbkmB": {
           "type": "item",
           "settings": {
-            "title": "What allergens is Arnies free from?",
+            "title": "Are your products organic?",
             "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
           }
         },
         "item_HWJ9PY": {
           "type": "item",
           "settings": {
-            "title": "How much is shipping?",
+            "title": "How long will it take to receive my order?",
             "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
-          }
-        },
-        "item_jdBaNt": {
-          "type": "item",
-          "settings": {
-            "title": "What makes Arnies better than other?",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
       },
       "block_order": [
         "item_XRYLqi",
         "item_yLbkmB",
-        "item_HWJ9PY",
-        "item_jdBaNt"
+        "item_HWJ9PY"
       ],
       "custom_css": [
         ".section-stack__intro {width: 35%;}",
