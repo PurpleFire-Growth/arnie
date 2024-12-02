@@ -6,15 +6,25 @@
     #shopify-section-{{ section.id }} {
       {%- if newsletter_block != blank -%}
         --footer-block-list-gap: var(--spacing-10);
+        background-color:black !important;
       {%- endif -%}
 
       --footer-block-list-justify-content: space-between;
+      
     }
-  }
- .footer{
-  background-color: #000000 !important;
-}
-  
+   
+      .header__icon-list {
+        align-items: flex-end;
+        gap: var(--header-icon-list-spacing);
+        display: flex;
+        justify-content: flex-end;
+      }
+      footer__block-list{
+          display: flex;
+          justify-content: space-between;
+          align-content: space-between;
+          flex-wrap: wrap;
+      }
 </style>
 {%- endif -%}
 
@@ -109,9 +119,52 @@
                 </div>
             {%- endcase -%}
           {%- endfor -%}
+   {%- comment -%}
+        ----------------------------------------------------------------------------------------------------------------
+        SOCIAL MEDIA + LOCALIZATION
+        ----------------------------------------------------------------------------------------------------------------
+        {%- endcomment -%}
+          {%- if section.settings.show_social_media -%}
+            {%- capture social_media -%}{%- render 'social-media' -%}{%- endcapture -%}
+          {%- endif -%}
+  
+          {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+            {%- assign country_selector = true -%}
+          {%- endif -%}
+  
+          {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+            {%- assign locale_selector = true -%}
+          {%- endif -%}
+  
+          {%- if social_media != blank or country_selector or locale_selector -%}
+            <div class="footer__aside-top">
+              {{- social_media -}}
+  
+              {%- if country_selector or locale_selector -%}
+                <div class="h-stack gap-6">
+                  {%- if social_media == blank -%}
+                    {%- assign popover_horizontal_position = 'start' -%}
+                  {%- else -%}
+                    {%- assign popover_horizontal_position = 'end' -%}
+                  {%- endif -%}
+  
+                  {%- if country_selector -%}
+                    {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_horizontal_position: popover_horizontal_position -%}
+                  {%- endif -%}
+  
+                  {%- if locale_selector -%}
+                    {%- render 'localization-selector', type: 'locale', popover_horizontal_position: popover_horizontal_position -%}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
         </div>
       {%- endif -%}
 
+
+{% comment %}ADDING A DIVIDER LINE{% endcomment %}
+      <hr>
       {%- comment -%}
       ------------------------------------------------------------------------------------------------------------------
       SECONDARY AREA
@@ -119,53 +172,34 @@
       {%- endcomment -%}
 
       <div class="footer__aside empty:hidden">
-        {%- comment -%}
-        ----------------------------------------------------------------------------------------------------------------
-        SOCIAL MEDIA + LOCALIZATION
-        ----------------------------------------------------------------------------------------------------------------
-        {%- endcomment -%}
 
-        {%- if section.settings.show_social_media -%}
-          {%- capture social_media -%}{%- render 'social-media' -%}{%- endcapture -%}
-        {%- endif -%}
 
-        {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
-          {%- assign country_selector = true -%}
-        {%- endif -%}
-
-        {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
-          {%- assign locale_selector = true -%}
-        {%- endif -%}
-
-        {%- if social_media != blank or country_selector or locale_selector -%}
-          <div class="footer__aside-top">
-            {{- social_media -}}
-
-            {%- if country_selector or locale_selector -%}
-              <div class="h-stack gap-6">
-                {%- if social_media == blank -%}
-                  {%- assign popover_horizontal_position = 'start' -%}
-                {%- else -%}
-                  {%- assign popover_horizontal_position = 'end' -%}
-                {%- endif -%}
-
-                {%- if country_selector -%}
-                  {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_horizontal_position: popover_horizontal_position -%}
-                {%- endif -%}
-
-                {%- if locale_selector -%}
-                  {%- render 'localization-selector', type: 'locale', popover_horizontal_position: popover_horizontal_position -%}
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
         COPYRIGHT + PAYMENT METHODS
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
+
+       
+        <div class="footer__block footer__block--menu">
+          {% if menu_links != blank %}
+            {% if show_menu_title %}
+              <p class="bold">{{ menu_title | default: "Menu" }}</p>
+            {% endif %}
+        
+            <ul class="v-stack gap-3" role="list">
+              {% for link in menu_links %}
+                <li>
+                  <a href="{{ link.url }}" class="inline-block link-faded break-all">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p>No links available.</p>
+          {% endif %}
+        </div>
+        
 
         <div class="footer__aside-bottom">
           {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
@@ -176,7 +210,7 @@
             </ul>
           {%- endif -%}
 
-          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}. All Rights Reserved. </p>
         </div>
       </div>
     </div>

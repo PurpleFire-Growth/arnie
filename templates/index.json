@@ -15,6 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Frame_1.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -82,7 +83,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "",
+        "title": "Shop Arnie's Product",
         "content": "",
         "link_url": "",
         "link_text": "View all",
@@ -183,6 +184,49 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "multiple_images_with_text_34A96X": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_JjTatM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e_4cae9525-2223-465f-93c7-1fb07a18833e.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "Why Arnie's",
+            "title": "Premium Ingredients",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_ajJiK7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d_950ccf47-f446-4daa-827a-ce6ecfdbf252.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_JjTatM",
+        "item_ajJiK7"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "featured_product_4kgUwe": {
@@ -601,6 +645,7 @@
     "featured-collection",
     "image-with-text-overlay",
     "text_with_icons_AzrtNM",
+    "multiple_images_with_text_34A96X",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
     "media_grid_NN7bPM",

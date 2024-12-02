@@ -14,23 +14,6 @@
       margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
     {%- endif -%}
   }
-  .image-below-text{
-    border-radius: 0px !important;
-    width: 40% !important;
-    height: 20% !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-  .shadow-block {
-     box-shadow: none;
-  }
-
-  .sm\:place-self-start-center {
-    place-self: center center;
- }
-.text-overlay{
- color:black;
-}
 </style>
 
 <div {% render 'section-properties' %} {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
@@ -41,7 +24,7 @@
       {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min({{ settings.page_width }}px, 100vw - 96px){% endif %}{%- endcapture -%}
       {%- capture fetch_priority -%}{% if section.index == 1 %}high{% else %}low{% endif %}{%- endcapture -%}
 
-      <picture class="image-below-text">
+      <picture>
         {%- if section.settings.mobile_image != blank -%}
           <source
             media="(max-width: 699px)"
@@ -64,28 +47,27 @@
             {%- case block.type -%}
               {%- when 'subheading' -%}
                 {%- if block.settings.text != blank -%}
-                  <p class="bold" {{ block.shopify_attributes }}>
-                    {% for letter in block.settings.text %}
-                      <span class="text-overlay">{{ letter }}</span>
-                    {% endfor %}
-                  </p>
+                  <p class="bold" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</p>
                 {%- endif -%}
 
               {%- when 'heading' -%}
                 {%- if block.settings.text != blank -%}
                   <p class="{{ block.settings.heading_tag }}" {% if settings.heading_apparition != 'none' %}reveal-on-scroll="true"{% endif %} {{ block.shopify_attributes }}>
-                    {% for letter in block.settings.text %}
-                      <span class="letter">{{ letter }}</span>
-                    {% endfor %}
+                    {%- render 'styled-text', content: block.settings.text, apparition_effect: true -%}
                   </p>
-                {%- endif -%}
+                {%- endif -%} 
 
               {%- when 'richtext' -%}
                 {%- if block.settings.content != blank -%}
                   <div {{ block.shopify_attributes }}>
-                    {% for letter in block.settings.content %}
-                      <span class="non-overlay">{{ letter }}</span>
-                    {% endfor %}
+                    {{- block.settings.content -}}
+                  </div>
+                {%- endif -%}
+
+              {%- when 'liquid' -%}
+                {%- if block.settings.liquid != blank -%}
+                  <div {{ block.shopify_attributes }}>
+                    {{- block.settings.liquid -}}
                   </div>
                 {%- endif -%}
 
@@ -100,7 +82,6 @@
     {%- endif -%}
   </image-banner>
 </div>
-
 
 {% schema %}
 {
