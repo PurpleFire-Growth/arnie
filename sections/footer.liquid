@@ -180,27 +180,6 @@
         COPYRIGHT + PAYMENT METHODS
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
-
-       
-        <div class="footer__block footer__block--menu">
-          {% if menu_links != blank %}
-            {% if show_menu_title %}
-              <p class="bold">{{ menu_title | default: "Menu" }}</p>
-            {% endif %}
-        
-            <ul class="v-stack gap-3" role="list">
-              {% for link in menu_links %}
-                <li>
-                  <a href="{{ link.url }}" class="inline-block link-faded break-all">{{ link.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% else %}
-            <p>No links available.</p>
-          {% endif %}
-        </div>
-        
-
         <div class="footer__aside-bottom">
           {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
             <ul class="footer__payment-icons h-stack wrap gap-2">
