@@ -524,6 +524,49 @@
         "chart_true_false_color": ""
       }
     },
+    "columns_with_icons_TXGDJf": {
+      "type": "columns-with-icons",
+      "blocks": {
+        "item_aXTdhN": {
+          "type": "item",
+          "settings": {
+            "custom_icon": "shopify://shop_images/Benefit_Icon_d0f61325-4fc4-47fb-8de6-2f0b780cf8bf.svg",
+            "icon": "star",
+            "icon_width": 32,
+            "title": "Doctor Approved",
+            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+          }
+        },
+        "item_CPT43p": {
+          "type": "item",
+          "settings": {
+            "custom_icon": "shopify://shop_images/Flag_Pack.png",
+            "icon": "star",
+            "icon_width": 32,
+            "title": "Made in USA",
+            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+          }
+        },
+        "item_eEGLTt": {
+          "type": "item",
+          "settings": {
+            "custom_icon": "shopify://shop_images/Benefit_Icon2.svg",
+            "icon": "star",
+            "icon_width": 32,
+            "title": "Lab Tested",
+            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+          }
+        }
+      },
+      "block_order": [
+        "item_aXTdhN",
+        "item_CPT43p",
+        "item_eEGLTt"
+      ],
+      "settings": {
+        "title": "Take control of your health"
+      }
+    },
     "multi_column_Crmzfc": {
       "type": "multi-column",
       "blocks": {
@@ -582,6 +625,7 @@
         "item_kpCxjp",
         "item_AVqkV8"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "stack_on_mobile": false,
@@ -660,6 +704,7 @@
     "rich_text_ELQrjr",
     "media_grid_MLJFhK",
     "comparison_table_fYFyRj",
+    "columns_with_icons_TXGDJf",
     "multi_column_Crmzfc",
     "faq_QEn9hC"
   ]
