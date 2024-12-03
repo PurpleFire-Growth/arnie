@@ -115,12 +115,21 @@
             "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
             "enable_follow_on_shop": true
           }
+        },
+        "links_D8dPfb": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-menu-2",
+            "show_menu_title": false,
+            "menu_title": ""
+          }
         }
       },
       "block_order": [
         "newsletter",
         "links",
-        "text"
+        "text",
+        "links_D8dPfb"
       ],
       "settings": {
         "show_social_media": true,

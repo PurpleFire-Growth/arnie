@@ -16,10 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_1.png",
-<<<<<<< HEAD
-=======
             "mobile_image": "shopify://shop_images/Frame_1.png",
->>>>>>> 0ccaaf49569018352cfc9a7b81f15a80232de6e3
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -87,7 +84,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Shop Arnie's Product",
+        "title": "",
         "content": "",
         "link_url": "",
         "link_text": "View all",
@@ -100,10 +97,10 @@
         "product_card_text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "image_with_text_overlay_new_q9ne7m": {
+      "type": "image-with-text-overlay-new",
       "blocks": {
-        "1664424230c4756b0e-1": {
+        "heading_XP986m": {
           "type": "heading",
           "settings": {
             "text": "Plant-powered topicals that works as hard as  you do.",
@@ -112,16 +109,17 @@
         }
       },
       "block_order": [
-        "1664424230c4756b0e-1"
+        "heading_XP986m"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "md",
+        "image_size": "auto",
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
-        "mobile_text_position": "place-self-start-center text-center",
-        "desktop_text_position": "sm:place-self-start-center sm:text-center",
+        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
@@ -188,49 +186,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "multiple_images_with_text_34A96X": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_JjTatM": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e_4cae9525-2223-465f-93c7-1fb07a18833e.jpg",
-            "image_rotation_degrees": 0,
-            "subheading": "Why Arnie's",
-            "title": "Premium Ingredients",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "item_ajJiK7": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d_950ccf47-f446-4daa-827a-ce6ecfdbf252.jpg",
-            "image_rotation_degrees": 0,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_JjTatM",
-        "item_ajJiK7"
-      ],
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "featured_product_4kgUwe": {
@@ -454,114 +409,6 @@
         "chart_true_false_color": ""
       }
     },
-    "media_grid_NN7bPM": {
-      "type": "media-grid",
-      "blocks": {
-        "image_XmTmdb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/f26224dd492eca3cc1b8e6ff51052aac.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_aDRxQx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/01feca16518e2919631eca5e5b19478e.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_zWJhTh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2a789e251b5d4a80cab656f544b0fb8d.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_t4CCQ7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/baa180f786fd13c559d9ead42647280c.jpg",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_XmTmdb",
-        "image_aDRxQx",
-        "image_zWJhTh",
-        "image_t4CCQ7"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -647,12 +494,10 @@
     "slideshow",
     "scrolling_text_nNzJj7",
     "featured-collection",
-    "image-with-text-overlay",
+    "image_with_text_overlay_new_q9ne7m",
     "text_with_icons_AzrtNM",
-    "multiple_images_with_text_34A96X",
     "featured_product_4kgUwe",
     "comparison_table_LtCyDT",
-    "media_grid_NN7bPM",
     "faq",
     "newsletter_8aXfQH"
   ]
