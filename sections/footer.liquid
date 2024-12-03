@@ -19,12 +19,14 @@
         display: flex;
         justify-content: flex-end;
       }
-      footer__block-list{
+      .footer__block-list{
           display: flex;
-          justify-content: space-between;
           align-content: space-between;
           flex-wrap: wrap;
+          justify-content: space-around;
       }
+    
+      
 </style>
 {%- endif -%}
 
@@ -99,7 +101,7 @@
                       </div>
                     {%- endif -%}
 
-                    {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+                    {% comment %} {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
                       {%- if form.posted_successfully? -%}
                         {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
                         {%- render 'banner', content: success_message, status: 'success' -%}
@@ -114,7 +116,7 @@
                         {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
                         {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
                       {%- endif -%}
-                    {%- endform -%}
+                    {%- endform -%} {% endcomment %}
                   </div>
                 </div>
             {%- endcase -%}
@@ -124,6 +126,8 @@
         SOCIAL MEDIA + LOCALIZATION
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
+        <div class="container-social-media">
+         <p class="header-social-media">Follow Arnie’s</p>
           {%- if section.settings.show_social_media -%}
             {%- capture social_media -%}{%- render 'social-media' -%}{%- endcapture -%}
           {%- endif -%}
@@ -161,7 +165,7 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-
+      </div>
 
 {% comment %}ADDING A DIVIDER LINE{% endcomment %}
       <hr>
@@ -180,6 +184,14 @@
         COPYRIGHT + PAYMENT METHODS
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
+        <div class="footer-links-bottom">
+         
+          <a href="{{ shop.url }}/collections"> <u> Shipping Policy  </u> </a> &nbsp;
+          <a href="{{ shop.url }}/collections"> <u>Terms & Conditions</u></a>
+         
+        </div>
+        
+
         <div class="footer__aside-bottom">
           {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
             <ul class="footer__payment-icons h-stack wrap gap-2">

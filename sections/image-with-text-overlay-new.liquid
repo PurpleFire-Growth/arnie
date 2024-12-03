@@ -1,4 +1,122 @@
-{%- unless section.settings.full_width -%}
+<section class="text-overlay-section">
+  <div class="container">
+    {% if section.settings.image %}
+      <div 
+        class="background-image" 
+        style="background-image: url('{{ section.settings.image | img_url: '2048x2048' }}');">
+      </div>
+    {% endif %}
+    <div class="overlay-text">
+      <span class="heading-overlay">{{ section.settings.text_line1 }}</span><br>
+      <span class="heading-overlay">{{ section.settings.text_line2 }}</span>
+    </div>
+  </div>
+</section>
+
+<style>
+.text-overlay-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+  background-color: white;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+ justify-content: center;
+}
+
+.background-image {
+  position: absolute;
+    top: 50;
+    left: 50;
+    width: 50%;
+    height: 78%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%);
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Default color */
+  mix-blend-mode: difference; /* Makes text white over dark backgrounds and black over light ones */
+  line-height: 1.2;
+  display: block;
+  margin: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.heading-overlay{
+ font-size: 3.5rem;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Text Overlay",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "text_line1",
+      "label": "First Line of Text",
+      "default": "Plant-powered topicals"
+    },
+    {
+      "type": "text",
+      "id": "text_line2",
+      "label": "Second Line of Text",
+      "default": "that works as hard as you do."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Overlay Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} {%- unless section.settings.full_width -%}
     {%- render 'section-spacing-collapsing' -%}
   {%- endunless -%}
   
@@ -470,4 +588,4 @@
       }
     ]
   }
-  {% endschema %}
+  {% endschema %} {% endcomment %}

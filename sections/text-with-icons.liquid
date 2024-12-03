@@ -7,6 +7,8 @@
       --text-with-icons-justify: center;
       --text-with-icons-text-align: center;
       --text-with-icons-gap: {% if section.settings.icon_spacing == 'small' %}var(--spacing-5){% elsif section.settings.icon_spacing == 'medium' %}var(--spacing-6){% else %}var(--spacing-7){% endif %};
+
+  }
     }
 
     {%- if section.settings.stack_on_mobile -%}
@@ -37,9 +39,15 @@
           --text-with-icons-template: repeat({{ section.blocks.size }}, 1fr);
           --text-with-icons-justify: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
           --text-with-icons-text-align: {% if section.settings.text_alignment == 'center' %}center{% else %}start{% endif %};
+      
         }
       }
     {%- endif -%}
+    .text-with-icons__item.snap-center{
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid var(--Gold-400, #D3B494);
+    }
   </style>
 
   <div {% render 'section-properties' %}>

@@ -1,0 +1,284 @@
+{%- render 'section-spacing-collapsing' -%}
+
+{%- assign visible_images_count = section.blocks | map: 'settings' | where: 'image' | size -%}
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --multiple-images-with-text-max-width: 580px;
+    --multiple-images-with-text-images-grid-template: {% if section.settings.images_layout != 'stacked' and visible_images_count > 1 %}repeat({% if visible_images_count == 2 %}1{% else %}2{% endif %}, auto) / minmax(0, 0.75fr) minmax(0, 1fr){% else %}none{% endif %};
+    --multiple-images-with-text-images-alignment: {% if section.settings.images_layout == 'collage' and section.settings.collage_images_alignment == 'top' or section.settings.collage_images_alignment == 'shifted' %}start{% else %}center{% endif %};
+    --multiple-images-with-text-main-image-offset: {% if section.settings.images_layout == 'collage' and section.settings.collage_images_alignment == 'shifted' and visible_images_count > 1 %}{% if visible_images_count == 2 %}40px{% else %}min(145px, 14vw){% endif %}{% else %}0px{% endif %};
+  }
+
+  {%- if section.settings.images_layout == 'stacked' or visible_images_count == 1 -%}
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} {
+        --multiple-images-with-text-max-width: none;
+        --multiple-images-with-text-grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+        --multiple-images-with-text-column-gap: var(--spacing-20);
+        --multiple-images-with-text-alignment: start;
+      }
+    }
+  {%- else -%}
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} {
+        --multiple-images-with-text-max-width: 690px;
+      }
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 1150px) {
+    #shopify-section-{{ section.id }} {
+      --multiple-images-with-text-max-width: none;
+      --multiple-images-with-text-grid-template-columns: {% if section.settings.images_layout == 'stacked' %}minmax(0, 0.8fr) minmax(0, 1fr){% else %}minmax(0, {% if visible_images_count == 1 %}max-content{% else %}1fr{% endif %}) minmax(0, 0.7fr){% endif %};
+      --multiple-images-with-text-column-gap: var(--spacing-24);
+      --multiple-images-with-text-alignment: start;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} {
+      --multiple-images-with-text-column-gap: var(--spacing-28);
+    }
+  }
+</style>
+
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign is_narrow = false -%}
+
+{%- if section.settings.images_layout == 'stacked' -%}
+  {%- assign is_narrow = true -%}
+{%- endif -%}
+
+<div {% render 'section-properties', narrow: is_narrow %}>
+    <multiple-images-with-text class="multiple-images-with-text">
+      <multiple-images-with-text-image-list reversed swipeable="false" layout="{{ section.settings.images_layout }}" class="multiple-images-with-text__image-list">
+        {%- if visible_images_count == 0 -%}
+          {{- 'collection-1' | placeholder_svg_tag: 'placeholder' -}}
+        {%- else -%}
+          {%- comment -%} Reverse images for stacked layout {%- endcomment -%}
+          {%- if section.settings.images_layout == 'stacked' -%}
+            {%- assign section_blocks = section.blocks | reverse -%}
+          {%- else -%}
+            {%- assign section_blocks = section.blocks -%}
+          {%- endif -%}
+  
+          {%- for block in section_blocks -%}
+            {%- if block.settings.image != blank -%}
+              {%- if section.settings.images_layout == 'scattered' -%}
+                {%- capture style -%}--image-rotation: {{ block.settings.image_rotation_degrees }}deg;{%- endcapture -%}
+              {%- endif -%}
+  
+              {%- capture image_id -%}image-{{ block.id }}{%- endcapture -%}
+              {%- capture image_class -%}rounded-sm shadow-sm {% unless section.settings.images_layout == 'stacked' %}reveal{% endunless %}{%- endcapture -%}
+  
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: id: image_id, style: style, sizes: 'min(100vw, 500px)', widths: '200,300,400,500,600,700,800,900,1000', class: image_class -}}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </multiple-images-with-text-image-list>
+  
+      <div class="multiple-images-with-text__content-with-nav">
+          <safe-sticky class="product-info">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'vendor' -%}
+                    <div class="product-info__vendor">{{ product.vendor }}</div>
+  
+                  {%- when 'title' -%}
+                    <h2 class="product-info__title">{{ product.title }}</h2>
+  
+                  {%- when 'price' -%}
+                    <div class="product-info__price">
+                      <price-list class="price-list price-list--lg">
+                        <sale-price class="text-lg">{{ product.price | money }}</sale-price>
+                      </price-list>
+                    </div>
+  
+                  {%- when 'separator' -%}
+                    <hr class="product-info__separator">
+  
+                  {%- when 'description' -%}
+                    <div class="product-info__description">
+                      <div class="prose">{{ product.description }}</div>
+                    </div>
+  
+                  {%- when 'quantity_selector' -%}
+                    <div class="product-info__quantity-selector">
+                      {%- assign variant = product.selected_or_first_available_variant -%}
+                      <div class="form-control">
+                        <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{ 'product.quantity.label' | t }}</label>
+                        <quantity-selector class="quantity-selector">
+                          <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+                          <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
+                          <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+                        </quantity-selector>
+                      </div>
+                    </div>
+  
+                  {%- when 'buy_buttons' -%}
+                    <div class="product-info__buy-buttons">
+                      <buy-buttons class="buy-buttons">
+                        {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+                        {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
+                      </buy-buttons>
+                    </div>
+                {%- endcase -%}
+              {%- endfor -%}
+            </safe-sticky>
+        {%- if section.blocks.size > 1 -%}
+          <div class="prev-next-buttons">
+            <button is="prev-button" class="circle-button ring group">
+              <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+              <span class="animated-arrow animated-arrow--reverse"></span>
+            </button>
+            <button is="next-button" class="circle-button ring group">
+              <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+              <span class="animated-arrow"></span>
+            </button>
+          </div>
+        {%- endif -%}
+      </div>
+    </multiple-images-with-text>
+  </div>
+  
+{% schema %}
+{
+    "name": " Product Information",
+    "settings": [
+      {
+        "type": "select",
+        "id": "images_layout",
+        "label": "Images Layout",
+        "default": "stacked",
+        "options": [
+          { "value": "stacked", "label": "Stacked" },
+          { "value": "scattered", "label": "Scattered" }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "is_narrow",
+        "label": "Enable Narrow Layout",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button Background Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button Text Color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "image_rotation_degrees",
+            "label": "Image Rotation (degrees)",
+            "default": 0,
+            "min": -45,
+            "max": 45,
+            "step": 1
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Product Info Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "vendor",
+            "label": "Product Vendor",
+            "default": "Your Vendor"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Product Title",
+            "default": "Sample Product"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Product Description",
+            "default": "This is a placeholder description for your product."
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "Product Price",
+            "default": "$99.99"
+          }
+        ]
+      },
+      {
+        "type": "quantity_selector",
+        "name": "Quantity Selector Block",
+        "settings": []
+      },
+      {
+        "type": "buy_buttons",
+        "name": "Buy Buttons",
+        "settings": [
+          {
+            "type": "color",
+            "id": "atc_button_background",
+            "label": "Add to Cart Button Background",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "atc_button_text_color",
+            "label": "Add to Cart Button Text Color",
+            "default": "#ffffff"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Product",
+        "settings": {
+          "images_layout": "stacked",
+          "is_narrow": false,
+          "button_background": "#000000",
+          "button_text_color": "#ffffff"
+        },
+        "blocks": [
+          { "type": "image" },
+          { "type": "text" },
+          { "type": "quantity_selector" },
+          { "type": "buy_buttons" }
+        ]
+      }
+    ]
+  }
+  
+{% endschema %}

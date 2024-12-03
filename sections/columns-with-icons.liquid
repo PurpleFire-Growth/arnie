@@ -1,0 +1,166 @@
+<style>
+    .section-multi-column {
+        background-color: #f3fcf6;
+        padding: 30px;
+        border-radius: 12px;
+        margin:30px;
+      }
+      
+      .multi-column-container {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+      }
+      
+      .multi-column-heading {
+        flex: 1;
+      }
+      
+      .multi-column-heading h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000000;
+      }
+      
+      .multi-column-content {
+        display: flex;
+        flex: 2;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      
+      .multi-column-item {
+        flex: 1;
+        text-align: left;
+      }
+      
+      .icon-and-text {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+      }
+      
+      .icon-wrapper {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+      }
+      
+      .icon {
+        height: auto;
+      }
+      
+      .text-content {
+        max-width: 250px;
+      }
+      
+      .item-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+      }
+      
+      .item-description {
+        font-size: 14px;
+        color: #666666;
+        margin: 4px 0 0;
+      }
+      
+
+
+</style>
+
+<div class="section-multi-column">
+    <div class="section-stack">
+      <div class="multi-column-container">
+        <!-- Left Section with Heading -->
+        <div class="multi-column-heading">
+          <h2>{{ section.settings.title | escape }}</h2>
+        </div>
+  
+        <!-- Right Section with Columns -->
+        <div class="multi-column-content">
+          {%- for block in section.blocks -%}
+            <div id="block-{{ section.id }}-{{ block.id }}" class="multi-column-item" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
+              <div class="icon-and-text">
+                <!-- Icon -->
+                <div class="icon-wrapper">
+                  {%- if block.settings.custom_icon != blank -%}
+                    <img src="{{ block.settings.custom_icon | image_url: width: block.settings.icon_width }}" width="50px" height="50px" alt="{{ block.settings.title }}" class="icon">
+                  {%- else -%}
+                    {%- render 'icon', icon: block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'icon' -%}
+                  {%- endif -%}
+                </div>
+  
+                <!-- Text Content -->
+                <div class="text-content">
+                  <h3 class="item-title">{{ block.settings.title | escape }}</h3>
+                  <p class="item-description">{{ block.settings.content | escape }}</p>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Multi-column Icons",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Take control of your health"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Column Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "custom_icon",
+            "label": "Custom Icon"
+          },
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon (from library)",
+            "options": [
+              { "value": "star", "label": "Star" },
+              { "value": "heart", "label": "Heart" },
+              { "value": "check", "label": "Checkmark" }
+            ]
+          },
+          {
+            "type": "number",
+            "id": "icon_width",
+            "label": "Icon Width (px)",
+            "default": 32
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Multi-column Icons",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
+  

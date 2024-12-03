@@ -15,7 +15,16 @@ Supported variables
 * context: can be "product" or "card"
 * class: an extra class added on the container
 {%- endcomment -%}
-
+<style>
+  .badge.badge--on-sale{
+    background-color:#D3B494;
+    color:black;
+    font-size: 15px;
+    font-weight:400;
+    border-radius: 4px;
+  
+    }
+  </style>
 {%- assign badge_types = types | default: 'custom, sold_out, discount' | split: ',' -%}
 {%- assign variant = variant | default: product.selected_or_first_available_variant -%}
 
