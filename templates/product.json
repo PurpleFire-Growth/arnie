@@ -133,7 +133,8 @@
         "product_variations_j8VTYQ"
       ],
       "custom_css": [
-        ".product-gallery__media img {width: 50%;}"
+        ".product-gallery__media img {width: 50%;}",
+        ".text-on-sale{color:black;}"
       ],
       "settings": {
         "full_width": true,
