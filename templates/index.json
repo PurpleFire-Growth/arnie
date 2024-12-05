@@ -534,28 +534,21 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "What can I expect while taking Arnies?",
-            "content": "<p>Like a lot of good things in life, Arnies is a long-term commitment rather than a quick fix. But even if you don’t feel the difference immediately, all those nutrients are getting to work behind the scenes.  </p><p>Early on, water-soluble nutrients (e.g. B-complex, selenium, vitamin C, and zinc) kick in. They’re absorbed quickly and start to replenish your body.  </p><p>Around the 3-6 month mark, fat-soluble nutrients (e.g. vitamins A, D, E, and minerals like omega 3) build up in your tissues. Research indicates these support heart health, skin, nails, hair, bone strength, and the immune system.  </p><p>Beyond that, patience pays off. Arnies  will continue to support your overall health—and you might notice the benefits our reviewers describe.</p>"
+            "title": "What makes Arnie's Naturals products different?",
+            "content": "<p>Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "What allergens is Arnies free from?",
+            "title": "Are your products organic?",
             "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "How much is shipping?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
           }
         },
         "item_7gNEwY": {
           "type": "item",
           "settings": {
-            "title": "What makes Arnies better than other?",
+            "title": "How long will it take to receive my order?",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
@@ -563,7 +556,6 @@
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2",
         "item_7gNEwY"
       ],
       "settings": {
