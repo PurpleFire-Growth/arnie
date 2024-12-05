@@ -70,7 +70,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".object-fill {width: 120%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}"
+        ".object-fill {width: 100%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}"
       ],
       "settings": {
         "collection": "",
