@@ -22,7 +22,7 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "Arnie°s Naturals",
             "custom_image": "shopify://shop_images/image_3.png",
-            "title": "Legendary Care<br> for Life in Motion.",
+            "title": "Legendary Care for Life in Motion.",
             "heading_tag": "h0",
             "button_text": "Shop Now",
             "button_link": "",
@@ -99,30 +99,10 @@
     },
     "image_with_text_overlay_new_q9ne7m": {
       "type": "image-with-text-overlay-new",
-      "blocks": {
-        "heading_XP986m": {
-          "type": "heading",
-          "settings": {
-            "text": "Plant-powered topicals that works as hard as  you do.",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XP986m"
-      ],
       "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
-        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "text_line1": "Plant-powered topicals",
+        "text_line2": "that works as hard as you do."
       }
     },
     "text_with_icons_AzrtNM": {
