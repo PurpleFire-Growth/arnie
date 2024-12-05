@@ -271,6 +271,145 @@
         "input_text_color": ""
       }
     },
+    "rich_text_eb6H9E": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UHzdeU": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusted by people that rise to every challenge",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_ejiDPg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>Are you ready to join them?</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UHzdeU",
+        "richtext_ejiDPg"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_grid_KPcAqJ": {
+      "type": "media-grid",
+      "blocks": {
+        "image_YbeeyM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Testimonial_image.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_FHX3by": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_2062be99-295e-4a44-b86a-c63aebba3962.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_erwzj6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_96216923-e002-4c2c-a0a0-afa1cac5819c.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_Vb7PHV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_b87e4322-f4ea-4ecd-ae0c-615ce11c9ce1.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_YbeeyM",
+        "image_FHX3by",
+        "image_erwzj6",
+        "image_Vb7PHV"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
     "comparison_table_LtCyDT": {
       "type": "comparison-table",
       "blocks": {
@@ -477,6 +616,8 @@
     "image_with_text_overlay_new_q9ne7m",
     "text_with_icons_AzrtNM",
     "featured_product_4kgUwe",
+    "rich_text_eb6H9E",
+    "media_grid_KPcAqJ",
     "comparison_table_LtCyDT",
     "faq",
     "newsletter_8aXfQH"
