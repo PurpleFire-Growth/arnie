@@ -404,6 +404,7 @@
         "image_erwzj6",
         "image_Vb7PHV"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -586,7 +587,8 @@
     "newsletter_8aXfQH": {
       "type": "newsletter",
       "custom_css": [
-        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}"
+        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}",
+        ".text-subdued {text-align: left;}"
       ],
       "settings": {
         "full_width": false,
