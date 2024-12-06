@@ -334,6 +334,7 @@
         "heading_APY3gX",
         "richtext_QjLiXd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "small",
@@ -441,6 +442,7 @@
         "image_44YYyt",
         "image_HBM6z4"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
