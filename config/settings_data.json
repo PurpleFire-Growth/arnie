@@ -148,5 +148,10 @@
       "product_color_display": "swatch",
       "product_info_alignment": "center"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ":root{overflow-x: hidden;}"
+    ]
   }
 }
