@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
         "vendor": {
           "type": "vendor",
           "disabled": true,
@@ -34,10 +38,6 @@
           "settings": {
             "show_empty": true
           }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
         },
         "price": {
           "type": "price",
@@ -158,11 +158,11 @@
         }
       },
       "block_order": [
+        "badges",
         "vendor",
         "title",
         "text_mf4bPN",
         "rating",
-        "badges",
         "price",
         "payment_terms",
         "separator",
