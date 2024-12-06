@@ -15,17 +15,17 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_1.png",
-            "mobile_image": "shopify://shop_images/Frame_1.png",
+            "image": "shopify://shop_images/Group_4.png",
+            "mobile_image": "shopify://shop_images/Group_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "subheading": "Arnie°s Naturals",
+            "subheading": "",
             "custom_image": "shopify://shop_images/image_3.png",
-            "title": "Legendary Care<br> for Life in Motion.",
+            "title": "Legendary Care for Life in Motion.",
             "heading_tag": "h0",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/frontpage",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#009b67",
@@ -69,6 +69,9 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "custom_css": [
+        ".object-fill {width: 100%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}"
+      ],
       "settings": {
         "collection": "",
         "products": [
@@ -97,32 +100,16 @@
         "product_card_text_color": ""
       }
     },
-    "image_with_text_overlay_new_q9ne7m": {
-      "type": "image-with-text-overlay-new",
-      "blocks": {
-        "heading_XP986m": {
-          "type": "heading",
-          "settings": {
-            "text": "Plant-powered topicals that works as hard as  you do.",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XP986m"
-      ],
+    "revealed_image_on_scroll_HaFTLV": {
+      "type": "revealed-image-on-scroll",
       "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
         "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "subheading": "",
+        "title": "Plant-powered topicals that works as hard as you do.",
+        "background": "",
+        "text_color_inside": "#ffffff",
+        "text_color_outside": "#000000"
       }
     },
     "text_with_icons_AzrtNM": {
@@ -240,6 +227,48 @@
             "size_chart_page": ""
           }
         },
+        "offer_7c6JjC": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/beaker-02.svg",
+            "icon_width": 24,
+            "title": "Clean ingredients",
+            "content": "",
+            "background": "#ffffff",
+            "text_color": "#272727"
+          }
+        },
+        "offer_X6x83N": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/compass-03.svg",
+            "icon_width": 24,
+            "title": "Travel ready",
+            "content": "",
+            "background": "#ffffff",
+            "text_color": "#272727"
+          }
+        },
+        "offer_7jdj9U": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/lightning-01.svg",
+            "icon_width": 24,
+            "title": "Fast-absorbing ",
+            "content": "",
+            "background": "#ffffff",
+            "text_color": "#272727"
+          }
+        },
         "quantity_selector_yg6iHh": {
           "type": "quantity_selector",
           "settings": {}
@@ -269,6 +298,9 @@
         "separator_MB43cE",
         "description_TAxd9X",
         "variant_picker_tTm4Ce",
+        "offer_7c6JjC",
+        "offer_X6x83N",
+        "offer_7jdj9U",
         "quantity_selector_yg6iHh",
         "buy_buttons_aDJ7pt",
         "pickup_availability_PAeiVc"
@@ -289,6 +321,147 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "rich_text_eb6H9E": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UHzdeU": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusted by people that rise to every challenge",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_ejiDPg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>Are you ready to join them?</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UHzdeU",
+        "richtext_ejiDPg"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_grid_KPcAqJ": {
+      "type": "media-grid",
+      "blocks": {
+        "image_YbeeyM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Testimonial_image.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_FHX3by": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_2062be99-295e-4a44-b86a-c63aebba3962.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_erwzj6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_96216923-e002-4c2c-a0a0-afa1cac5819c.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_Vb7PHV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_b87e4322-f4ea-4ecd-ae0c-615ce11c9ce1.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_YbeeyM",
+        "image_FHX3by",
+        "image_erwzj6",
+        "image_Vb7PHV"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
       }
     },
     "comparison_table_LtCyDT": {
@@ -389,7 +562,7 @@
         "content": "",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "max_rows": 10,
         "view_all_text": "View all",
         "view_less_text": "View less",
@@ -415,28 +588,21 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "What can I expect while taking Arnies?",
-            "content": "<p>Like a lot of good things in life, Arnies is a long-term commitment rather than a quick fix. But even if you don’t feel the difference immediately, all those nutrients are getting to work behind the scenes.  </p><p>Early on, water-soluble nutrients (e.g. B-complex, selenium, vitamin C, and zinc) kick in. They’re absorbed quickly and start to replenish your body.  </p><p>Around the 3-6 month mark, fat-soluble nutrients (e.g. vitamins A, D, E, and minerals like omega 3) build up in your tissues. Research indicates these support heart health, skin, nails, hair, bone strength, and the immune system.  </p><p>Beyond that, patience pays off. Arnies  will continue to support your overall health—and you might notice the benefits our reviewers describe.</p>"
+            "title": "What makes Arnie's Naturals products different?",
+            "content": "<p>Our products are crafted using only pure, natural ingredients sourced from trusted suppliers. We never use artificial preservatives, synthetic fragrances, or harmful chemicals in our formulations.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "What allergens is Arnies free from?",
+            "title": "Are your products organic?",
             "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "How much is shipping?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
           }
         },
         "item_7gNEwY": {
           "type": "item",
           "settings": {
-            "title": "What makes Arnies better than other?",
+            "title": "How long will it take to receive my order?",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
@@ -444,7 +610,6 @@
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2",
         "item_7gNEwY"
       ],
       "settings": {
@@ -472,7 +637,8 @@
     "newsletter_8aXfQH": {
       "type": "newsletter",
       "custom_css": [
-        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}"
+        ".newsletter {grid-template-columns: 0.43fr 0.57fr; display: grid; border-radius: 0px;}",
+        ".text-subdued {text-align: left;}"
       ],
       "settings": {
         "full_width": false,
@@ -494,9 +660,11 @@
     "slideshow",
     "scrolling_text_nNzJj7",
     "featured-collection",
-    "image_with_text_overlay_new_q9ne7m",
+    "revealed_image_on_scroll_HaFTLV",
     "text_with_icons_AzrtNM",
     "featured_product_4kgUwe",
+    "rich_text_eb6H9E",
+    "media_grid_KPcAqJ",
     "comparison_table_LtCyDT",
     "faq",
     "newsletter_8aXfQH"
