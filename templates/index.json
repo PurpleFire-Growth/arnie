@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Group_2.png",
-            "mobile_image": "shopify://shop_images/Clip_path_group_3.png",
+            "mobile_image": "shopify://shop_images/Group_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -25,7 +25,7 @@
             "title": "Legendary Care for Life in Motion.",
             "heading_tag": "h0",
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/all",
+            "button_link": "shopify://collections/frontpage",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#009b67",
