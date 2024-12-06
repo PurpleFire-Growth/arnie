@@ -77,7 +77,7 @@ Supported variables
               (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
             {%- endif -%}
           {%- endcapture -%}
-  
+       
           {%- liquid
             assign main_media_loading_strategy = nil
             if section.index > 3 or position > 3
@@ -95,7 +95,9 @@ Supported variables
             image_tag: loading: main_media_loading_strategy, sizes: sizes, 
             widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
         </a>
+    
       </div>
+ 
         <!-- Secondary Image (if applicable) -->
         {% comment %} {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
@@ -324,12 +326,20 @@ Supported variables
 
   .product-info-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: flex-start;
   }
+  .product-badges-container {
+ 
+    display: flex;
+    margin-left:20px;
+}
   
   .price-list-container,
   .product-badges-container {
-    flex: 1; 
+   
+    display: flex !important;
+    justify-content: flex-start !important;
   }
   
   .badge.badge--on-sale{
@@ -366,6 +376,7 @@ Supported variables
 .scroll-area.bleed{
   height:700px;
 }
+
 
   </style>
 </product-card>

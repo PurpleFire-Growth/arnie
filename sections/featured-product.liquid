@@ -40,11 +40,36 @@
   .product-gallery__media img {
   
     width: 50%;
+    
+
 }
 
 .product-gallery__thumbnail-list-wrapper {
  
   display: none;
+}
+.product-gallery__media-list-wrapper{
+ 
+  background-color: #003725;
+  border-radius: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  z-index:1;
+}
+.product-gallery__cursor{
+ opacity: 1 !important;
+ visibility: visible !important;
+ scale: 1 !important;
+ pointer-events: none !important;
+ translate: 536.8px 100.175px !important;
+ z-index: 1000;
+}
+.circle-button.circle-button--fill.circle-button--lg{
+  border: 1px solid black;
+  position: absolute;
+  top: 350px;
+  left: 104px;
 }
 </style>
 
@@ -53,12 +78,12 @@
 
   <product-rerender id="featured-product-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
     <div class="product">
-      
+   
       {%- if section.settings.product != blank -%}
         {%- if section.settings.product.media.size > 0 -%}
           {%- render 'product-gallery', product: section.settings.product, product_form_id: product_form_id -%}
-        {%- endif -%}
-
+          {%- endif -%}
+     
         {%- render 'product-info', 
           product: section.settings.product, 
           product_form_id: product_form_id, 
@@ -69,12 +94,13 @@
         <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
           <div class="product-gallery__ar-wrapper">
             <div class="product-gallery__media-list-wrapper">
-
+              
               <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
                 <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
                   {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
                 </div>
               </media-carousel>
+             
             </div>
           </div>
         </product-gallery>
@@ -142,6 +168,23 @@
                     <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
                   {%- endif -%}
                 </div>
+                {% for block in section.blocks %}
+                  {% if block.type == 'features' %}
+                    <div class="product-info__block-item" data-block-id="{{ block.id }}" data-block-type="{{ block.type }}">
+                      {% if block.settings.icon %}
+                        <img src="{{ block.settings.icon | img_url: 'medium' }}" width="24px" height="24px" alt="{{ block.settings.title }}">
+                      {% endif %}
+                      {% if block.settings.title %}
+                        <h3>{{ block.settings.title }}</h3>
+                      {% endif %}
+                      {% if block.settings.description %}
+                        <p>{{ block.settings.description }}</p>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                
+                
 
               {%- when 'buy_buttons' -%}
                 <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
@@ -215,6 +258,28 @@
         }
       ]
     },
+    {
+      "type": "features",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Feature Description"
+        }
+      ]
+    },
+    
     {
       "type": "sku",
       "name": "SKU",
@@ -1332,6 +1397,9 @@
         },
         {
           "type": "description"
+        },
+        {
+          "type": "features",
         },
         {
           "type": "variant_picker"

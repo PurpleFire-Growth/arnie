@@ -41,8 +41,7 @@
       }
       
       .icon-wrapper {
-        width: 32px;
-        height: 32px;
+      
         flex-shrink: 0;
       }
       
@@ -65,7 +64,9 @@
         color: #666666;
         margin: 4px 0 0;
       }
-      
+      .icon-text-contanier{
+       display:flex;
+      }
 
 
 </style>
@@ -85,19 +86,22 @@
               <div class="icon-and-text">
                 <!-- Icon -->
                 <div class="icon-wrapper">
-                  {%- if block.settings.custom_icon != blank -%}
-                    <img src="{{ block.settings.custom_icon | image_url: width: block.settings.icon_width }}" width="50px" height="50px" alt="{{ block.settings.title }}" class="icon">
-                  {%- else -%}
-                    {%- render 'icon', icon: block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'icon' -%}
-                  {%- endif -%}
+                  <div class="icon-text-contanier">
+                    {%- if block.settings.custom_icon != blank -%}
+                      <img src="{{ block.settings.custom_icon | image_url: width: block.settings.icon_width }}" alt="{{ block.settings.title }}" class="icon">
+                      <h3 class="item-title">{{ block.settings.title | escape }}</h3>
+                    {%- else -%}
+                      {%- render 'icon', icon: block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'icon' -%}
+                    {%- endif -%}
+                    
                 </div>
-  
-                <!-- Text Content -->
-                <div class="text-content">
-                  <h3 class="item-title">{{ block.settings.title | escape }}</h3>
-                  <p class="item-description">{{ block.settings.content | escape }}</p>
                 </div>
               </div>
+                <!-- Text Content -->
+                <div class="text-content">
+                  <p class="item-description">{{ block.settings.content | escape }}</p>
+                </div>
+              
             </div>
           {%- endfor -%}
         </div>
