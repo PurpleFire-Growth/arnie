@@ -12,7 +12,7 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "badges": {
+        "badges_AKgTck": {
           "type": "badges",
           "settings": {}
         },
@@ -158,7 +158,7 @@
         }
       },
       "block_order": [
-        "badges",
+        "badges_AKgTck",
         "vendor",
         "title",
         "text_mf4bPN",
