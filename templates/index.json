@@ -100,12 +100,16 @@
         "product_card_text_color": ""
       }
     },
-    "image_with_text_overlay_new_q9ne7m": {
-      "type": "image-with-text-overlay-new",
+    "revealed_image_on_scroll_HaFTLV": {
+      "type": "revealed-image-on-scroll",
       "settings": {
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
-        "text_line1": "Plant-powered topicals",
-        "text_line2": "that works as hard as you do."
+        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "subheading": "",
+        "title": "Plant-powered topicals that works as hard as you do.",
+        "background": "",
+        "text_color_inside": "#ffffff",
+        "text_color_outside": "#000000"
       }
     },
     "text_with_icons_AzrtNM": {
@@ -297,6 +301,7 @@
         "heading_UHzdeU",
         "richtext_ejiDPg"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "content_width": "large",
@@ -610,7 +615,7 @@
     "slideshow",
     "scrolling_text_nNzJj7",
     "featured-collection",
-    "image_with_text_overlay_new_q9ne7m",
+    "revealed_image_on_scroll_HaFTLV",
     "text_with_icons_AzrtNM",
     "featured_product_4kgUwe",
     "rich_text_eb6H9E",
