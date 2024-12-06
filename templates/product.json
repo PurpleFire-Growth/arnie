@@ -179,7 +179,8 @@
       ],
       "custom_css": [
         ".product-gallery__media img {width: 50%;}",
-        ".text-on-sale {color: black;}"
+        ".text-on-sale {color: black;}",
+        ".line-through {font-size: 20px;}"
       ],
       "settings": {
         "full_width": true,
