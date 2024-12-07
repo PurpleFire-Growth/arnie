@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Clip_path_group_3.png",
+            "image": "shopify://shop_images/Group_2.png",
             "mobile_image": "shopify://shop_images/Group_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
