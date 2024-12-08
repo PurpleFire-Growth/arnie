@@ -163,7 +163,16 @@ Supported variables
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
+  
+
   <div class="product-card_info {% if text_alignment == 'center' %}product-card_info--center{% endif %}">
+    {% if product.tags.size > 0 %}
+      <div class="product-card__tags">
+        {% for tag in product.tags %}
+          <span class="product-card__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
         <div class="rating-with-text w-full">
@@ -195,6 +204,8 @@ Supported variables
         <div class="price-list-container">
           {%- render 'price-list', product: product, text_alignment: text_alignment -%}
         </div>
+
+        
       
         {%- comment -%}
         --------------------------------------------------------------------------------------------------------------------
@@ -284,6 +295,7 @@ Supported variables
   .product-card__figure {
     position: relative;
     overflow: hidden;
+    border-radius: 0% 0% 50% 50%;
   }
   
   .image-wrapper {
@@ -294,8 +306,10 @@ Supported variables
     display: flex;
     justify-content: center;
     align-items: flex-end;
-  }
   
+  
+  }
+ 
   .circle-background {
     position: absolute;
     bottom: 0;
@@ -307,7 +321,7 @@ Supported variables
     transform: translateX(-50%);
     z-index: -100; /* Ensures the circle is behind the image */
   }
-  
+
   .clipped-image {
     height: 50%;
     left: 50;
@@ -377,6 +391,20 @@ Supported variables
   height:700px;
 }
 
+.product-card__tags {
+  margin-top: 10px;
+}
+
+.product-card__tag {
+  display: inline-block;
+  background-color: #009B67;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
 
   </style>
 </product-card>

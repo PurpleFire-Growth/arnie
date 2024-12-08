@@ -4125,18 +4125,19 @@ tfoot td {
     width: var(--icon-max-width);
   }
 }
+/* Changed CSS */
 
 custom-cursor {
   z-index: 2;
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  display: none;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  scale: .5;
-  transition: opacity .1s, scale .1s, visibility .1s !important;
+  scale: 1;
+  transition: none !important;
 }
 
 @media screen and (pointer: fine) {
