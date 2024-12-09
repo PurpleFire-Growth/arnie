@@ -308,7 +308,7 @@
       "settings": {
         "full_width": true,
         "product": "arnie-s-aftersun",
-        "desktop_media_width": 55,
+        "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
