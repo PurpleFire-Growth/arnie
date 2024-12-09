@@ -305,6 +305,9 @@
         "buy_buttons_aDJ7pt",
         "pickup_availability_PAeiVc"
       ],
+      "custom_css": [
+        ".text-subdued {font-size:20px;}"
+      ],
       "settings": {
         "full_width": true,
         "product": "arnie-s-aftersun",
