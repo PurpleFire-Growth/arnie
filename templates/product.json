@@ -12,14 +12,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "badges_AKgTck": {
-          "type": "badges",
-          "settings": {}
-        },
-        "vendor": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {}
+        "text_hMQcVD": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ product.metafields.custom.badge | metafield_tag }}"
+          }
         },
         "title": {
           "type": "title",
@@ -158,8 +155,7 @@
         }
       },
       "block_order": [
-        "badges_AKgTck",
-        "vendor",
+        "text_hMQcVD",
         "title",
         "text_mf4bPN",
         "rating",
