@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_2.png",
+            "image": "shopify://shop_images/Group_5.png",
             "mobile_image": "shopify://shop_images/Group_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
@@ -25,7 +25,7 @@
             "title": "Legendary Care for Life in Motion.",
             "heading_tag": "h0",
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/frontpage",
+            "button_link": "shopify://products/arnie-s-muscle-cream",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#009b67",
@@ -89,7 +89,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "link_url": "",
+        "link_url": "shopify://collections/frontpage",
         "link_text": "View all",
         "background": "",
         "background_gradient": "",
@@ -308,7 +308,7 @@
       "settings": {
         "full_width": true,
         "product": "arnie-s-aftersun",
-        "desktop_media_width": 55,
+        "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
@@ -496,7 +496,7 @@
           "type": "values",
           "settings": {
             "product": "arnies",
-            "value_1": "<p>✅</p>",
+            "value_1": "",
             "value_2": "<p>✅</p>",
             "value_3": "<p>✅</p>",
             "value_4": "<p>✅</p>",
