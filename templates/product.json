@@ -176,7 +176,8 @@
       "custom_css": [
         ".product-gallery__media img {width: 50%;}",
         ".text-on-sale {color: black;}",
-        ".line-through {font-size: 20px;}"
+        ".line-through {font-size: 20px;}",
+        ".metafield-single_line_text_field-array{list-style: none; background: green; color: white; padding: 0px 5px; width: 20%; border-radius: 4px; text-transform: uppercase;}"
       ],
       "settings": {
         "full_width": true,
