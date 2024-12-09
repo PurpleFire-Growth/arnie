@@ -151,8 +151,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ":root {overflow-x: hidden;}",
-      ".metafield-single_line_text_field-array {background: #009b67; color: white; padding: 0px 5px; width: 20%; border-radius: 4px; text-transform: uppercase;}"
+      ":root {overflow-x: hidden;}"
     ]
   }
 }
