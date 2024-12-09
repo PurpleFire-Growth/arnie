@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Clip_path_group_19.png",
+            "image": "shopify://shop_images/Group.png",
             "mobile_image": "shopify://shop_images/Group_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
@@ -43,7 +43,7 @@
         "full_width": true,
         "allow_transparent_header": true,
         "show_initial_transition": false,
-        "image_size": "fill",
+        "image_size": "auto",
         "controls_type": "numbers",
         "transition_type": "fade_with_text",
         "autoplay": true,
