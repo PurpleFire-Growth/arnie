@@ -35,7 +35,7 @@ CSS
 
   .feature-chart__product{
    display:block;
-   margin: 0 auto;
+   margin: auto;
   }
   .feature-chart__table-row {
     --feature-chart-heading-width: 300px;
@@ -53,7 +53,7 @@ CSS
   @media screen and (min-width: 700px) {
     {%- if text_position == 'center' -%}
       #shopify-section-{{ section.id }} .section-stack__main {
-        width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}900px{% else %}100%{% endif %};
+        width: {% if values_column_count == 1 %}680px{% elsif values_column_count == 2 %}1200px{% else %}100%{% endif %};
         min-width: 680px; 
         margin-inline: auto;
       }
@@ -76,29 +76,7 @@ CSS
       }
     {%- endif -%}
   }
-  #shopify-section-template--23786342580512__comparison_table_fYFyRj .section-stack__main {
-    width: 100%; /* Default for small screens */
-    margin-inline: auto;
-    padding: 0 16px; /* Add some padding for smaller screens */
-}
-
-@media (min-width: 768px) {
-    #shopify-section-template--23786342580512__comparison_table_fYFyRj .section-stack__main {
-        width: 90%; /* Adjust for tablets and small desktops */
-    }
-}
-
-@media (min-width: 1024px) {
-    #shopify-section-template--23786342580512__comparison_table_fYFyRj .section-stack__main {
-        width: 1000px; /* Adjust for larger desktops */
-    }
-}
-
-@media (min-width: 1440px) {
-    #shopify-section-template--23786342580512__comparison_table_fYFyRj .section-stack__main {
-        width: 1200px; /* Full width for wide screens */
-    }
-}
+ 
 
 </style>
 

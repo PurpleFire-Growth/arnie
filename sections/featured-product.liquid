@@ -49,13 +49,12 @@
  
   background-color: #003725;
   border-radius: 50%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   z-index:1;
 }
 
-<<<<<<< HEAD
 .product-gallery__cursor{
  display: block !important;
 }
@@ -75,8 +74,7 @@
   text-transform: uppercase;
 }
 
-=======
->>>>>>> ba61422f193cdd35d8ca60b10ad7c82d1f5fa8ad
+
 </style>
 
 <div {% render 'section-properties', tight: true %}>
@@ -97,112 +95,95 @@
           context: 'featured_product'
         -%}
       {%- else -%}
-        <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
-          <div class="product-gallery__ar-wrapper">
-            <div class="product-gallery__media-list-wrapper">
-              
-              <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
-                <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
-                  {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
-                </div>
-              </media-carousel>
-             
+        <div class="green-circle-background">
+          <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
+            <div class="product-gallery__ar-wrapper">
+              <div class="product-gallery__media-list-wrapper">
+                <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
+                  <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
+                    {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}
+                  </div>
+                </media-carousel>
+              </div>
             </div>
-          </div>
-        </product-gallery>
-
-        <safe-sticky class="product-info">
+          </product-gallery>
+        </div>
         
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'vendor' -%}
-                <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
 
-              {%- when 'title' -%}
-                <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
+    <safe-sticky class="product-info">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'vendor' -%}
+        <div class="product-info__vendor" {{ block.shopify_attributes }}>{{- 'general.on_boarding.product_vendor' | t -}}</div>
 
-              {%- when 'price' -%}
-                <div class="product-info__price">
-                  <price-list class="price-list price-list--lg">
-                    <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
-                  </price-list>
-                </div>
+      {%- when 'title' -%}
+        <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
 
-              {%- when 'separator' -%}
-                <hr class="product-info__separator" {{ block.shopify_attributes }}>
+      {%- when 'price' -%}
+        <div class="product-info__price">
+          <price-list class="price-list price-list--lg">
+            <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
+          </price-list>
+        </div>
 
-              {%- when 'description' -%}
-                <div class="product-info__description" {{ block.shopify_attributes }}>
-                  <div class="prose">
-                    {{- 'general.on_boarding.product_description' | t -}}
-                  </div>
-                </div>
+      {%- when 'separator' -%}
+        <hr class="product-info__separator" {{ block.shopify_attributes }}>
 
-              {%- when 'quantity_selector' -%}
-                <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
-                  {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- when 'description' -%}
+        <div class="product-info__description" {{ block.shopify_attributes }}>
+          <div class="prose">
+            {{- 'general.on_boarding.product_description' | t -}}
+          </div>
+        </div>
 
-                  <div class="form-control">
-                    <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
+      {%- when 'quantity_selector' -%}
+        <!-- Container for Quantity Selector and Buy Button -->
+        <div class="product-info__actions">
+          <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
+            {%- assign variant = product.selected_or_first_available_variant -%}
 
-                    <quantity-selector class="quantity-selector">
-                      <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                      <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
-                      <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
-                    </quantity-selector>
-                  </div>
+            <div class="form-control">
+              <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
 
-                  {%- liquid
-                    assign quantity_rules = ''
-    
-                    if variant.quantity_rule.min > 1
-                      assign rule = 'product.quantity.minimum_of' | t: min: variant.quantity_rule.min
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-    
-                    if variant.quantity_rule.max != nil
-                      assign rule = 'product.quantity.maximum_of' | t: max: variant.quantity_rule.max
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-    
-                    if variant.quantity_rule.increment > 1
-                      assign rule = 'product.quantity.increment_of' | t: step: variant.quantity_rule.increment
-                      assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                    endif
-                  -%}
-    
-                  {%- if quantity_rules != blank -%}
-                    <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
-                  {%- endif -%}
-                </div>
-                {% for block in section.blocks %}
-                  {% if block.type == 'features' %}
-                    <div class="product-info__block-item" data-block-id="{{ block.id }}" data-block-type="{{ block.type }}">
-                      {% if block.settings.icon %}
-                        <img src="{{ block.settings.icon | img_url: 'medium' }}" width="24px" height="24px" alt="{{ block.settings.title }}">
-                      {% endif %}
-                      {% if block.settings.title %}
-                        <h3>{{ block.settings.title }}</h3>
-                      {% endif %}
-                      {% if block.settings.description %}
-                        <p>{{ block.settings.description }}</p>
-                      {% endif %}
-                    </div>
-                  {% endif %}
-                {% endfor %}
-                
-                
+              <quantity-selector class="quantity-selector">
+                <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+                <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
+                <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+              </quantity-selector>
+            </div>
 
-              {%- when 'buy_buttons' -%}
-                <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
-                  <buy-buttons class="buy-buttons">
-                    {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
-                    {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
-                  </buy-buttons>
-                </div>
-            {%- endcase -%}
-          {%- endfor -%}
-        </safe-sticky>
+            {%- liquid
+              assign quantity_rules = ''
+              if variant.quantity_rule.min > 1
+                assign rule = 'product.quantity.minimum_of' | t: min: variant.quantity_rule.min
+                assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+              endif
+              if variant.quantity_rule.max != nil
+                assign rule = 'product.quantity.maximum_of' | t: max: variant.quantity_rule.max
+                assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+              endif
+              if variant.quantity_rule.increment > 1
+                assign rule = 'product.quantity.increment_of' | t: step: variant.quantity_rule.increment
+                assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+              endif
+            -%}
+            {%- if quantity_rules != blank -%}
+              <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
+            {%- endif -%}
+          </div>
+
+          <!-- Buy Button Block -->
+          <div class="product-info__buy-buttons" {{ block.shopify_attributes }}>
+            <buy-buttons class="buy-buttons">
+              {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+              {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: block.settings.atc_button_background, text_color: block.settings.atc_button_text_color -%}
+            </buy-buttons>
+          </div>
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
+</safe-sticky>
+
       {%- endif -%}
       
     </div>
