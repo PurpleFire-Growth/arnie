@@ -15,7 +15,7 @@
         "text_hMQcVD": {
           "type": "text",
           "settings": {
-            "text": "<p></p><ul><li>{{ product.metafields.custom.badge | metafield_text }}</li></ul>"
+            "text": "<p></p><p>{{ product.metafields.custom.badge | metafield_text }}</p>"
           }
         },
         "title": {
