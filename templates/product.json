@@ -127,6 +127,10 @@
             "payment_button_text_color": ""
           }
         },
+        "judge_me_reviews_review_widget_wqErfq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "collapsible_text_rBfLne": {
           "type": "collapsible_text",
           "settings": {
@@ -169,6 +173,7 @@
         "offer_MD7PBb",
         "quantity_selector",
         "buy_buttons",
+        "judge_me_reviews_review_widget_wqErfq",
         "collapsible_text_rBfLne",
         "collapsible_text_BfEzBY",
         "product_variations_j8VTYQ"
@@ -263,7 +268,7 @@
         "item_Bzm6Kt"
       ],
       "custom_css": [
-        ".text-with-icons__item.snap-center{height: 250px;}"
+        ".text-with-icons__item.snap-center {height: 250px;}"
       ],
       "settings": {
         "full_width": true,
