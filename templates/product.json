@@ -262,6 +262,9 @@
         "item_MEAYGD",
         "item_Bzm6Kt"
       ],
+      "custom_css": [
+        ".text-with-icons__item.snap-center.is-selected{height:250px; }"
+      ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
