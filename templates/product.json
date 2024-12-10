@@ -574,126 +574,6 @@
         "image_3": "shopify://shop_images/image_7.png"
       }
     },
-    "comparison_table_fYFyRj": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_GA89Qe": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Natural ingredients",
-            "heading_2": "Third-party testing",
-            "heading_3": "GMP certified manufacturing",
-            "heading_4": "US-based customer service",
-            "heading_5": "Money-back guarantee",
-            "heading_6": "Free shipping options",
-            "heading_7": "Vegan/cruelty-free",
-            "heading_8": "Made in USA",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_Va7AHN": {
-          "type": "values",
-          "settings": {
-            "product": "arnies",
-            "value_1": "<p>✅</p>",
-            "value_2": "<p>✅</p>",
-            "value_3": "<p>✅</p>",
-            "value_4": "<p>✅</p>",
-            "value_5": "<p>✅</p>",
-            "value_6": "<p>✅</p>",
-            "value_7": "<p>✅</p>",
-            "value_8": "<p>✅</p>",
-            "value_9": "<p>✅</p>",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_AfDHGC": {
-          "type": "values",
-          "settings": {
-            "product": "other-brands",
-            "value_1": "<p>🗙</p>",
-            "value_2": "<p>🗙</p>",
-            "value_3": "<p>🗙</p>",
-            "value_4": "<p>🗙</p>",
-            "value_5": "<p>🗙</p>",
-            "value_6": "<p>🗙</p>",
-            "value_7": "<p>🗙</p>",
-            "value_8": "<p>🗙</p>",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_GA89Qe",
-        "values_Va7AHN",
-        "values_AfDHGC"
-      ],
-      "custom_css": [
-        ".v-stack.gap-5 {display: none;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Choose the smarter option",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "max_rows": 10,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "show_product_info": true,
-        "show_product_swatch": true,
-        "viewing_product": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
     "columns_with_icons_TXGDJf": {
       "type": "columns-with-icons",
       "blocks": {
@@ -704,7 +584,7 @@
             "icon": "star",
             "icon_width": 32,
             "title": "Doctor Approved",
-            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+            "content": "Our product formulations are thoroughly evaluated by licensed medical professionals to ensure safety and efficacy."
           }
         },
         "item_CPT43p": {
@@ -714,7 +594,7 @@
             "icon": "star",
             "icon_width": 32,
             "title": "Made in USA",
-            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+            "content": "Our products are proudly manufactured in the United States using carefully selected quality ingredients."
           }
         },
         "item_eEGLTt": {
@@ -724,7 +604,7 @@
             "icon": "star",
             "icon_width": 32,
             "title": "Lab Tested",
-            "content": "Small text about this benefit in two sentences. Small text about this benefit in two sentences"
+            "content": "Every product undergoes comprehensive testing by independent, accredited third-party laboratories to verify quality and purity."
           }
         }
       },
@@ -875,7 +755,6 @@
     "media_grid_MLJFhK",
     "rich_text_7cTMdD",
     "new_table_bMK3Wk",
-    "comparison_table_fYFyRj",
     "columns_with_icons_TXGDJf",
     "multi_column_Crmzfc",
     "faq_QEn9hC"
