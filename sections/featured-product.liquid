@@ -45,7 +45,7 @@
  
   display: none;
 }
-.product-gallery__media-list-wrapper{
+{% comment %} .product-gallery__media-list-wrapper{
  
   background-color: #003725;
   border-radius: 50%;
@@ -53,8 +53,18 @@
   display: flex;
   align-items: center;
   z-index:1;
-}
+} {% endcomment %}
 
+.product-gallery.product-gallery--mobile-dots.product-gallery--desktop-carousel.product-gallery--mobile-expanded{
+  background-color: #003725;
+  border-radius: 50%;
+  height: 84%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  z-index:1;
+
+}
 .product-gallery__cursor{
  display: block !important;
 }
@@ -73,7 +83,9 @@
   font-size: 0.875rem;
   text-transform: uppercase;
 }
-
+.circle-button.circle-button--fill.ring{
+ display:none;
+}
 
 </style>
 
@@ -82,10 +94,10 @@
 
   <product-rerender id="featured-product-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
     <div class="product">
-   
       {%- if section.settings.product != blank -%}
         {%- if section.settings.product.media.size > 0 -%}
           {%- render 'product-gallery', product: section.settings.product, product_form_id: product_form_id -%}
+          <div class="green-circle-background">
           {%- endif -%}
      
         {%- render 'product-info', 
@@ -95,7 +107,7 @@
           context: 'featured_product'
         -%}
       {%- else -%}
-        <div class="green-circle-background">
+       
           <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
             <div class="product-gallery__ar-wrapper">
               <div class="product-gallery__media-list-wrapper">
@@ -107,7 +119,7 @@
               </div>
             </div>
           </product-gallery>
-        </div>
+   
         
 
     <safe-sticky class="product-info">
