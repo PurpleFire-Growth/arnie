@@ -163,6 +163,9 @@
         "item_NrcnRy",
         "item_9QThcb"
       ],
+      "custom_css": [
+        ".text-with-icons__item.snap-center {height: 250px;}"
+      ],
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
