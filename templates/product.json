@@ -263,7 +263,7 @@
         "item_Bzm6Kt"
       ],
       "custom_css": [
-        ".text-with-icons__item.snap-center.is-selected{height:250px; }"
+        ".text-with-icons__item.snap-center{height: 250px;}"
       ],
       "settings": {
         "full_width": true,
