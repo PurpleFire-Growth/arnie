@@ -567,124 +567,6 @@
         "image_3": "shopify://shop_images/image_7.png"
       }
     },
-    "comparison_table_LtCyDT": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_NgQRiR": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Natural ingredients",
-            "heading_2": "Third-party testing",
-            "heading_3": "GMP certified manufacturing",
-            "heading_4": "US-based customer service",
-            "heading_5": "Money-back guarantee",
-            "heading_6": "Free shipping options",
-            "heading_7": "Vegan/cruelty-free",
-            "heading_8": "Made in USA",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_HaxDUt": {
-          "type": "values",
-          "settings": {
-            "product": "arnies",
-            "value_1": "",
-            "value_2": "<p>✅</p>",
-            "value_3": "<p>✅</p>",
-            "value_4": "<p>✅</p>",
-            "value_5": "<p>✅</p>",
-            "value_6": "<p>✅</p>",
-            "value_7": "<p>✅</p>",
-            "value_8": "<p>✅</p>",
-            "value_9": "",
-            "value_10": "<p>✅</p>",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_AEgpKh": {
-          "type": "values",
-          "settings": {
-            "product": "other-brands",
-            "value_1": "<p>🗙</p>",
-            "value_2": "<p>🗙</p>",
-            "value_3": "<p>🗙</p>",
-            "value_4": "<p>🗙</p>",
-            "value_5": "",
-            "value_6": "<p>🗙</p>",
-            "value_7": "<p>🗙</p>",
-            "value_8": "<p>🗙</p>",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_NgQRiR",
-        "values_HaxDUt",
-        "values_AEgpKh"
-      ],
-      "custom_css": [],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Choose the smarter option",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "max_rows": 10,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "",
-        "show_product_info": true,
-        "show_product_swatch": false,
-        "viewing_product": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -769,7 +651,6 @@
     "rich_text_eb6H9E",
     "media_grid_KPcAqJ",
     "new_table_NQcXKm",
-    "comparison_table_LtCyDT",
     "faq",
     "newsletter_8aXfQH"
   ]
