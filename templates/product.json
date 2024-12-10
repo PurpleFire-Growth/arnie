@@ -449,6 +449,106 @@
         "background_gradient": ""
       }
     },
+    "new_table_bMK3Wk": {
+      "type": "new-table",
+      "blocks": {
+        "row_FkMMwG": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Natural ingredients</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_r6rRLD": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Third-party testing</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_gTxfhU": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>GMP certified manufacturing</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_KJpLFC": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>US-based customer service</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_CPmtBH": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Money-back guarantee</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_KzYmTh": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Free shipping options</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_RMW4ke": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Vegan/cruelty-free</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_hG7ciC": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Made in USA</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_FkMMwG",
+        "row_r6rRLD",
+        "row_gTxfhU",
+        "row_KJpLFC",
+        "row_CPmtBH",
+        "row_KzYmTh",
+        "row_RMW4ke",
+        "row_hG7ciC"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/Frame_1.png",
+        "image_2": "shopify://shop_images/image.png",
+        "image_3": "shopify://shop_images/image_7.png"
+      }
+    },
     "comparison_table_fYFyRj": {
       "type": "comparison-table",
       "blocks": {
@@ -748,6 +848,7 @@
     "image_with_text_overlay_cKmUWz",
     "rich_text_ELQrjr",
     "media_grid_MLJFhK",
+    "new_table_bMK3Wk",
     "comparison_table_fYFyRj",
     "columns_with_icons_TXGDJf",
     "multi_column_Crmzfc",
