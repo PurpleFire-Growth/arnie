@@ -449,6 +449,31 @@
         "background_gradient": ""
       }
     },
+    "rich_text_7cTMdD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e3BFq7": {
+          "type": "heading",
+          "settings": {
+            "text": "Choose the smarter option",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_e3BFq7"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "new_table_bMK3Wk": {
       "type": "new-table",
       "blocks": {
@@ -848,6 +873,7 @@
     "image_with_text_overlay_cKmUWz",
     "rich_text_ELQrjr",
     "media_grid_MLJFhK",
+    "rich_text_7cTMdD",
     "new_table_bMK3Wk",
     "comparison_table_fYFyRj",
     "columns_with_icons_TXGDJf",
