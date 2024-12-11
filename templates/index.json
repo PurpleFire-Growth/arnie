@@ -470,6 +470,31 @@
         "background_gradient": ""
       }
     },
+    "rich_text_FhdMHq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p7WpAc": {
+          "type": "heading",
+          "settings": {
+            "text": "Choose the smarter option",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_p7WpAc"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "new_table_NQcXKm": {
       "type": "new-table",
       "blocks": {
@@ -653,6 +678,7 @@
     "featured_product_4kgUwe",
     "rich_text_eb6H9E",
     "media_grid_KPcAqJ",
+    "rich_text_FhdMHq",
     "new_table_NQcXKm",
     "faq",
     "newsletter_8aXfQH"
