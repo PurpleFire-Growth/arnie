@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_5.png",
-            "mobile_image": "shopify://shop_images/Group_2.png",
+            "image": "shopify://shop_images/Clip_path_group_21.png",
+            "mobile_image": "shopify://shop_images/Clip_path_group_21.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -70,7 +70,8 @@
     "featured-collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".object-fill {width: 100%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}"
+        ".object-fill {width: 100%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}",
+        ".product-card_info {margin-top: 20px;}"
       ],
       "settings": {
         "collection": "",
@@ -104,7 +105,7 @@
       "type": "revealed-image-on-scroll",
       "settings": {
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
-        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
         "subheading": "",
         "title": "Plant-powered topicals that works as hard as you do.",
         "background": "",
@@ -162,6 +163,9 @@
         "item_UDGxQi",
         "item_NrcnRy",
         "item_9QThcb"
+      ],
+      "custom_css": [
+        ".text-with-icons__item.snap-center {height: 250px;}"
       ],
       "settings": {
         "full_width": true,
@@ -306,7 +310,7 @@
         "pickup_availability_PAeiVc"
       ],
       "custom_css": [
-        ".text-subdued {font-size:20px;}"
+        ".text-subdued {font-size: 20px;}"
       ],
       "settings": {
         "full_width": true,
@@ -467,122 +471,129 @@
         "background_gradient": ""
       }
     },
-    "comparison_table_LtCyDT": {
-      "type": "comparison-table",
+    "rich_text_FhdMHq": {
+      "type": "rich-text",
       "blocks": {
-        "headings_NgQRiR": {
-          "type": "headings",
+        "heading_p7WpAc": {
+          "type": "heading",
           "settings": {
-            "heading_1": "Natural ingredients",
-            "heading_2": "Third-party testing",
-            "heading_3": "GMP certified manufacturing",
-            "heading_4": "US-based customer service",
-            "heading_5": "Money-back guarantee",
-            "heading_6": "Free shipping options",
-            "heading_7": "Vegan/cruelty-free",
-            "heading_8": "Made in USA",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_HaxDUt": {
-          "type": "values",
-          "settings": {
-            "product": "arnies",
-            "value_1": "",
-            "value_2": "<p>✅</p>",
-            "value_3": "<p>✅</p>",
-            "value_4": "<p>✅</p>",
-            "value_5": "<p>✅</p>",
-            "value_6": "<p>✅</p>",
-            "value_7": "<p>✅</p>",
-            "value_8": "<p>✅</p>",
-            "value_9": "",
-            "value_10": "<p>✅</p>",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_AEgpKh": {
-          "type": "values",
-          "settings": {
-            "product": "other-brands",
-            "value_1": "<p>🗙</p>",
-            "value_2": "<p>🗙</p>",
-            "value_3": "<p>🗙</p>",
-            "value_4": "<p>🗙</p>",
-            "value_5": "",
-            "value_6": "<p>🗙</p>",
-            "value_7": "<p>🗙</p>",
-            "value_8": "<p>🗙</p>",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
+            "text": "Choose the smarter option",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
           }
         }
       },
       "block_order": [
-        "headings_NgQRiR",
-        "values_HaxDUt",
-        "values_AEgpKh"
+        "heading_p7WpAc"
       ],
-      "custom_css": [],
       "settings": {
         "full_width": true,
-        "subheading": "",
-        "title": "Choose the smarter option",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
+        "content_width": "large",
         "text_position": "center",
-        "max_rows": 10,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "",
-        "show_product_info": true,
-        "show_product_swatch": false,
-        "viewing_product": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
+        "text_color": ""
+      }
+    },
+    "new_table_NQcXKm": {
+      "type": "new-table",
+      "blocks": {
+        "row_X9DNXe": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Natural ingredients</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_EL4L9K": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Third-party testing</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_EKMxdW": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>GMP certified manufacturing</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_FHqiHm": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>US-based customer service</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_GbnDhx": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Money-back guarantee</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_mLymcB": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Free shipping options</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_NjFFT3": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Vegan/cruelty-free</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        },
+        "row_PFA9GM": {
+          "type": "row",
+          "settings": {
+            "value_1": "<p>Made in USA</p>",
+            "value_2": "",
+            "icon_2": "shopify://shop_images/Check_mark.svg",
+            "value_3": "",
+            "icon_3": "shopify://shop_images/X_mark_container.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_X9DNXe",
+        "row_EL4L9K",
+        "row_EKMxdW",
+        "row_FHqiHm",
+        "row_GbnDhx",
+        "row_mLymcB",
+        "row_NjFFT3",
+        "row_PFA9GM"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/Frame_1.png",
+        "image_2": "shopify://shop_images/image.png",
+        "image_3": "shopify://shop_images/image_7.png"
       }
     },
     "faq": {
@@ -668,7 +679,8 @@
     "featured_product_4kgUwe",
     "rich_text_eb6H9E",
     "media_grid_KPcAqJ",
-    "comparison_table_LtCyDT",
+    "rich_text_FhdMHq",
+    "new_table_NQcXKm",
     "faq",
     "newsletter_8aXfQH"
   ]

@@ -42,6 +42,7 @@
     "text_font": "futura_n4",
     "heading_apparition": "split_rotation",
     "color_swatch_style": "rectangle",
+    "show_secondary_image": false,
     "product_color_display": "swatch",
     "product_info_alignment": "start",
     "cart_type": "drawer",
