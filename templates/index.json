@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_5.png",
-            "mobile_image": "shopify://shop_images/Group_2.png",
+            "image": "shopify://shop_images/Clip_path_group_21.png",
+            "mobile_image": "shopify://shop_images/Clip_path_group_21.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center-start text-start",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
@@ -71,7 +71,7 @@
       "type": "featured-collection",
       "custom_css": [
         ".object-fill {width: 100%; position: absolute; top: -25px; display: flex; justify-content: center; align-items: flex-start;}",
-        ".product-card_info{margin-top:20px; }"
+        ".product-card_info {margin-top: 20px;}"
       ],
       "settings": {
         "collection": "",
