@@ -42,32 +42,10 @@
             "show_taxes_notice": false
           }
         },
-        "payment_terms": {
-          "type": "payment_terms",
-          "disabled": true,
-          "settings": {}
-        },
-        "separator": {
-          "type": "separator",
-          "disabled": true,
-          "settings": {}
-        },
         "description": {
           "type": "description",
           "settings": {
             "collapse_content": false
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
           }
         },
         "offer_b7NTXD": {
@@ -146,16 +124,6 @@
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
-        },
-        "product_variations_j8VTYQ": {
-          "type": "product_variations",
-          "disabled": true,
-          "settings": {
-            "option_name": "",
-            "option_value_metafield": "",
-            "products": [],
-            "selector_style": "swatch"
-          }
         }
       },
       "block_order": [
@@ -164,10 +132,7 @@
         "text_mf4bPN",
         "rating",
         "price",
-        "payment_terms",
-        "separator",
         "description",
-        "variant_picker",
         "offer_b7NTXD",
         "offer_pfzJci",
         "offer_MD7PBb",
@@ -175,8 +140,7 @@
         "buy_buttons",
         "judge_me_reviews_review_widget_wqErfq",
         "collapsible_text_rBfLne",
-        "collapsible_text_BfEzBY",
-        "product_variations_j8VTYQ"
+        "collapsible_text_BfEzBY"
       ],
       "custom_css": [
         ".product-gallery__media img {width: 50%;}",
