@@ -45,15 +45,15 @@
  
   display: none;
 }
-{% comment %} .product-gallery__media-list-wrapper{
+.green-circle-background{
  
   background-color: #003725;
   border-radius: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  z-index:1;
-} {% endcomment %}
+  
+} 
 
 .product-gallery.product-gallery--mobile-dots.product-gallery--desktop-carousel.product-gallery--mobile-expanded{
   background-color: #003725;
@@ -64,7 +64,8 @@
   align-items: center;
   z-index:1;
 
-}
+
+} 
 .product-gallery__cursor{
  display: block !important;
 }
@@ -97,7 +98,7 @@
       {%- if section.settings.product != blank -%}
         {%- if section.settings.product.media.size > 0 -%}
           {%- render 'product-gallery', product: section.settings.product, product_form_id: product_form_id -%}
-          <div class="green-circle-background">
+         
           {%- endif -%}
      
         {%- render 'product-info', 
@@ -107,10 +108,11 @@
           context: 'featured_product'
         -%}
       {%- else -%}
-       
+
           <product-gallery form="placeholder-{{ section.id }}" class="product-gallery {% if section.settings.mobile_carousel_control contains 'dots' %}product-gallery--mobile-dots{% endif %} {% if section.settings.desktop_media_layout contains 'grid' %}product-gallery--desktop-grid{% else %}product-gallery--desktop-carousel{% endif %} {% if section.settings.desktop_media_layout == 'carousel_thumbnails_left' %}product-gallery--desktop-thumbnails-left{% endif %} {% if section.settings.mobile_media_size == 'expanded' %}product-gallery--mobile-expanded{% endif %}">
             <div class="product-gallery__ar-wrapper">
               <div class="product-gallery__media-list-wrapper">
+                <div class="green-circle-background"></div>
                 <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
                   <div class="product-gallery__media {% if section.settings.mobile_carousel_control != 'free_scroll' %}snap-center{% endif %}">
                     {{- 'product-1' | placeholder_svg_tag: 'placeholder rounded' -}}

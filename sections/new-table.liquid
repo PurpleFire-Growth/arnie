@@ -10,6 +10,10 @@
         border-collapse: collapse;
        
       }
+      th{
+       background-color:white;
+      }
+
       td, th{
        border: 0px;
     }
@@ -42,8 +46,9 @@
        padding: 0px 10px;
     }
     .heading-center{
-        text-align: -webkit-center;
-        text-align: center !important;
+        {% comment %} text-align: -webkit-center;
+        text-align: center !important; {% endcomment %}
+        align-content: center;
     }
     tr:nth-child(odd){
      background-color: #F7F7F7;
