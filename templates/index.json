@@ -105,7 +105,7 @@
       "type": "revealed-image-on-scroll",
       "settings": {
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
-        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1.jpg",
+        "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
         "subheading": "",
         "title": "Plant-powered topicals that works as hard as you do.",
         "background": "",
