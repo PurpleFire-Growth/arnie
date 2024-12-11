@@ -310,7 +310,8 @@
         "pickup_availability_PAeiVc"
       ],
       "custom_css": [
-        ".text-subdued {font-size: 20px;}"
+        ".text-subdued {font-size: 20px;}",
+        "{padding: 30px 0px;}"
       ],
       "settings": {
         "full_width": true,
