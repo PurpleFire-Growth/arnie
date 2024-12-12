@@ -128,7 +128,7 @@
         "associated_products_yeVAyN": {
           "type": "associated_products",
           "settings": {
-            "title": "Buy it with",
+            "title": "",
             "stack_products": false,
             "products_count": 1,
             "background": "#e7f7ef",
