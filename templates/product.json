@@ -124,6 +124,16 @@
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
+        },
+        "associated_products_yeVAyN": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -140,7 +150,8 @@
         "buy_buttons",
         "judge_me_reviews_review_widget_wqErfq",
         "collapsible_text_rBfLne",
-        "collapsible_text_BfEzBY"
+        "collapsible_text_BfEzBY",
+        "associated_products_yeVAyN"
       ],
       "custom_css": [
         ".product-gallery__media img {width: 50%;}",

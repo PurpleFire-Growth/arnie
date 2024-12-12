@@ -220,17 +220,6 @@
             "collapse_content": false
           }
         },
-        "variant_picker_tTm4Ce": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
         "offer_7c6JjC": {
           "type": "offer",
           "settings": {
@@ -301,7 +290,6 @@
         "price_NDQHH6",
         "separator_MB43cE",
         "description_TAxd9X",
-        "variant_picker_tTm4Ce",
         "offer_7c6JjC",
         "offer_X6x83N",
         "offer_7jdj9U",
