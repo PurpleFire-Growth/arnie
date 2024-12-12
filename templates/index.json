@@ -220,17 +220,6 @@
             "collapse_content": false
           }
         },
-        "variant_picker_tTm4Ce": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
         "offer_7c6JjC": {
           "type": "offer",
           "settings": {
@@ -301,7 +290,6 @@
         "price_NDQHH6",
         "separator_MB43cE",
         "description_TAxd9X",
-        "variant_picker_tTm4Ce",
         "offer_7c6JjC",
         "offer_X6x83N",
         "offer_7jdj9U",
@@ -591,7 +579,7 @@
         "row_PFA9GM"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/Frame_1.png",
+        "image_1": "shopify://shop_images/Frame_1_1.png",
         "image_2": "shopify://shop_images/image.png",
         "image_3": "shopify://shop_images/image_7.png"
       }
