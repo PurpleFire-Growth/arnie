@@ -534,6 +534,7 @@
           "type": "row",
           "settings": {
             "value_1": "<p>Made in USA</p>",
+            "icon_1": "shopify://shop_images/Flag_Pack_40180393-0af5-47a5-8a82-181e4689ba4a.png",
             "value_2": "",
             "icon_2": "shopify://shop_images/Check_mark.svg",
             "value_3": "",
