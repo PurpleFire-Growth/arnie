@@ -364,35 +364,44 @@ Supported variables
             {%- if recommendations.performed and recommendations.products_count > 0 -%}
               <div class="product-info__complementary-products v-stack gap-3 sm:gap-4">
                 {%- assign carousel_id = 'carousel-' | append: block.id -%}
-
+          
                 {%- if block.settings.title != blank or block.settings.stack_products == false and recommendations.products_count > 1 -%}
                   <div class="h-stack justify-between gap-4">
                     {%- if block.settings.title != blank -%}
-                      <p>{{ block.settings.title | escape }}</p>
-                    {%- endif -%}
-
-                    {%- if block.settings.stack_products == false and recommendations.products_count > 1 -%}
-                      <div class="h-stack gap-2 hidden sm:flex">
-                        <button is="prev-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.previous' | t | escape }}" disabled>{%- render 'icon' with 'chevron-left-small', direction_aware: true -%}</button>
-                        <button is="next-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.next' | t | escape }}">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</button>
-                      </div>
+                      <p class="section-title">{{ block.settings.title | escape }}</p>
+                    
                     {%- endif -%}
                   </div>
                 {%- endif -%}
-
+          
+              
+          
                 {%- capture horizontal_products -%}
                   {%- for associated_product in recommendations.products -%}
-                    {%- render 'horizontal-product', product: associated_product, show_add_to_cart: true, background: block.settings.background, text_color: block.settings.text_color -%}
+                    <div class="horizontal-product v-stack p-4 border rounded">
+                      <div class="wrap-container">
+                        <div class="product-description v-stack gap-2">
+                          <p class="text-lg font-semibold">Bundle up to save 14% every month</p>
+                          <p>Cover all your bases with the complete package.</p>
+                        </div>
+                  
+                        <div class="badge_div">
+                          <span class="badge badge--on-sale">Save $15</span>
+                        </div>
+                      </div>
+                      {%- render 'horizontal-product', product: associated_product, description: product.description, show_add_to_cart: true, background: block.settings.background, text_color: block.settings.text_color  -%}
+                      
+                    </div>
                   {%- endfor -%}
                 {%- endcapture -%}
-
+          
                 {%- assign horizontal_products_blends = true -%}
                 {%- assign section_background = section.settings.background_gradient | default: section.settings.background | default: settings.background -%}
-
+          
                 {%- if block.settings.background != 'rgba(0,0,0,0)' and block.settings.background != blank and block.settings.background != section_background -%}
                   {%- assign horizontal_products_blends = false -%}
                 {%- endif -%}
-
+          
                 {%- if block.settings.stack_products -%}
                   <div class="horizontal-product-list {% if horizontal_products_blends %}border divide-y rounded-xs{% else %}separate{% endif %}">
                     {{- horizontal_products -}}
@@ -404,9 +413,13 @@ Supported variables
                     </div>
                   </scroll-carousel>
                 {%- endif -%}
+                
+        
               </div>
             {%- endif -%}
+       
           </product-recommendations>
+          
 
         {%- when 'offer' -%}
           {%- if block.settings.title != blank or block.settings.content != blank -%}
@@ -462,3 +475,37 @@ Supported variables
     {%- endform -%}
   {%- endunless -%}
 </safe-sticky>
+
+
+<style>
+  .product-info__complementary-products .horizontal-product-list-carousel:not(.separate){
+   border-width: 0px;
+  }
+  .wrap-container{
+   display:flex;
+   justify-content: space-between;
+   padding:0px 10px;
+  }
+
+  .horizontal-product.snap-start{
+   padding-top:0px;
+  }
+
+  .horizontal-product.v-stack.p-4.border.rounded.is-selected{
+  
+   background-color: #E7F7EF;  
+  }
+  
+  .text-lg.font-semibold{
+   font-size:16px;
+   font-weight:600;
+  }
+  .button.button--sm.button--subdued{
+   background-color: #009B67;
+   color: white;
+  }
+
+  .text-subdued.text-sm{
+   font-weight:600;
+  }
+</style>

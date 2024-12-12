@@ -57,6 +57,7 @@ only way to do it on Shopify right now.
       {%- endfor -%}
     </page-dots>
   {%- endcapture -%}
+
   <div class="product-gallery__ar-wrapper">
     <div class="product-gallery__media-list-wrapper">
       {%- if section.settings.desktop_media_layout contains 'carousel' and product.media.size > 1 -%}
@@ -66,15 +67,15 @@ only way to do it on Shopify right now.
           </div>
         </custom-cursor>
       {%- endif -%}
-
+     
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
       MEDIA LIST
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
+      
       <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height initial-index="{{ default_media.position | minus: 1 }}" {% if section.settings.enable_video_autoplay %}autoplay{% endif %} id="{{ product_gallery_id }}" class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
         {%- assign media_attached_to_variant = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-
         {%- for media in product.media -%}
           {%- case section.settings.desktop_media_layout -%}
             {%- when 'carousel_thumbnails_bottom' -%}
@@ -110,7 +111,7 @@ only way to do it on Shopify right now.
           </div>
         {%- endfor -%}
       </media-carousel>
-
+    </div>
       {%- if section.settings.enable_image_zoom -%}
         <div class="product-gallery__zoom {% if section.settings.desktop_media_layout contains 'grid' %}md:hidden{% endif %}">
           <button type="button" is="product-zoom-button" class="circle-button circle-button--fill ring">
@@ -123,7 +124,7 @@ only way to do it on Shopify right now.
       {%- if product.media.size > 1 and section.settings.mobile_carousel_control == 'floating_dots' -%}
         {{- page_dots -}}
       {%- endif -%}
-    </div>
+   
 
     {%- comment -%}
     ----------------------------------------------------------------------------------------------------------------------
@@ -179,4 +180,5 @@ only way to do it on Shopify right now.
     {%- endif -%}
   {%- endif -%}
 </product-gallery>
+
 
