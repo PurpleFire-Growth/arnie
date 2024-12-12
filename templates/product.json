@@ -138,7 +138,7 @@
         "liquid_xwXteh": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  .product-info__quantity-buy-wrapper {\n      display: flex;\n      gap: 1rem; \n      align-items: center;\n    }\n\n    .product-info__quantity-selector {\n      flex: 0; \n    }\n\n  .product-info__buy-buttons {\n      flex: 1; \n    }\nlabel.block-label.text-subdued{\ndisplay:none;}\n.quantity-selector{\nheight:59px;\n</style>"
+            "liquid": "<style>\n  .product-info__quantity-buy-wrapper {\n      display: flex;\n      gap: 1rem; \n      align-items: flex-start;\n    }\n\n    .product-info__quantity-selector {\n      flex: 0; \n    }\n\n  .product-info__buy-buttons {\n      flex: 1; \n    }\nlabel.block-label.text-subdued{\ndisplay:none;}\n.quantity-selector{\nheight:59px;\n</style>"
           }
         }
       },
