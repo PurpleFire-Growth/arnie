@@ -134,6 +134,12 @@
             "background": "#e7f7ef",
             "text_color": "#1a1a1a"
           }
+        },
+        "liquid_xwXteh": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .product-info__quantity-buy-wrapper {\n      display: flex;\n      gap: 1rem; \n      align-items: center;\n    }\n\n    .product-info__quantity-selector {\n      flex: 0; \n    }\n\n  .product-info__buy-buttons {\n      flex: 1; \n    }\nlabel.block-label.text-subdued{\ndisplay:none;\n</style>"
+          }
         }
       },
       "block_order": [
@@ -151,7 +157,8 @@
         "judge_me_reviews_review_widget_wqErfq",
         "collapsible_text_rBfLne",
         "collapsible_text_BfEzBY",
-        "associated_products_yeVAyN"
+        "associated_products_yeVAyN",
+        "liquid_xwXteh"
       ],
       "custom_css": [
         ".product-gallery__media img {width: 50%;}",
