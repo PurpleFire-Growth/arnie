@@ -261,59 +261,62 @@ Supported variables
         {%- when 'quantity_selector' -%}
           {%- if product.available -%}
             {%- assign variant = product.selected_or_first_available_variant -%}
-
-            <div class="product-info__quantity-selector">
-              <div class="form-control">
-                <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
-
-                <quantity-selector class="quantity-selector">
-                  <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                  <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
-                  <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
-                </quantity-selector>
+        
+            <div class="product-info__quantity-buy-wrapper">
+              <div class="product-info__quantity-selector">
+                <div class="form-control">
+                  <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
+        
+                  <quantity-selector class="quantity-selector">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+                    <input id="{{ product_form_id }}-quantity" type="number" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" value="{{ variant.quantity_rule.min | default: 1 }}" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if variant.quantity_rule.max != nil %}max="{{ variant.quantity_rule.max }}"{% endif %} autocomplete="off">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+                  </quantity-selector>
+                </div>
+        
+                {%- liquid
+                  assign quantity_rules = ''
+        
+                  if variant.quantity_rule.min > 1
+                    assign rule = 'product.quantity.minimum_of' | t: min: variant.quantity_rule.min
+                    assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+                  endif
+        
+                  if variant.quantity_rule.max != nil
+                    assign rule = 'product.quantity.maximum_of' | t: max: variant.quantity_rule.max
+                    assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+                  endif
+        
+                  if variant.quantity_rule.increment > 1
+                    assign rule = 'product.quantity.increment_of' | t: step: variant.quantity_rule.increment
+                    assign quantity_rules = quantity_rules | append: ' / ' | append: rule
+                  endif
+                -%}
+        
+                {%- if quantity_rules != blank -%}
+                  <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
+                {%- endif -%}
               </div>
-
-              {%- liquid
-                assign quantity_rules = ''
-
-                if variant.quantity_rule.min > 1
-                  assign rule = 'product.quantity.minimum_of' | t: min: variant.quantity_rule.min
-                  assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                endif
-
-                if variant.quantity_rule.max != nil
-                  assign rule = 'product.quantity.maximum_of' | t: max: variant.quantity_rule.max
-                  assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                endif
-
-                if variant.quantity_rule.increment > 1
-                  assign rule = 'product.quantity.increment_of' | t: step: variant.quantity_rule.increment
-                  assign quantity_rules = quantity_rules | append: ' / ' | append: rule
-                endif
-              -%}
-
-              {%- if quantity_rules != blank -%}
-                <p class="text-subdued text-sm">{{ quantity_rules | remove_first: ' / ' | capitalize }}</p>
-              {%- endif -%}
+        
+              <div class="product-info__buy-buttons">
+                {%- if request.page_type != 'password' -%}
+                  <div>
+                    {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, show_gift_card_recipient: block.settings.show_gift_card_recipient, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
+                  </div>
+                {%- endif -%}
+              </div>
             </div>
+        
+    
           {%- endif -%}
-
         {%- when 'volume_pricing' -%}
           {%- render 'volume-pricing-table', variant: product.selected_or_first_available_variant -%}
-
+        
         {%- when 'inventory' -%}
           <div class="product-info__inventory">
             {%- render 'inventory', variant: product.selected_or_first_available_variant, low_threshold: block.settings.low_inventory_threshold, form_id: product_form_id -%}
           </div>
-
-        {%- when 'buy_buttons' -%}
-          {%- assign main_form_exists = true -%}
-
-          {%- if request.page_type != 'password' -%}
-            <div class="product-info__buy-buttons">
-              {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, show_gift_card_recipient: block.settings.show_gift_card_recipient, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
-            </div>
-          {%- endif -%}
+        
 
         {%- when 'pickup_availability' -%}
           <div class="product-info__pickup-availability">
@@ -508,4 +511,7 @@ Supported variables
   .text-subdued.text-sm{
    font-weight:600;
   }
+
+  
+  
 </style>
