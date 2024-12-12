@@ -103,6 +103,7 @@
     },
     "revealed_image_on_scroll_HaFTLV": {
       "type": "revealed-image-on-scroll",
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
         "mobile_image": "shopify://shop_images/d4723b88ead4f1df86eb2c62a57b8420_1_f4d91167-cb0c-4696-9ce5-cebec2ee7c1c.jpg",
@@ -560,7 +561,8 @@
         "row_PFA9GM": {
           "type": "row",
           "settings": {
-            "value_1": "<p>Made in USA</p>",
+            "value_1": "<p>Made in USA </p>",
+            "icon_1": "shopify://shop_images/Flag_Pack_40180393-0af5-47a5-8a82-181e4689ba4a.png",
             "value_2": "",
             "icon_2": "shopify://shop_images/Check_mark.svg",
             "value_3": "",
