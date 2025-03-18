@@ -70,7 +70,7 @@
       "settings": {
         "collection": "",
         "products": [
-          "arnie-s-aftersun",
+          "arnie-s-aftersun-wholesale",
           "arnie-s-muscle-cream",
           "arnie-s-roll-on",
           "arnie-s-sunscreen"
@@ -315,7 +315,7 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "arnie-s-aftersun",
+        "product": "arnie-s-aftersun-wholesale",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
